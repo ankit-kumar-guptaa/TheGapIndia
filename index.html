@@ -1,0 +1,2947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The GAP India - Recruitment agency in New Delhi specializing in IT and Non-IT hiring, executive search, RPO, and HR consulting for multiple industries across India.">
+    <meta name="keywords" content="The GAP India, recruitment agency Delhi, IT hiring, non IT recruitment, executive search India, RPO services, HR consulting, talent acquisition, staffing solutions">
+    <title>The GAP India | Recruitment & Talent Solutions in India</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #0B3C5D;
+            --secondary: #328CC1;
+            --accent: #F5A623;
+            --bg: #F7F9FC;
+            --bg-soft: #EEF3F9;
+            --dark: #121826;
+            --text: #1F2933;
+            --muted: #6B7280;
+            --white: #FFFFFF;
+            --shadow-soft: 0 14px 40px rgba(15, 23, 42, 0.10);
+            --radius-lg: 20px;
+            --radius-md: 14px;
+            --radius-sm: 10px;
+            --transition: all 0.35s ease;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(18px);
+            border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+            transition: var(--transition);
+        }
+
+        .header-top {
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            color: var(--white);
+            font-size: 13px;
+        }
+
+        .header-top-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 20px;
+        }
+
+        .header-contact span {
+            margin-right: 18px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .header-contact i {
+            color: var(--accent);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 20px;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo-mark {
+            width: 32px;
+            height: 32px;
+            border-radius: 12px;
+            background: radial-gradient(circle at 0 0, var(--accent), var(--secondary));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 26px;
+            font-size: 14px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            padding-bottom: 4px;
+            border-bottom: 2px solid transparent;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary);
+            border-bottom-color: var(--secondary);
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 130%;
+            left: 0;
+            background: var(--white);
+            border-radius: 14px;
+            box-shadow: var(--shadow-soft);
+            padding: 10px 0;
+            min-width: 210px;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(10px);
+            transition: var(--transition);
+            z-index: 1002;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0);
+        }
+        .dropdown.open .dropdown-menu {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0);
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 10px 18px;
+            font-size: 14px;
+            color: var(--text);
+        }
+
+        .dropdown-menu a:hover {
+            background: var(--bg-soft);
+            padding-left: 24px;
+        }
+
+        .nav-cta {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-nav {
+            padding: 8px 18px;
+            border-radius: 999px;
+            border: 1px solid rgba(15, 23, 42, 0.12);
+            background: var(--white);
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+
+        .btn-nav i {
+            font-size: 12px;
+        }
+
+        .btn-nav:hover {
+            border-color: var(--secondary);
+            color: var(--secondary);
+        }
+
+        .mobile-toggle {
+            display: none;
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        .nav-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(15, 23, 42, 0.35);
+            backdrop-filter: blur(2px);
+            z-index: 1000;
+            opacity: 0;
+            pointer-events: none;
+            transition: var(--transition);
+        }
+        .nav-overlay.show { opacity: 1; pointer-events: auto; }
+
+        /* Buttons */
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent), #ffb648);
+            color: var(--white);
+            border-radius: 999px;
+            padding: 14px 28px;
+            font-size: 15px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 14px 30px rgba(245, 166, 35, 0.35);
+            transition: var(--transition);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px) scale(1.01);
+            box-shadow: 0 18px 40px rgba(245, 166, 35, 0.45);
+        }
+
+        .btn-outline {
+            background: rgba(255, 255, 255, 0.14);
+            border-radius: 999px;
+            padding: 13px 26px;
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            color: #F9FAFB;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            backdrop-filter: blur(16px);
+            transition: var(--transition);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.22);
+            transform: translateY(-2px);
+        }
+
+        /* Hero */
+        .hero {
+            position: relative;
+            padding: 80px 0 70px;
+            background: radial-gradient(circle at top left, #EDF4FF 0, #F7F9FC 40%, #E8F1FF 100%);
+            overflow: hidden;
+        }
+        .hero-typed-row {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 15px;
+            color: var(--text);
+            margin-bottom: 12px;
+        }
+        .hero-typed-row .label {
+            color: var(--secondary);
+            font-weight: 600;
+        }
+        .typed {
+            color: var(--accent);
+            font-weight: 700;
+            position: relative;
+            padding-right: 10px;
+        }
+        .typed::after {
+            content: '';
+            position: absolute;
+            right: 2px;
+            top: 50%;
+            width: 2px;
+            height: 1.2em;
+            background: var(--accent);
+            transform: translateY(-50%);
+            animation: caretBlink 0.8s steps(1) infinite;
+        }
+        @keyframes caretBlink {
+            0%, 49% { opacity: 1; }
+            50%, 100% { opacity: 0; }
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 520px;
+            height: 520px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(50, 140, 193, 0.25), transparent 70%);
+            top: -120px;
+            right: -120px;
+            z-index: 0;
+        }
+
+        .hero-inner {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr;
+            gap: 50px;
+            position: relative;
+            z-index: 1;
+            align-items: center;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 14px;
+            border-radius: 999px;
+            background: rgba(11, 60, 93, 0.06);
+            color: var(--primary);
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 14px;
+        }
+
+        .hero-badge span {
+            width: 22px;
+            height: 22px;
+            border-radius: 999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #FFFFFF;
+            color: var(--accent);
+            box-shadow: 0 6px 20px rgba(15, 23, 42, 0.15);
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            line-height: 1.2;
+            margin-bottom: 14px;
+        }
+
+        .hero h1 span {
+            color: var(--accent);
+        }
+
+        .hero-subtitle {
+            font-size: 16px;
+            color: var(--muted);
+            max-width: 520px;
+            margin-bottom: 20px;
+        }
+
+        .hero-highlights {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 14px;
+            margin-bottom: 22px;
+        }
+
+        .hero-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: #FFFFFF;
+            font-size: 12px;
+            color: var(--muted);
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+        }
+
+        .hero-tag i {
+            font-size: 11px;
+            color: var(--secondary);
+        }
+
+        .hero-cta-row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-bottom: 18px;
+        }
+
+        .hero-support-text {
+            font-size: 13px;
+            color: var(--muted);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .hero-support-text i {
+            color: #16A34A;
+        }
+
+        .hero-meta-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-top: 10px;
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        .hero-meta-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .hero-meta-item i {
+            color: var(--secondary);
+        }
+
+        .hero-right {
+            position: relative;
+        }
+
+        .hero-card {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            background: #020617;
+            color: #F9FAFB;
+        }
+
+        .hero-img-wrapper {
+            position: relative;
+            height: 320px;
+            overflow: hidden;
+        }
+
+        .hero-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(1.03);
+            transition: transform 4s ease-out;
+        }
+
+        .hero-card:hover .hero-img-wrapper img {
+            transform: scale(1.08);
+        }
+
+        .hero-overlay-gradient {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(2, 6, 23, 0.9), rgba(2, 6, 23, 0.1));
+        }
+
+        .hero-animated {
+            position: absolute;
+            inset: 0;
+            z-index: 2;
+            pointer-events: none;
+        }
+        .blob {
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            filter: blur(16px);
+            background: radial-gradient(circle, rgba(50,140,193,0.35), rgba(245,166,35,0.25));
+        }
+        .b1 { left: 14%; top: 16%; animation: blobFloatA 8s ease-in-out infinite; }
+        .b2 { right: 12%; top: 28%; animation: blobFloatB 9s ease-in-out infinite; }
+        .b3 { left: 22%; bottom: 12%; animation: blobFloatC 7.5s ease-in-out infinite; }
+        @keyframes blobFloatA { 0% { transform: translateY(0) } 50% { transform: translateY(-18px) } 100% { transform: translateY(0) } }
+        @keyframes blobFloatB { 0% { transform: translateY(0) } 50% { transform: translateY(16px) } 100% { transform: translateY(0) } }
+        @keyframes blobFloatC { 0% { transform: translateY(0) } 50% { transform: translateY(-12px) } 100% { transform: translateY(0) } }
+
+        .hero-bottom-content {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 18px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 2;
+        }
+
+        .hero-bottom-text h3 {
+            font-size: 17px;
+            margin-bottom: 4px;
+            color: #F9FAFB;
+        }
+
+        .hero-bottom-text p {
+            font-size: 12px;
+            color: #CBD5F5;
+        }
+
+        .hero-mini-stats {
+            position: absolute;
+            top: -24px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(18px);
+            border-radius: 18px;
+            padding: 14px 16px;
+            box-shadow: 0 18px 40px rgba(15, 23, 42, 0.35);
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 8px 14px;
+            font-size: 11px;
+            color: var(--muted);
+        }
+
+        .hero-mini-stats strong {
+            display: block;
+            font-size: 16px;
+            color: var(--primary);
+        }
+
+        .hero-floating-label {
+            position: absolute;
+            left: -16px;
+            top: 40px;
+            background: #FFFFFF;
+            color: var(--primary);
+            padding: 8px 16px;
+            border-radius: 999px;
+            font-size: 11px;
+            font-weight: 600;
+            box-shadow: 0 14px 35px rgba(15, 23, 42, 0.25);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .hero-floating-label i {
+            color: #22C55E;
+        }
+
+        .scroll-indicator {
+            margin-top: 30px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        .scroll-indicator span {
+            width: 26px;
+            height: 42px;
+            border-radius: 999px;
+            border: 1px solid rgba(15, 23, 42, 0.18);
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding-top: 6px;
+        }
+
+        .scroll-indicator span::before {
+            content: '';
+            width: 4px;
+            height: 10px;
+            border-radius: 999px;
+            background: var(--secondary);
+            animation: scrollDot 1.2s infinite;
+        }
+
+        @keyframes scrollDot {
+            0% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(12px); opacity: 0; }
+        }
+
+        /* Trust / Counter Section */
+        .trust-section {
+            padding: 40px 0 70px;
+            position: relative;
+        }
+
+        .trust-card-row {
+            background: #FFFFFF;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-soft);
+            padding: 26px 28px;
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 18px;
+            margin-top: -40px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .trust-item {
+            text-align: left;
+            border-right: 1px solid rgba(15, 23, 42, 0.08);
+            padding-right: 10px;
+        }
+
+        .trust-item:last-child {
+            border-right: none;
+        }
+
+        .trust-label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--muted);
+            margin-bottom: 4px;
+        }
+
+        .trust-number {
+            font-size: 26px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .trust-number span {
+            color: var(--accent);
+        }
+
+        .trust-note {
+            font-size: 11px;
+            color: var(--muted);
+        }
+
+        .counter-number {
+            display: inline-block;
+        }
+
+        /* Client slider (two rows) */
+        .clients-section {
+            padding: 40px 0 70px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 36px;
+        }
+
+        .section-header h2 {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        .section-header p {
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .client-slider-outer {
+            overflow: hidden;
+        }
+
+        .client-slider-row {
+            display: flex;
+            gap: 26px;
+            animation: marquee 22s linear infinite;
+            margin-bottom: 22px;
+        }
+
+        .client-slider-row.alt {
+            animation: marqueeReverse 24s linear infinite;
+        }
+
+        .client-logo-card {
+            min-width: 180px;
+            height: 90px;
+            border-radius: var(--radius-md);
+            background: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+        }
+        .client-logo-card img {
+            max-height: 60px;
+            max-width: 150px;
+            object-fit: contain;
+            opacity: 0.95;
+            transition: transform 0.25s ease;
+        }
+        .client-logo-card:hover img { transform: scale(1.05); }
+
+        @keyframes marquee {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+
+        @keyframes marqueeReverse {
+            from { transform: translateX(-50%); }
+            to { transform: translateX(0); }
+        }
+
+        /* Split About + Who we are */
+        .about-split {
+            padding: 70px 0 60px;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .eyebrow {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            color: var(--secondary);
+            margin-bottom: 8px;
+        }
+
+        .about-grid h2 {
+            font-size: 30px;
+            margin-bottom: 14px;
+        }
+
+        .about-grid p {
+            font-size: 14px;
+            color: var(--muted);
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+
+        .about-points {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px;
+            margin-top: 12px;
+        }
+
+        .about-point-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        .about-point-item i {
+            margin-top: 3px;
+            color: #22C55E;
+        }
+
+        .about-card-img {
+            position: relative;
+        }
+
+        .about-photo-main {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .about-photo-main img {
+            height: 320px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .about-photo-badge {
+            position: absolute;
+            bottom: 18px;
+            left: 18px;
+            background: rgba(15, 23, 42, 0.92);
+            color: #F9FAFB;
+            padding: 12px 14px;
+            border-radius: 16px;
+            font-size: 11px;
+            max-width: 220px;
+        }
+
+        .about-photo-badge strong {
+            display: block;
+            font-size: 13px;
+            margin-bottom: 4px;
+            color: #E5E7EB;
+        }
+
+        /* Parallax Who We Are */
+        .parallax-who {
+            position: relative;
+            background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #F9FAFB;
+            padding: 90px 0;
+            margin: 0;
+        }
+
+        .parallax-overlay {
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at top left, rgba(50, 140, 193, 0.4), transparent 55%),
+                        linear-gradient(to bottom right, rgba(15, 23, 42, 0.92), rgba(15, 23, 42, 0.92));
+        }
+
+        .parallax-inner {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: 1.2fr 0.9fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .parallax-inner h2 {
+            color: #F9FAFB;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .parallax-inner p {
+            font-size: 14px;
+            color: #CBD5F5;
+            margin-bottom: 10px;
+        }
+
+        .who-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .who-tag-chip {
+            font-size: 11px;
+            padding: 6px 10px;
+            border-radius: 999px;
+            border: 1px solid rgba(148, 163, 255, 0.4);
+            color: #E5E7EB;
+        }
+
+        .who-mini-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+        }
+
+        .who-mini-card {
+            background: rgba(15, 23, 42, 0.75);
+            border-radius: 14px;
+            padding: 12px 14px;
+            font-size: 12px;
+            color: #E5E7EB;
+        }
+
+        .who-mini-card strong {
+            display: block;
+            margin-bottom: 3px;
+            color: #F9FAFB;
+        }
+
+        /* Mission / Vision / Values */
+        .mvv-section {
+            padding: 70px 0;
+        }
+
+        .mvv-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+        }
+
+        .mvv-card {
+            background: #FFFFFF;
+            border-radius: var(--radius-md);
+            padding: 24px 22px;
+            box-shadow: var(--shadow-soft);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mvv-icon-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 999px;
+            background: rgba(50, 140, 193, 0.06);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary);
+            margin-bottom: 10px;
+        }
+
+        .mvv-card h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .mvv-card p {
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        .mvv-pill {
+            position: absolute;
+            right: 16px;
+            top: 18px;
+            font-size: 11px;
+            padding: 4px 10px;
+            border-radius: 999px;
+            background: var(--bg-soft);
+            color: var(--secondary);
+            font-weight: 500;
+        }
+
+        /* Core values cards */
+        .values-section {
+            padding: 0 0 70px;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .value-card {
+            background: #FFFFFF;
+            border-radius: 16px;
+            padding: 18px 18px 20px;
+            border: 1px solid rgba(148, 163, 184, 0.35);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .value-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(50, 140, 193, 0.08), transparent 55%);
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .value-card:hover::before {
+            opacity: 1;
+        }
+
+        .value-icon {
+            width: 28px;
+            height: 28px;
+            border-radius: 10px;
+            background: var(--bg-soft);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary);
+            margin-bottom: 8px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .value-card h4 {
+            font-size: 15px;
+            margin-bottom: 6px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .value-card p {
+            font-size: 13px;
+            color: var(--muted);
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Services cards + image cards */
+        .services-section {
+            padding: 70px 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 22px;
+            margin-top: 26px;
+        }
+
+        .service-card {
+            background: #FFFFFF;
+            border-radius: 18px;
+            padding: 20px 18px 20px;
+            box-shadow: var(--shadow-soft);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-top: 3px solid rgba(50, 140, 193, 0.3);
+        }
+
+        .service-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .service-icon {
+            width: 34px;
+            height: 34px;
+            border-radius: 12px;
+            background: var(--bg-soft);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary);
+        }
+
+        .service-card h3 {
+            font-size: 16px;
+        }
+
+        .service-card p {
+            font-size: 13px;
+            color: var(--muted);
+            margin-bottom: 8px;
+        }
+
+        .service-meta {
+            font-size: 11px;
+            color: var(--muted);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 10px;
+        }
+
+        .service-link {
+            font-size: 12px;
+            color: var(--secondary);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: auto;
+            font-weight: 500;
+        }
+
+        .service-link i {
+            font-size: 11px;
+        }
+
+        /* Image cards band */
+        .solutions-band {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .solution-card {
+            position: relative;
+            border-radius: 18px;
+            overflow: hidden;
+            height: 190px;
+        }
+
+        .solution-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(1.05);
+            transition: transform 3.5s ease-out;
+        }
+
+        .solution-card:hover img {
+            transform: scale(1.12);
+        }
+
+        .solution-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.1));
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 16px 16px 14px;
+            color: #F9FAFB;
+        }
+
+        .solution-overlay h4 {
+            font-size: 15px;
+            margin-bottom: 3px;
+        }
+
+        .solution-overlay p {
+            font-size: 12px;
+            color: #E5E7EB;
+        }
+
+        /* Industries */
+        .industries-section {
+            padding: 70px 0;
+            background: #FFFFFF;
+        }
+
+        .industries-grid {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 14px;
+            margin-top: 18px;
+        }
+
+        .industry-pill {
+            background: var(--bg-soft);
+            border-radius: 999px;
+            padding: 10px 14px;
+            font-size: 12px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text);
+        }
+
+        .industry-pill i {
+            font-size: 13px;
+            color: var(--secondary);
+        }
+
+        .industry-group {
+            margin-bottom: 26px;
+        }
+
+        .industry-group h3 {
+            font-size: 18px;
+            margin-bottom: 6px;
+        }
+
+        .industry-group p {
+            font-size: 13px;
+            color: var(--muted);
+        }
+        .oilgas-section {
+            padding: 70px 0;
+            background: radial-gradient(circle at top left, #E9F5FF, #F9FBFF 40%, #FFFFFF 100%);
+            color: var(--text);
+            position: relative;
+        }
+        .oilgas-banner {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            height: 240px;
+            margin-bottom: 24px;
+        }
+        .oilgas-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(1.06);
+            transition: transform 4s ease-out;
+        }
+        .oilgas-banner:hover img { transform: scale(1.12); }
+        .oilgas-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.05));
+            display: flex;
+            align-items: flex-end;
+            padding: 18px;
+        }
+        .oilgas-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 16px;
+        }
+        .oil-card {
+            background: #FFFFFF;
+            border-radius: 16px;
+            padding: 16px;
+            border: 1px solid rgba(148, 163, 184, 0.25);
+            box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+        }
+        .oil-card .icon {
+            width: 34px;
+            height: 34px;
+            border-radius: 10px;
+            background: var(--bg-soft);
+            color: var(--secondary);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+        .oil-card h4 { font-size: 15px; margin-bottom: 6px; color: var(--primary); }
+        .oil-card p { font-size: 12px; color: var(--muted); }
+
+        .oil-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 10px 0 18px;
+        }
+        .oil-chip {
+            font-size: 11px;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: var(--bg-soft);
+            color: var(--text);
+            border: 1px solid rgba(50, 140, 193, 0.25);
+        }
+        .oil-cta { margin-top: 18px; }
+
+        /* Why choose + process mixed layout */
+        .why-process {
+            padding: 70px 0;
+            background: radial-gradient(circle at top left, #E5F1FF, #F7F9FC 40%, #E5F1FF 100%);
+        }
+
+        .why-process-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.9fr;
+            gap: 32px;
+            align-items: flex-start;
+        }
+
+        .why-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px;
+            margin-top: 16px;
+        }
+
+        .why-item {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 14px;
+            padding: 12px 12px 14px;
+            font-size: 13px;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .why-item i {
+            margin-top: 2px;
+            color: var(--accent);
+        }
+
+        .process-board {
+            background: #020617;
+            color: #E5E7EB;
+            border-radius: 20px;
+            padding: 18px 18px 20px;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .process-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .process-badge {
+            font-size: 11px;
+            padding: 4px 10px;
+            border-radius: 999px;
+            background: rgba(148, 163, 255, 0.12);
+            color: #E5E7EB;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 8px;
+            margin-top: 12px;
+            font-size: 11px;
+        }
+
+        .process-step {
+            background: rgba(15, 23, 42, 0.9);
+            border-radius: 14px;
+            padding: 10px 10px 11px;
+            position: relative;
+        }
+
+        .process-step span {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            border-radius: 999px;
+            background: rgba(248, 250, 252, 0.08);
+            font-size: 11px;
+            margin-bottom: 4px;
+        }
+
+        .process-step strong {
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        /* Forms section */
+        .forms-section {
+            padding: 70px 0;
+        }
+
+        .forms-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 26px;
+        }
+
+        .form-card {
+            background: #FFFFFF;
+            border-radius: 18px;
+            padding: 24px 20px 22px;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .form-card h3 {
+            font-size: 18px;
+            margin-bottom: 4px;
+        }
+
+        .form-card p {
+            font-size: 13px;
+            color: var(--muted);
+            margin-bottom: 16px;
+        }
+
+        .form-grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px 14px;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+            font-size: 13px;
+        }
+
+        label {
+            display: block;
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px 9px;
+            border-radius: 10px;
+            border: 1px solid rgba(148, 163, 184, 0.7);
+            font-size: 13px;
+            outline: none;
+            transition: var(--transition);
+            font-family: inherit;
+        }
+        .dropzone {
+            border: 2px dashed rgba(148, 163, 184, 0.7);
+            border-radius: 14px;
+            padding: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 8px;
+            color: var(--muted);
+            cursor: pointer;
+            background: #FAFBFF;
+        }
+        .dropzone i { color: var(--secondary); }
+        .dropzone.active {
+            border-color: var(--secondary);
+            background: #FFFFFF;
+            box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+        }
+        .file-list {
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .file-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 10px;
+            border-radius: 999px;
+            background: var(--bg-soft);
+            font-size: 12px;
+            color: var(--text);
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: var(--secondary);
+            box-shadow: 0 0 0 1px rgba(50, 140, 193, 0.25);
+        }
+
+        textarea {
+            min-height: 90px;
+            resize: vertical;
+        }
+
+        .btn-submit {
+            margin-top: 6px;
+            width: 100%;
+            padding: 11px 14px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            color: #FFFFFF;
+            border: none;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 30px rgba(15, 23, 42, 0.3);
+        }
+
+        /* Testimonials slider */
+        .testimonials-section {
+            padding: 70px 0;
+            background: #020617;
+            color: #E5E7EB;
+        }
+
+        .testimonials-header h2 {
+            color: #F9FAFB;
+        }
+
+        .testimonials-header p {
+            color: #A5B4FC;
+            font-size: 13px;
+        }
+
+        .testimonial-shell {
+            max-width: 760px;
+            margin: 26px auto 0;
+            position: relative;
+        }
+
+        .testimonial-track {
+            position: relative;
+            overflow: hidden;
+            min-height: 160px;
+        }
+
+        .testimonial-item {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transform: translateX(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .testimonial-item.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .testimonial-quote {
+            font-size: 15px;
+            color: #E5E7EB;
+            margin-bottom: 16px;
+        }
+
+        .testimonial-meta {
+            font-size: 13px;
+            color: #9CA3AF;
+        }
+
+        .testimonial-name {
+            font-weight: 600;
+            color: #F9FAFB;
+        }
+
+        .testimonial-dots {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            margin-top: 16px;
+        }
+
+        .testimonial-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 999px;
+            background: rgba(148, 163, 184, 0.5);
+        }
+
+        .testimonial-dot.active {
+            width: 18px;
+            background: #F97316;
+        }
+
+        /* Final CTA */
+        .cta-final {
+            padding: 60px 0 70px;
+            background: #FFFFFF;
+        }
+
+        .cta-box {
+            background: radial-gradient(circle at top left, #E0F2FE, #EEF2FF 40%, #F7F9FC 100%);
+            border-radius: 22px;
+            padding: 24px 24px 26px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 22px;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .cta-box h2 {
+            font-size: 24px;
+            margin-bottom: 6px;
+        }
+
+        .cta-box p {
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        .cta-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .btn-ghost {
+            padding: 11px 16px;
+            border-radius: 12px;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            font-size: 13px;
+            background: #FFFFFF;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background: #020617;
+            color: #9CA3AF;
+            padding: 40px 0 24px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 0.9fr 0.9fr 1fr;
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+
+        .footer-logo {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #F9FAFB;
+        }
+
+        .footer-logo span {
+            color: var(--accent);
+        }
+
+        .footer-text {
+            font-size: 13px;
+        }
+
+        .footer-heading {
+            font-size: 13px;
+            color: #E5E7EB;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .footer-links a {
+            display: block;
+            font-size: 13px;
+            color: #9CA3AF;
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+
+        .footer-links a:hover {
+            color: #E5E7EB;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(148, 163, 184, 0.3);
+            padding-top: 10px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .footer-bottom span {
+            color: #64748B;
+        }
+
+        /* Scroll animation utility */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-inner {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-right {
+                order: -1;
+            }
+
+            .trust-card-row {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .parallax-inner {
+                grid-template-columns: 1fr;
+            }
+
+            .industries-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            .why-process-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding-inline: 16px;
+            }
+
+            .header-top { display: none; }
+
+            .nav-links {
+                position: fixed;
+                inset: 60px 14px auto 14px;
+                background: #FFFFFF;
+                border-radius: 18px;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 14px 16px 16px;
+                box-shadow: var(--shadow-soft);
+                transform: translateY(-10px);
+                opacity: 0;
+                pointer-events: none;
+                z-index: 1001;
+                transition: opacity 0.3s ease, transform 0.3s ease;
+            }
+
+            .nav-links.show {
+                opacity: 1;
+                pointer-events: auto;
+                transform: translateY(0);
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .nav-cta { display: none; }
+
+            .nav-cta {
+                display: none;
+            }
+
+            .hero {
+                padding-top: 60px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .hero-highlights {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .trust-card-row {
+                grid-template-columns: 1fr 1fr;
+                row-gap: 18px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .mvv-grid,
+            .values-grid,
+            .services-grid,
+            .solutions-band,
+            .forms-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .industries-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .cta-box {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .dropdown-menu {
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 100%;
+                border-radius: 12px;
+                box-shadow: none;
+                border: 1px solid rgba(15, 23, 42, 0.06);
+                margin-top: 6px;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .trust-card-row {
+                grid-template-columns: 1fr;
+            }
+
+            .industries-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-highlights {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <div class="container header-top-inner">
+                <div class="header-contact">
+                    <span><i class="fas fa-envelope"></i> info@gapindia.com</span>
+                    <span><i class="fas fa-phone"></i>+ 91-9990411626</span>
+                    <span><i class="fas fa-location-dot"></i> New Delhi, India</span>
+                </div>
+                <div class="header-cta">
+                    <span>Looking to hire?</span>
+                    <button class="btn-nav" onclick="openModal('employer')"><i class="fas fa-briefcase"></i> Hire Talent</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <!-- <div class="logo-mark">G</div>
+                    THE GAP <span>INDIA</span> -->
+                    <img src="logo.png" width="180" alt="">
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">HOME</a></li>
+                    <li class="dropdown">
+                        <a href="#about">ABOUT US <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="#mission">Mission</a>
+                            <a href="#vision">Vision</a>
+                            <a href="#values">Core Values</a>
+                            <a href="#who-we-are">Who We Are</a>
+                        </div>
+                    </li>
+                    <li><a href="#oil-gas">OIL & GAS</a></li>
+                    <li><a href="#team">OUR TEAM</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#clientele">CLIENTELE</a></li>
+                    <li><a href="#contact">CONTACT US</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <button class="btn-nav" onclick="openModal('jobSeeker')"><i class="fas fa-file-arrow-up"></i> Submit CV</button>
+                </div>
+                <div class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></div>
+            </nav>
+        </div>
+        <div id="navOverlay" class="nav-overlay"></div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-inner">
+                <div class="hero-left reveal">
+                    <div class="hero-badge">
+                        <span><i class="fas fa-star"></i></span>
+                        Recruitment Partner for Growing Companies
+                    </div>
+                    <h1>
+                        Bridging the <span>Gap</span> Between
+                        <br>High-Impact Talent & Ambitious Teams
+                    </h1>
+                    <div class="hero-typed-row">
+                        <span class="label">Specialists in</span>
+                        <span id="typedText" class="typed"></span>
+                    </div>
+                    <p class="hero-subtitle">
+                        The GAP India is a New Delhi–based recruitment and talent solutions company helping organizations hire the right people across IT and Non‑IT roles, faster and smarter.
+                    </p>
+                    <div class="hero-highlights">
+                        <div class="hero-tag"><i class="fas fa-code"></i> IT & Technology Hiring</div>
+                        <div class="hero-tag"><i class="fas fa-stethoscope"></i> Healthcare & BFSI Experts</div>
+                        <div class="hero-tag"><i class="fas fa-user-tie"></i> Leadership & Executive Search</div>
+                    </div>
+                    <div class="hero-cta-row">
+                        <button class="btn-primary" onclick="openModal('jobSeeker')">
+                            <i class="fas fa-paper-plane"></i>
+                            Submit Your CV
+                        </button>
+                        <button class="btn-outline" onclick="openModal('employer')">
+                            <i class="fas fa-handshake"></i>
+                            Book a Hiring Consultation
+                        </button>
+                    </div>
+                    <div class="hero-support-text">
+                        <i class="fas fa-circle-check"></i>
+                        Zero-cost profile evaluation for job seekers • Fast shortlisting for employers
+                    </div>
+                    <div class="hero-meta-row">
+                        <div class="hero-meta-item"><i class="fas fa-location-dot"></i> Serving clients across India</div>
+                        <div class="hero-meta-item"><i class="fas fa-layer-group"></i> IT, Non‑IT & niche roles</div>
+                        <div class="hero-meta-item"><i class="fas fa-lock"></i> 100% confidential hiring support</div>
+                    </div>
+                    <div class="scroll-indicator">
+                        <span></span>
+                        Scroll to explore services
+                    </div>
+                </div>
+                <div class="hero-right reveal">
+                    <div class="hero-card">
+                        <div class="hero-img-wrapper">
+                            <img src="https://wowidea.in/wp-content/uploads/2023/04/maxresdefault-7.jpg" alt="Hiring discussion in a modern office">
+                            <div class="hero-overlay-gradient"></div>
+                            <div class="hero-animated">
+                                <span class="blob b1"></span>
+                                <span class="blob b2"></span>
+                                <span class="blob b3"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Clients slider -->
+    <section class="clients-section" id="clientele">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Trusted by Growth‑Focused Organizations</h2>
+                <p>We partner with brands across technology, healthcare, manufacturing, BFSI, retail and more.</p>
+            </div>
+            <div class="client-slider-outer">
+                <div class="client-slider-row">
+                    <div class="client-logo-card"><img src="https://logo.clearbit.com/microsoft.com" alt="Microsoft"></div>
+                    <div class="client-logo-card"><img src="https://logo.clearbit.com/ibm.com" alt="IBM"></div>
+                    <div class="client-logo-card"><img src="https://logo.clearbit.com/adobe.com" alt="Adobe"></div>
+                    <div class="client-logo-card"><img src="https://logo.clearbit.com/oracle.com" alt="Oracle"></div>
+                    <div class="client-logo-card"><img src="https://logo.clearbit.com/siemens.com" alt="Siemens"></div>
+                    <div class="client-logo-card"><img src="https://logo.clearbit.com/salesforce.com" alt="Salesforce"></div>
+                    <div class="client-logo-card"><img src="https://logo.clearbit.com/sap.com" alt="SAP"></div>
+                    <div class="client-logo-card"><img src="https://logo.clearbit.com/intel.com" alt="Intel"></div>
+                </div>
+                <div class="client-slider-row alt">
+                    <div class="client-logo-card"><img src="https://logo.clearbit.com/citi.com" alt="Citi"></div>
+                    <div class="client-logo-card"><img src="https://logo.clearbit.com/nestle.com" alt="Nestlé"></div>
+                    <div class="client-logo-card"><img src="https://logo.clearbit.com/airbnb.com" alt="Airbnb"></div>
+                    <div class="client-logo-card"><img src="https://logo.clearbit.com/dhl.com" alt="DHL"></div>
+                    <div class="client-logo-card"><img src="https://logo.clearbit.com/shell.com" alt="Shell"></div>
+                    <div class="client-logo-card"><img src="https://logo.clearbit.com/bp.com" alt="BP"></div>
+                    <div class="client-logo-card"><img src="https://logo.clearbit.com/marriott.com" alt="Marriott"></div>
+                    <div class="client-logo-card"><img src="https://logo.clearbit.com/samsung.com" alt="Samsung"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+  
+
+    <!-- Trust / Counters -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="trust-card-row reveal">
+                <div class="trust-item">
+                    <div class="trust-label">Operational Since</div>
+                    <div class="trust-number"><span class="counter-number" data-target="2023">0</span></div>
+                    <div class="trust-note">Founded in New Delhi with a clear mission to connect talent & opportunity.</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-label">Companies Partnered With</div>
+                    <div class="trust-number"><span class="counter-number" data-target="500">0</span>+</div>
+                    <div class="trust-note">From agile startups to large enterprises across India.</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-label">Successful Closures</div>
+                    <div class="trust-number"><span class="counter-number" data-target="98">0</span>%</div>
+                    <div class="trust-note">High offer‑to‑joining ratio with quality‑driven shortlisting.</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-label">Industry Coverage</div>
+                    <div class="trust-number"><span class="counter-number" data-target="17">0</span>+</div>
+                    <div class="trust-note">IT & Non‑IT industries including BFSI, Healthcare, Manufacturing & more.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+  <section class="oilgas-section" id="oil-gas">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Oil & Gas Talent Solutions</h2>
+                <p>End‑to‑end hiring across upstream, midstream and downstream operations.</p>
+            </div>
+            <div class="oil-chips reveal">
+                <span class="oil-chip">Safety & HSE</span>
+                <span class="oil-chip">Process Engineering</span>
+                <span class="oil-chip">Maintenance & Reliability</span>
+                <span class="oil-chip">QA/QC</span>
+                <span class="oil-chip">Project Management</span>
+            </div>
+            <div class="oilgas-banner reveal">
+                <img src="https://images.unsplash.com/photo-1504215403659-69fdd218edcc?auto=format&fit=crop&w=1400&q=80" alt="Oil and gas industry">
+                <div class="oilgas-overlay">
+                    <div>
+                        <div style="font-size:12px; color:#A5B4FC; text-transform:uppercase; letter-spacing:0.16em;">Industry Spotlight</div>
+                        <h3 style="font-size:18px; color:#F9FAFB; margin-top:4px;">Specialized roles across exploration, operations and refining</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="oilgas-grid">
+                <div class="oil-card reveal">
+                    <div class="icon"><i class="fas fa-mountain"></i></div>
+                    <h4>Upstream</h4>
+                    <p>Drilling engineers, geologists, geophysicists, HSE and field operations.</p>
+                </div>
+                <div class="oil-card reveal">
+                    <div class="icon"><i class="fas fa-route"></i></div>
+                    <h4>Midstream</h4>
+                    <p>Pipeline operations, storage, transportation, logistics and maintenance.</p>
+                </div>
+                <div class="oil-card reveal">
+                    <div class="icon"><i class="fas fa-flask"></i></div>
+                    <h4>Downstream</h4>
+                    <p>Refinery operations, petrochemicals, QA/QC, process and plant management.</p>
+                </div>
+            </div>
+            <div class="oil-cta">
+                <button class="btn-primary" onclick="openModal('employer')"><i class="fas fa-oil-can"></i> Discuss Oil & Gas Hiring</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About split -->
+    <section class="about-split" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="reveal">
+                    <div class="eyebrow">About The GAP India</div>
+                    <h2>Specialized recruitment for IT & Non‑IT roles across India</h2>
+                    <p>
+                        Founded in 2023, The GAP India is a dynamic recruitment solutions provider based in New Delhi. We specialize in both IT and non‑IT hiring, offering end‑to‑end talent acquisition services to clients in technology, healthcare, manufacturing, BFSI, retail, logistics, education and more.
+                    </p>
+                    <p>
+                        Our strength lies in understanding the unique hiring needs of each sector and designing search strategies that connect the right talent with the right opportunity. Whether it is a leadership mandate, a critical niche hire or high‑volume recruitment, our team is focused on speed, quality and long‑term fit.
+                    </p>
+                    <div class="about-points">
+                        <div class="about-point-item"><i class="fas fa-check-circle"></i><span>Dedicated practice teams for IT, Non‑IT and leadership hiring.</span></div>
+                        <div class="about-point-item"><i class="fas fa-check-circle"></i><span>Structured screening, interviewing and background validation.</span></div>
+                        <div class="about-point-item"><i class="fas fa-check-circle"></i><span>Transparent process, real‑time updates and accountable SLAs.</span></div>
+                        <div class="about-point-item"><i class="fas fa-check-circle"></i><span>Partnership mindset focused on repeat and long‑term relationships.</span></div>
+                    </div>
+                </div>
+                <div class="about-card-img reveal">
+                    <div class="about-photo-main">
+                        <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=80" alt="Recruitment consultants collaborating in an office">
+                    </div>
+                    <div class="about-photo-badge">
+                        <strong>People‑first, performance‑driven.</strong>
+                        Management and consultants with national and international exposure across finance, consumer, manufacturing, healthcare, technology, engineering, automotive and banking.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Who we are -->
+    <section class="parallax-who" id="who-we-are">
+        <div class="parallax-overlay"></div>
+        <div class="container">
+            <div class="parallax-inner">
+                <div class="reveal">
+                    <div class="eyebrow" style="color:#A5B4FC;">Who We Are</div>
+                    <h2>Your strategic recruitment & talent solutions partner</h2>
+                    <p>
+                        The GAP India connects skilled professionals with leading organizations across India. Our consultants act as problem‑solvers and opportunity‑creators, helping employers build strong teams and helping candidates move closer to their career goals.
+                    </p>
+                    <p>
+                        We work closely with founders, HR leaders and business heads to design hiring plans that align with culture, capability needs and growth roadmaps. From mid‑level specialists to CXO leaders, our search capability helps identify individuals who drive measurable impact.
+                    </p>
+                    <div class="who-tags">
+                        <span class="who-tag-chip">End‑to‑end recruitment lifecycle ownership</span>
+                        <span class="who-tag-chip">Market‑mapped talent intelligence</span>
+                        <span class="who-tag-chip">Advisory on compensation & structures</span>
+                    </div>
+                </div>
+                <div class="who-mini-grid reveal">
+                    <div class="who-mini-card">
+                        <strong>Consulting‑driven approach</strong>
+                        Tailored search strategies instead of generic database‑driven hiring.
+                    </div>
+                    <div class="who-mini-card">
+                        <strong>Compliance & governance</strong>
+                        Recruitment and processes aligned with policies and statutory requirements.
+                    </div>
+                    <div class="who-mini-card">
+                        <strong>Scale‑ready engine</strong>
+                        Ability to support both niche hiring and high‑volume ramp‑ups.
+                    </div>
+                    <div class="who-mini-card">
+                        <strong>Value‑added insights</strong>
+                        Talent mapping, competitor benchmarking and compensation inputs.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission / Vision / Values summary -->
+    <section class="mvv-section" id="mission">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Mission, Vision & Core Values</h2>
+                <p>Clear purpose and principles behind every search we execute.</p>
+            </div>
+            <div class="mvv-grid">
+                <div class="mvv-card reveal">
+                    <div class="mvv-pill">Mission</div>
+                    <div class="mvv-icon-circle"><i class="fas fa-bullseye"></i></div>
+                    <h3>Bridging talent and opportunity</h3>
+                    <p>
+                        Our mission is to empower organizations with the right people and empower individuals with the right careers, through innovative, reliable and industry‑specific recruitment solutions.
+                    </p>
+                </div>
+                <div class="mvv-card reveal" id="vision">
+                    <div class="mvv-pill">Vision</div>
+                    <div class="mvv-icon-circle"><i class="fas fa-eye"></i></div>
+                    <h3>India's most trusted partner</h3>
+                    <p>
+                        We aim to be the preferred recruitment partner for organizations and professionals, shaping a future‑ready workforce that drives innovation, inclusivity and sustainable growth.
+                    </p>
+                </div>
+                <div class="mvv-card reveal" id="values">
+                    <div class="mvv-pill">Core Values</div>
+                    <div class="mvv-icon-circle"><i class="fas fa-gem"></i></div>
+                    <h3>How we operate every day</h3>
+                    <p>
+                        Integrity, excellence, innovation, collaboration, inclusivity and accountability guide our decisions, actions and long‑term client and candidate relationships.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed values -->
+    <section class="values-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Values that shape every mandate</h2>
+                <p>Strong ethics and clear standards at the heart of every engagement.</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card reveal">
+                    <div class="value-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h4>Integrity</h4>
+                    <p>Honest, transparent and responsible communication with clients, candidates and partners at every stage.</p>
+                </div>
+                <div class="value-card reveal">
+                    <div class="value-icon"><i class="fas fa-award"></i></div>
+                    <h4>Excellence</h4>
+                    <p>High‑quality shortlists, well‑researched talent pools and structured evaluation processes.</p>
+                </div>
+                <div class="value-card reveal">
+                    <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h4>Innovation</h4>
+                    <p>Continuously evolving sourcing methods, tools and assessment techniques for better outcomes.</p>
+                </div>
+                <div class="value-card reveal">
+                    <div class="value-icon"><i class="fas fa-handshake"></i></div>
+                    <h4>Collaboration</h4>
+                    <p>Working as an extended arm of your HR and business teams, not just as a vendor.</p>
+                </div>
+                <div class="value-card reveal">
+                    <div class="value-icon"><i class="fas fa-users"></i></div>
+                    <h4>Inclusivity</h4>
+                    <p>Promoting diverse, equal‑opportunity hiring and unbiased evaluation frameworks.</p>
+                </div>
+                <div class="value-card reveal">
+                    <div class="value-icon"><i class="fas fa-clipboard-check"></i></div>
+                    <h4>Accountability</h4>
+                    <p>Clear commitments, measurable SLAs and ownership of outcomes for every assignment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services with image band -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Recruitment & Talent Services</h2>
+                <p>End‑to‑end hiring support for IT and Non‑IT roles, across levels and locations.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div>
+                        <div class="service-header">
+                            <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                            <div>
+                                <h3>IT Recruitment</h3>
+                                <div class="service-meta"><i class="fas fa-circle"></i> Product, services, SaaS & startups</div>
+                            </div>
+                        </div>
+                        <p>Specialized hiring for software engineers, architects, DevOps, cloud, security, data and AI professionals.</p>
+                    </div>
+                    <a href="#contact" class="service-link">Discuss IT hiring needs <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card reveal">
+                    <div>
+                        <div class="service-header">
+                            <div class="service-icon"><i class="fas fa-user-tie"></i></div>
+                            <div>
+                                <h3>Non‑IT Recruitment</h3>
+                                <div class="service-meta"><i class="fas fa-circle"></i> Operations, sales, plant & support</div>
+                            </div>
+                        </div>
+                        <p>Staffing for healthcare, automotive, manufacturing, retail, logistics, education, hospitality and more.</p>
+                    </div>
+                    <a href="#contact" class="service-link">Plan your Non‑IT hiring <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card reveal">
+                    <div>
+                        <div class="service-header">
+                            <div class="service-icon"><i class="fas fa-crown"></i></div>
+                            <div>
+                                <h3>Executive Search</h3>
+                                <div class="service-meta"><i class="fas fa-circle"></i> CXO, function heads & leadership</div>
+                            </div>
+                        </div>
+                        <p>High‑touch retained and contingent search for senior management and leadership roles.</p>
+                    </div>
+                    <a href="#contact" class="service-link">Hire transformational leaders <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card reveal">
+                    <div>
+                        <div class="service-header">
+                            <div class="service-icon"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <h3>Contract & Temporary Staffing</h3>
+                                <div class="service-meta"><i class="fas fa-circle"></i> Project & seasonal needs</div>
+                            </div>
+                        </div>
+                        <p>Agile workforce models with compliant contract staffing for project‑based and interim roles.</p>
+                    </div>
+                    <a href="#contact" class="service-link">Build flexible teams <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card reveal">
+                    <div>
+                        <div class="service-header">
+                            <div class="service-icon"><i class="fas fa-cogs"></i></div>
+                            <div>
+                                <h3>Recruitment Process Outsourcing (RPO)</h3>
+                                <div class="service-meta"><i class="fas fa-circle"></i> On‑going or project RPO</div>
+                            </div>
+                        </div>
+                        <p>Dedicated teams managing sourcing, screening, coordination and offer‑to‑joining workflows.</p>
+                    </div>
+                    <a href="#contact" class="service-link">Explore RPO engagement <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card reveal">
+                    <div>
+                        <div class="service-header">
+                            <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div>
+                                <h3>Campus Hiring</h3>
+                                <div class="service-meta"><i class="fas fa-circle"></i> Freshers & early‑career talent</div>
+                            </div>
+                        </div>
+                        <p>Structured campus recruitment programs with assessments and shortlisting from partner institutes.</p>
+                    </div>
+                    <a href="#contact" class="service-link">Plan campus drives <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card reveal">
+                    <div>
+                        <div class="service-header">
+                            <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                            <div>
+                                <h3>HR Consulting & Advisory</h3>
+                                <div class="service-meta"><i class="fas fa-circle"></i> Org structure & people strategy</div>
+                            </div>
+                        </div>
+                        <p>Advisory on org design, manpower planning, role design and performance‑driven structures.</p>
+                    </div>
+                    <a href="#contact" class="service-link">Talk to our HR experts <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card reveal">
+                    <div>
+                        <div class="service-header">
+                            <div class="service-icon"><i class="fas fa-map"></i></div>
+                            <div>
+                                <h3>Talent Mapping & Insights</h3>
+                                <div class="service-meta"><i class="fas fa-circle"></i> Market & competitor view</div>
+                            </div>
+                        </div>
+                        <p>Insights on talent availability, compensation benchmarks and competitor hiring trends.</p>
+                    </div>
+                    <a href="#contact" class="service-link">Request market insights <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card reveal">
+                    <div>
+                        <div class="service-header">
+                            <div class="service-icon"><i class="fas fa-people-group"></i></div>
+                            <div>
+                                <h3>Project & Bulk Hiring</h3>
+                                <div class="service-meta"><i class="fas fa-circle"></i> New launches & scale‑ups</div>
+                            </div>
+                        </div>
+                        <p>High‑volume hiring support for new plants, branches, projects or market expansions.</p>
+                    </div>
+                    <a href="#contact" class="service-link">Plan a hiring drive <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Image + content cards band -->
+            <div class="solutions-band">
+                <div class="solution-card reveal">
+                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80" alt="Technology recruitment discussions">
+                    <div class="solution-overlay">
+                        <h4>Dedicated IT Hiring Pods</h4>
+                        <p>Focused teams for product engineering, cloud, data and cybersecurity roles.</p>
+                    </div>
+                </div>
+                <div class="solution-card reveal">
+                    <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80" alt="Manufacturing and operations workforce">
+                    <div class="solution-overlay">
+                        <h4>Plant & Operations Specialists</h4>
+                        <p>Non‑IT hiring support for factories, plants and on‑ground operations.</p>
+                    </div>
+                </div>
+                <div class="solution-card reveal">
+                    <img src="https://images.unsplash.com/photo-1521790797524-b2497295b8a0?auto=format&fit=crop&w=1200&q=80" alt="HR consulting meeting">
+                    <div class="solution-overlay">
+                        <h4>HR as a Strategic Partner</h4>
+                        <p>Consultative approach to build scalable and future‑ready people functions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries -->
+    <section class="industries-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Industries We Serve</h2>
+                <p>IT and Non‑IT hiring expertise across multiple industry verticals.</p>
+            </div>
+            <div class="industry-group reveal">
+                <h3>IT Sector Industries</h3>
+                <p>Helping technology‑driven organizations scale engineering and digital teams.</p>
+                <div class="industries-grid">
+                    <div class="industry-pill"><i class="fas fa-server"></i> Information Technology Services</div>
+                    <div class="industry-pill"><i class="fas fa-code"></i> Software Development & Products</div>
+                    <div class="industry-pill"><i class="fas fa-cart-shopping"></i> E‑commerce & Internet Businesses</div>
+                    <div class="industry-pill"><i class="fas fa-tower-cell"></i> Telecommunications</div>
+                    <div class="industry-pill"><i class="fas fa-network-wired"></i> IT Infrastructure & Networking</div>
+                    <div class="industry-pill"><i class="fas fa-cloud"></i> Cloud Computing & Cybersecurity</div>
+                    <div class="industry-pill"><i class="fas fa-chart-line"></i> Data Analytics & AI</div>
+                </div>
+            </div>
+            <div class="industry-group reveal">
+                <h3>Non‑IT Sector Industries</h3>
+                <p>Domain‑aware hiring for core, service and consumer industries.</p>
+                <div class="industries-grid">
+                    <div class="industry-pill"><i class="fas fa-oil-can"></i> Oil & Gas</div>
+                    <div class="industry-pill"><i class="fas fa-car"></i> Automotive</div>
+                    <div class="industry-pill"><i class="fas fa-notes-medical"></i> Pharmaceuticals & Healthcare</div>
+                    <div class="industry-pill"><i class="fas fa-store"></i> Retail & FMCG</div>
+                    <div class="industry-pill"><i class="fas fa-building-columns"></i> Banking, Financial Services & Insurance (BFSI)</div>
+                    <div class="industry-pill"><i class="fas fa-truck"></i> Logistics & Supply Chain</div>
+                    <div class="industry-pill"><i class="fas fa-plane-departure"></i> Hospitality & Aviation</div>
+                    <div class="industry-pill"><i class="fas fa-city"></i> Construction & Real Estate</div>
+                    <div class="industry-pill"><i class="fas fa-graduation-cap"></i> Education & Training</div>
+                    <div class="industry-pill"><i class="fas fa-industry"></i> Manufacturing & Engineering</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why choose + process -->
+    <section class="why-process">
+        <div class="container">
+            <div class="why-process-grid">
+                <div class="reveal">
+                    <div class="eyebrow">Why Choose Us</div>
+                    <h2>Recruitment that feels structured, fast and human‑centered</h2>
+                    <p style="font-size:13px; color:var(--muted); margin-top:8px;">
+                        The GAP India works like an extension of your HR team – combining market knowledge, candidate insight and execution discipline to deliver consistent hiring outcomes.
+                    </p>
+                    <div class="why-list">
+                        <div class="why-item"><i class="fas fa-circle-check"></i><span>Specialized consultants for IT, Non‑IT and leadership mandates.</span></div>
+                        <div class="why-item"><i class="fas fa-circle-check"></i><span>Shorter hiring cycles with focused sourcing and pre‑screening.</span></div>
+                        <div class="why-item"><i class="fas fa-circle-check"></i><span>Strong focus on culture fit and long‑term retention.</span></div>
+                        <div class="why-item"><i class="fas fa-circle-check"></i><span>Transparent communication and structured feedback loops.</span></div>
+                    </div>
+                </div>
+                <div class="process-board reveal">
+                    <div class="process-header">
+                        <div>
+                            <div style="font-size:12px; color:#A5B4FC; text-transform:uppercase; letter-spacing:0.16em;">Recruitment Process</div>
+                            <h3 style="font-size:17px; color:#F9FAFB; margin-top:4px;">Simple, clear 4‑step methodology</h3>
+                        </div>
+                        <div class="process-badge"><i class="fas fa-clock"></i> Faster closures</div>
+                    </div>
+                    <p style="font-size:12px; color:#9CA3AF; margin-bottom:8px;">From intake discussion to joining, our process keeps all stakeholders aligned.</p>
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <span>01</span>
+                            <strong>Analyse</strong>
+                            <p>Understand role, culture, expectations & timelines.</p>
+                        </div>
+                        <div class="process-step">
+                            <span>02</span>
+                            <strong>Search</strong>
+                            <p>Source, approach and evaluate relevant talent.</p>
+                        </div>
+                        <div class="process-step">
+                            <span>03</span>
+                            <strong>Select</strong>
+                            <p>Shortlist, coordinate interviews and feedback.</p>
+                        </div>
+                        <div class="process-step">
+                            <span>04</span>
+                            <strong>Onboard</strong>
+                            <p>Offer negotiation, joining and post‑joining touchpoints.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forms section -->
+    <section class="forms-section" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Start your hiring or job search journey</h2>
+                <p>Share your details and our team will connect with you shortly.</p>
+            </div>
+            <div class="forms-grid">
+                <div class="form-card reveal">
+                    <h3><i class="fas fa-user"></i> Job Seekers – Submit Your CV</h3>
+                    <p>Tell us about your skills and aspirations. Our consultants will match you to relevant openings.</p>
+                    <form id="cvForm">
+                        <div class="form-grid-2">
+                            <div class="form-group">
+                                <label>Full Name *</label>
+                                <input type="text" required placeholder="Your full name">
+                            </div>
+                            <div class="form-group">
+                                <label>Email *</label>
+                                <input type="email" required placeholder="you@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label>Mobile Number *</label>
+                                <input type="tel" required placeholder="+91 XXXXX XXXXX">
+                            </div>
+                            <div class="form-group">
+                                <label>Experience (Years)</label>
+                                <input type="number" min="0" placeholder="e.g. 4">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Preferred Role / Domain *</label>
+                            <input type="text" required placeholder="e.g. Full‑Stack Developer, Sales Manager, HRBP">
+                        </div>
+                        <div class="form-group">
+                            <label>IT or Non‑IT *</label>
+                            <select required>
+                                <option value="">Select category</option>
+                                <option>IT</option>
+                                <option>Non‑IT</option>
+                                <option>Open to both</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Upload CV (PDF/DOC) *</label>
+                            <div id="cvDropzone" class="dropzone">
+                                <i class="fas fa-cloud-arrow-up"></i>
+                                <div>Drag & drop your CV here or <a href="#" id="cvBrowse">browse</a></div>
+                                <div style="font-size:11px; color:#9CA3AF;">Accepted: PDF, DOC, DOCX</div>
+                            </div>
+                            <input type="file" id="cvFileInput" required accept=".pdf,.doc,.docx" style="display:none">
+                            <div id="cvFileList" class="file-list"></div>
+                        </div>
+                        <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Submit CV</button>
+                    </form>
+                </div>
+                <div class="form-card reveal">
+                    <h3><i class="fas fa-building"></i> Employers – Share Your Requirement</h3>
+                    <p>Share a quick brief and our team will schedule a call to understand your hiring needs.</p>
+                    <form id="employerForm">
+                        <div class="form-grid-2">
+                            <div class="form-group">
+                                <label>Company Name *</label>
+                                <input type="text" required placeholder="Organization name">
+                            </div>
+                            <div class="form-group">
+                                <label>Contact Person *</label>
+                                <input type="text" required placeholder="Your name">
+                            </div>
+                            <div class="form-group">
+                                <label>Work Email *</label>
+                                <input type="email" required placeholder="you@company.com">
+                            </div>
+                            <div class="form-group">
+                                <label>Contact Number *</label>
+                                <input type="tel" required placeholder="+91 XXXXX XXXXX">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Industry *</label>
+                            <select required>
+                                <option value="">Select industry</option>
+                                <option>IT / Technology</option>
+                                <option>Healthcare / Pharma</option>
+                                <option>BFSI</option>
+                                <option>Manufacturing / Engineering</option>
+                                <option>Retail / FMCG</option>
+                                <option>Logistics / Supply Chain</option>
+                                <option>Education / Training</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Brief about roles / hiring plan *</label>
+                            <textarea required placeholder="Share role titles, locations, experience band, timelines, etc."></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit"><i class="fas fa-user-plus"></i> Submit Requirement</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials slider -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header testimonials-header reveal">
+                <h2>What our clients and candidates say</h2>
+                <p>Real feedback from people who have worked with The GAP India.</p>
+            </div>
+            <div class="testimonial-shell">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-item active">
+                        <p class="testimonial-quote">“We were able to ramp up our technology team faster than expected. The GAP India understood our product roadmap, culture and skill expectations, and the quality of shortlisted profiles was consistently high.”</p>
+                        <div class="testimonial-meta">
+                            <span class="testimonial-name">HR Head, SaaS Product Company</span>
+                            <br>Mid‑size B2B product firm, Bangalore
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <p class="testimonial-quote">“For our manufacturing locations, we needed a partner who could handle both frontline and mid‑management hiring. The team handled coordination end‑to‑end and helped us maintain timelines during a critical expansion phase.”</p>
+                        <div class="testimonial-meta">
+                            <span class="testimonial-name">Plant HR Manager, Manufacturing Group</span>
+                            <br>Multi‑location industrial client, North India
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <p class="testimonial-quote">“As a candidate, I always received clear communication, feedback and guidance before interviews. The entire process felt transparent and professional, right from first contact to joining.”</p>
+                        <div class="testimonial-meta">
+                            <span class="testimonial-name">Senior Technology Professional</span>
+                            <br>Placed with a leading IT services organization
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-dots" id="testimonialDots">
+                    <div class="testimonial-dot active"></div>
+                    <div class="testimonial-dot"></div>
+                    <div class="testimonial-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta-final">
+        <div class="container">
+            <div class="cta-box reveal">
+                <div>
+                    <h2>Ready to strengthen your team or career?</h2>
+                    <p>Share your requirement or profile and let The GAP India do the heavy lifting on recruitment.</p>
+                </div>
+                <div class="cta-actions">
+                    <button class="btn-primary" onclick="openModal('employer')"><i class="fas fa-briefcase"></i> Book Hiring Consultation</button>
+                    <button class="btn-ghost" onclick="openModal('jobSeeker')"><i class="fas fa-file-arrow-up"></i> Submit Your CV</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">THE GAP <span>INDIA</span></div>
+                    <p class="footer-text">Recruitment and talent solutions partner for IT and Non‑IT organizations across India, with a focus on quality, speed and long‑term fit.</p>
+                </div>
+                <div>
+                    <div class="footer-heading">Company</div>
+                    <div class="footer-links">
+                        <a href="#about">About Us</a>
+                        <a href="#who-we-are">Who We Are</a>
+                        <a href="#services">Services</a>
+                        <a href="#clientele">Clientele</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-heading">For Talent</div>
+                    <div class="footer-links">
+                        <a href="#contact">Submit CV</a>
+                        <a href="#testimonials">Success Stories</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-heading">Contact</div>
+                    <p class="footer-text">
+                        New Delhi, India<br>
+                        +91 11 1234 5678<br>
+                        info@gapindia.com
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2023–2025 The GAP India. All rights reserved.</span>
+                <span>Designed for a clean, minimal and corporate recruitment experience.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="jobSeekerModal" class="modal" style="display:none; position:fixed; inset:0; background:rgba(15,23,42,0.65); z-index:2000; align-items:center; justify-content:center; padding:16px;">
+        <div class="modal-dialog" style="background:#FFFFFF; border-radius:20px; max-width:520px; width:100%; box-shadow:var(--shadow-soft); overflow:hidden;">
+            <div style="padding:14px 18px; border-bottom:1px solid rgba(148,163,184,0.35); display:flex; align-items:center; justify-content:space-between;">
+                <div style="font-size:15px; font-weight:600; color:var(--primary);"><i class="fas fa-user"></i> Submit Your CV</div>
+                <button onclick="closeModal('jobSeeker')" style="border:none; background:none; font-size:18px; cursor:pointer; color:var(--muted);"><i class="fas fa-times"></i></button>
+            </div>
+            <div style="padding:16px 18px 18px;">
+                <p style="font-size:13px; color:var(--muted); margin-bottom:12px;">Share a few details and upload your latest CV. Our team will review and reach out for suitable roles.</p>
+                <form onsubmit="event.preventDefault(); alert('Thank you for submitting your CV. Our team will connect with you soon.'); this.reset();">
+                    <div class="form-group">
+                        <label>Full Name *</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email *</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Mobile *</label>
+                        <input type="tel" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Current Role / Skills *</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Upload CV *</label>
+                        <div id="cvDropzoneModal" class="dropzone">
+                            <i class="fas fa-cloud-arrow-up"></i>
+                            <div>Drag & drop your CV here or <a href="#" id="cvBrowseModal">browse</a></div>
+                            <div style="font-size:11px; color:#64748B;">Accepted: PDF, DOC, DOCX</div>
+                        </div>
+                        <input type="file" id="cvFileInputModal" required accept=".pdf,.doc,.docx" style="display:none">
+                        <div id="cvFileListModal" class="file-list"></div>
+                    </div>
+                    <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="employerModal" class="modal" style="display:none; position:fixed; inset:0; background:rgba(15,23,42,0.65); z-index:2000; align-items:center; justify-content:center; padding:16px;">
+        <div class="modal-dialog" style="background:#FFFFFF; border-radius:20px; max-width:520px; width:100%; box-shadow:var(--shadow-soft); overflow:hidden;">
+            <div style="padding:14px 18px; border-bottom:1px solid rgba(148,163,184,0.35); display:flex; align-items:center; justify-content:space-between;">
+                <div style="font-size:15px; font-weight:600; color:var(--primary);"><i class="fas fa-briefcase"></i> Share Hiring Requirement</div>
+                <button onclick="closeModal('employer')" style="border:none; background:none; font-size:18px; cursor:pointer; color:var(--muted);"><i class="fas fa-times"></i></button>
+            </div>
+            <div style="padding:16px 18px 18px;">
+                <p style="font-size:13px; color:var(--muted); margin-bottom:12px;">Provide a quick overview of the roles you want to hire for. We will schedule a call with you.</p>
+                <form onsubmit="event.preventDefault(); alert('Thank you for sharing your requirement. Our team will reach out shortly.'); this.reset();">
+                    <div class="form-group">
+                        <label>Company Name *</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Contact Person *</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email *</label>
+                        <input type="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Contact Number *</label>
+                        <input type="tel" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Requirement Summary *</label>
+                        <textarea required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit"><i class="fas fa-user-plus"></i> Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile nav toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navLinks = document.getElementById('navLinks');
+        const navOverlay = document.getElementById('navOverlay');
+        mobileToggle.addEventListener('click', () => {
+            const showing = navLinks.classList.toggle('show');
+            if (navOverlay) navOverlay.classList.toggle('show', showing);
+        });
+        if (navOverlay) {
+            navOverlay.addEventListener('click', () => {
+                navLinks.classList.remove('show');
+                navOverlay.classList.remove('show');
+            });
+        }
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if (targetId && targetId !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(targetId);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                    navLinks.classList.remove('show');
+                    if (navOverlay) navOverlay.classList.remove('show');
+                }
+            });
+        });
+
+        // Reveal on scroll
+        const revealEls = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+
+        revealEls.forEach(el => revealObserver.observe(el));
+
+        // Counter animation
+        const counters = document.querySelectorAll('.counter-number');
+        let counterStarted = false;
+
+        function animateCounters() {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                if (!target) return;
+                const duration = 1400;
+                const startTime = performance.now();
+
+                function update(now) {
+                    const progress = Math.min((now - startTime) / duration, 1);
+                    const current = Math.floor(progress * target);
+                    counter.textContent = current.toLocaleString('en-IN');
+                    if (progress < 1) {
+                        requestAnimationFrame(update);
+                    } else {
+                        counter.textContent = target.toLocaleString('en-IN');
+                    }
+                }
+                requestAnimationFrame(update);
+            });
+        }
+
+        const trustSection = document.querySelector('.trust-section');
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !counterStarted) {
+                    counterStarted = true;
+                    animateCounters();
+                    counterObserver.disconnect();
+                }
+            });
+        }, { threshold: 0.25 });
+
+        if (trustSection) {
+            counterObserver.observe(trustSection);
+        }
+
+        // Modals
+        function openModal(type) {
+            const id = type === 'jobSeeker' ? 'jobSeekerModal' : 'employerModal';
+            const modal = document.getElementById(id);
+            if (modal) {
+                modal.style.display = 'flex';
+            }
+        }
+
+        function closeModal(type) {
+            const id = type === 'jobSeeker' ? 'jobSeekerModal' : 'employerModal';
+            const modal = document.getElementById(id);
+            if (modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        window.addEventListener('click', (e) => {
+            const jsModal = document.getElementById('jobSeekerModal');
+            const empModal = document.getElementById('employerModal');
+            if (e.target === jsModal) jsModal.style.display = 'none';
+            if (e.target === empModal) empModal.style.display = 'none';
+        });
+
+        // Forms inline alerts
+        document.getElementById('cvForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for submitting your CV. Our team will connect with you soon.');
+            this.reset();
+        });
+
+        document.getElementById('employerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for sharing your hiring requirement. We will reach out shortly.');
+            this.reset();
+        });
+
+        // Testimonials auto slider
+        const testimonialItems = document.querySelectorAll('.testimonial-item');
+        const testimonialDots = document.querySelectorAll('.testimonial-dot');
+        let testimonialIndex = 0;
+
+        function showTestimonial(index) {
+            testimonialItems.forEach((item, i) => {
+                item.classList.toggle('active', i === index);
+            });
+            testimonialDots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextTestimonial() {
+            testimonialIndex = (testimonialIndex + 1) % testimonialItems.length;
+            showTestimonial(testimonialIndex);
+        }
+
+        let testimonialTimer = setInterval(nextTestimonial, 6000);
+
+        testimonialDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                testimonialIndex = index;
+                showTestimonial(testimonialIndex);
+                clearInterval(testimonialTimer);
+                testimonialTimer = setInterval(nextTestimonial, 6000);
+            });
+        });
+
+        const dropdowns = document.querySelectorAll('.dropdown');
+        dropdowns.forEach(dd => {
+            const link = dd.querySelector('a');
+            if (!link) return;
+            link.addEventListener('click', (e) => {
+                const isMobile = window.matchMedia('(max-width: 768px)').matches || navLinks.classList.contains('show');
+                if (isMobile) {
+                    e.preventDefault();
+                    dd.classList.toggle('open');
+                }
+            });
+        });
+
+        window.addEventListener('resize', () => {
+            if (!window.matchMedia('(max-width: 768px)').matches) {
+                navLinks.classList.remove('show');
+                if (navOverlay) navOverlay.classList.remove('show');
+                document.querySelectorAll('.dropdown.open').forEach(el => el.classList.remove('open'));
+            }
+        });
+
+        const typedEl = document.getElementById('typedText');
+        const typedWords = ["IT Hiring", "Non‑IT Recruitment", "Oil & Gas Talent", "Executive Search", "BFSI & Healthcare"];
+        let tIndex = 0, cIndex = 0, deleting = false;
+        function runTyping() {
+            if (!typedEl) return;
+            const current = typedWords[tIndex];
+            if (!deleting) {
+                cIndex++;
+                typedEl.textContent = current.slice(0, cIndex);
+                if (cIndex === current.length) {
+                    deleting = true;
+                    setTimeout(runTyping, 900);
+                    return;
+                }
+            } else {
+                cIndex--;
+                typedEl.textContent = current.slice(0, Math.max(cIndex, 0));
+                if (cIndex <= 0) {
+                    deleting = false;
+                    tIndex = (tIndex + 1) % typedWords.length;
+                }
+            }
+            setTimeout(runTyping, deleting ? 45 : 70);
+        }
+        if (typedEl) runTyping();
+
+        function setupDropzone(dropzoneId, inputId, listId, browseId) {
+            const dz = document.getElementById(dropzoneId);
+            const input = document.getElementById(inputId);
+            const list = document.getElementById(listId);
+            const browse = browseId ? document.getElementById(browseId) : null;
+            if (!dz || !input) return;
+            const setFiles = files => {
+                input.files = files;
+                if (list) list.innerHTML = '';
+                if (files && files.length) {
+                    const file = files[0];
+                    if (list) {
+                        const pill = document.createElement('div');
+                        pill.className = 'file-pill';
+                        pill.innerHTML = `<i class="fas fa-file"></i> <span>${file.name}</span> <button type="button" style="border:none;background:none;color:#ef4444;font-size:12px;cursor:pointer">Remove</button>`;
+                        pill.querySelector('button').addEventListener('click', () => {
+                            input.value = '';
+                            list.innerHTML = '';
+                        });
+                        list.appendChild(pill);
+                    }
+                }
+            };
+            dz.addEventListener('dragover', e => { e.preventDefault(); dz.classList.add('active'); });
+            dz.addEventListener('dragleave', () => dz.classList.remove('active'));
+            dz.addEventListener('drop', e => {
+                e.preventDefault(); dz.classList.remove('active');
+                const files = e.dataTransfer.files;
+                if (!files || !files.length) return;
+                const dt = new DataTransfer();
+                dt.items.add(files[0]);
+                setFiles(dt.files);
+            });
+            dz.addEventListener('click', () => input.click());
+            if (browse) browse.addEventListener('click', e => { e.preventDefault(); input.click(); });
+            input.addEventListener('change', () => {
+                const dt = new DataTransfer();
+                if (input.files && input.files.length) dt.items.add(input.files[0]);
+                setFiles(dt.files);
+            });
+        }
+        setupDropzone('cvDropzone','cvFileInput','cvFileList','cvBrowse');
+        setupDropzone('cvDropzoneModal','cvFileInputModal','cvFileListModal','cvBrowseModal');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
