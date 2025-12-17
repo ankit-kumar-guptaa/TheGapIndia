@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The GAP India - Recruitment agency in New Delhi specializing in IT and Non-IT hiring, executive search, RPO, and HR consulting for multiple industries across India.">
-    <meta name="keywords" content="The GAP India, recruitment agency Delhi, IT hiring, non IT recruitment, executive search India, RPO services, HR consulting, talent acquisition, staffing solutions">
-    <title>The GAP India | Recruitment & Talent Solutions in India</title>
+    <meta name="description" content="Gap India - Recruitment agency in New Delhi specializing in IT and Non-IT hiring, executive search, RPO, and HR consulting for multiple industries across India.">
+    <meta name="keywords" content="Gap India, recruitment agency Delhi, IT hiring, non IT recruitment, executive search India, RPO services, HR consulting, talent acquisition, staffing solutions">
+    <title>Gap India | Recruitment & Talent Solutions in India</title>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -103,7 +103,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 14px 20px;
+            /* padding: 14px 20px; */
         }
 
         .logo {
@@ -175,12 +175,7 @@
             z-index: 1002;
         }
 
-        .dropdown:hover .dropdown-menu {
-            opacity: 1;
-            pointer-events: auto;
-            transform: translateY(0);
-        }
-        .dropdown.open .dropdown-menu {
+        .dropdown-menu.show {
             opacity: 1;
             pointer-events: auto;
             transform: translateY(0);
@@ -196,6 +191,29 @@
         .dropdown-menu a:hover {
             background: var(--bg-soft);
             padding-left: 24px;
+        }
+
+        .dropdown-menu .has-submenu { position: relative; }
+        .dropdown-menu .has-submenu > a { display: flex; align-items: center; justify-content: space-between; }
+        .dropdown-menu .submenu {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: var(--shadow-soft);
+            min-width: 220px;
+            padding: 8px 0;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(10px);
+            transition: var(--transition);
+            z-index: 1003;
+        }
+        .dropdown-menu .has-submenu:hover .submenu {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0);
         }
 
         .nav-cta {
@@ -291,7 +309,7 @@
         /* Hero */
         .hero {
             position: relative;
-            padding: 80px 0 70px;
+            padding: 20px 0 20px;
             background: radial-gradient(circle at top left, #EDF4FF 0, #F7F9FC 40%, #E8F1FF 100%);
             overflow: hidden;
         }
@@ -714,7 +732,7 @@
             box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
         }
         .client-logo-card img {
-            max-height: 60px;
+            /* max-height: 60px; */
             max-width: 150px;
             object-fit: contain;
             opacity: 0.95;
@@ -1124,6 +1142,7 @@
         .solution-overlay h4 {
             font-size: 15px;
             margin-bottom: 3px;
+            color: #FFFFFF;
         }
 
         .solution-overlay p {
@@ -1777,6 +1796,20 @@
                 border: 1px solid rgba(15, 23, 42, 0.06);
                 margin-top: 6px;
             }
+
+            .dropdown-menu .submenu {
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 100%;
+                box-shadow: none;
+                border: 1px solid rgba(15, 23, 42, 0.06);
+                margin-top: 6px;
+                opacity: 0;
+                pointer-events: none;
+                transform: none;
+            }
+            .dropdown-menu .has-submenu.open .submenu { opacity: 1; pointer-events: auto; }
         }
 
         @media (max-width: 520px) {
@@ -1819,12 +1852,12 @@
                 <div class="logo">
                     <!-- <div class="logo-mark">G</div>
                     THE GAP <span>INDIA</span> -->
-                    <img src="logo.png" width="180" alt="">
+                    <img src="logo.png" width="130" alt="">
                 </div>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#home">HOME</a></li>
                     <li class="dropdown">
-                        <a href="#about">ABOUT US <i class="fas fa-chevron-down" style="font-size: 10px;"></i></a>
+                        <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">ABOUT US </a>
                         <div class="dropdown-menu">
                             <a href="#mission">Mission</a>
                             <a href="#vision">Vision</a>
@@ -1832,9 +1865,28 @@
                             <a href="#who-we-are">Who We Are</a>
                         </div>
                     </li>
-                    <li><a href="#oil-gas">OIL & GAS</a></li>
                     <li><a href="#team">OUR TEAM</a></li>
-                    <li><a href="#services">SERVICES</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">SERVICES </a>
+                        <div class="dropdown-menu">
+                            <a href="#services">IT & Non‑IT Recruitment</a>
+                            <a href="#oil-gas">Oil & Gas</a>
+                            <div class="has-submenu">
+                                <a href="#services">Contract Staffing Solutions <i class="fas fa-chevron-right" style="font-size: 10px;"></i></a>
+                                <div class="submenu">
+                                    <a href="#services">Blue Collar Staffing</a>
+                                    <a href="#services">White Collar Staffing</a>
+                                    <a href="#services">Grey Collar Staffing</a>
+                                </div>
+                            </div>
+                            <a href="#services">IT Staffing Solutions</a>
+                            <a href="#services">Global Placements</a>
+                            <a href="#services">Recruitment</a>
+                            <a href="#services">Payroll and Operations</a>
+                            <a href="#services">Infra & Asset Management</a>
+                            <a href="#services">Statutory Compliance</a>
+                        </div>
+                    </li>
                     <li><a href="#clientele">CLIENTELE</a></li>
                     <li><a href="#contact">CONTACT US</a></li>
                 </ul>
@@ -1857,15 +1909,15 @@
                         Recruitment Partner for Growing Companies
                     </div>
                     <h1>
-                        Bridging the <span>Gap</span> Between
-                        <br>High-Impact Talent & Ambitious Teams
+                        Leading provider of manpower 
+outsourcing solution
                     </h1>
                     <div class="hero-typed-row">
                         <span class="label">Specialists in</span>
                         <span id="typedText" class="typed"></span>
                     </div>
                     <p class="hero-subtitle">
-                        The GAP India is a New Delhi–based recruitment and talent solutions company helping organizations hire the right people across IT and Non‑IT roles, faster and smarter.
+                        Gap India, based in New Delhi, connects companies with the right IT & Non‑IT talent quickly and smartly
                     </p>
                     <div class="hero-highlights">
                         <div class="hero-tag"><i class="fas fa-code"></i> IT & Technology Hiring</div>
@@ -1900,7 +1952,7 @@
                     <div class="hero-card">
                         <div class="hero-img-wrapper">
                             <img src="https://wowidea.in/wp-content/uploads/2023/04/maxresdefault-7.jpg" alt="Hiring discussion in a modern office">
-                            <div class="hero-overlay-gradient"></div>
+                            <div class=""></div>
                             <div class="hero-animated">
                                 <span class="blob b1"></span>
                                 <span class="blob b2"></span>
@@ -1916,31 +1968,31 @@
 
     <!-- Clients slider -->
     <section class="clients-section" id="clientele">
-        <div class="container">
-            <div class="section-header reveal">
+        <div class="">
+            <!-- <div class="section-header reveal">
                 <h2>Trusted by Growth‑Focused Organizations</h2>
                 <p>We partner with brands across technology, healthcare, manufacturing, BFSI, retail and more.</p>
-            </div>
+            </div> -->
             <div class="client-slider-outer">
                 <div class="client-slider-row">
-                    <div class="client-logo-card"><img src="https://logo.clearbit.com/microsoft.com" alt="Microsoft"></div>
-                    <div class="client-logo-card"><img src="https://logo.clearbit.com/ibm.com" alt="IBM"></div>
-                    <div class="client-logo-card"><img src="https://logo.clearbit.com/adobe.com" alt="Adobe"></div>
-                    <div class="client-logo-card"><img src="https://logo.clearbit.com/oracle.com" alt="Oracle"></div>
-                    <div class="client-logo-card"><img src="https://logo.clearbit.com/siemens.com" alt="Siemens"></div>
-                    <div class="client-logo-card"><img src="https://logo.clearbit.com/salesforce.com" alt="Salesforce"></div>
-                    <div class="client-logo-card"><img src="https://logo.clearbit.com/sap.com" alt="SAP"></div>
-                    <div class="client-logo-card"><img src="https://logo.clearbit.com/intel.com" alt="Intel"></div>
+                    <div class="client-logo-card"><img src="https://grconsultants.in/public/front/imgs/gr/pa-21.png" alt="Microsoft"></div>
+                    <div class="client-logo-card"><img src="https://grconsultants.in/public/front/imgs/gr/pa-11.png" alt="IBM"></div>
+                    <div class="client-logo-card"><img src="https://grconsultants.in/public/front/imgs/gr/pa-14.png" alt="Adobe"></div>
+                    <div class="client-logo-card"><img src="https://grconsultants.in/public/front/imgs/gr/pa-15.png" alt="Oracle"></div>
+                    <div class="client-logo-card"><img src="https://grconsultants.in/public/front/imgs/gr/pa-16.png" alt="Siemens"></div>
+                    <div class="client-logo-card"><img src="https://grconsultants.in/public/front/imgs/gr/pa-12.png" alt="Salesforce"></div>
+                    <div class="client-logo-card"><img src="https://grconsultants.in/public/front/imgs/gr/pa-5.png" alt="SAP"></div>
+                    <div class="client-logo-card"><img src="https://grconsultants.in/public/front/imgs/gr/pa-7.png" alt="Intel"></div>
                 </div>
                 <div class="client-slider-row alt">
-                    <div class="client-logo-card"><img src="https://logo.clearbit.com/citi.com" alt="Citi"></div>
-                    <div class="client-logo-card"><img src="https://logo.clearbit.com/nestle.com" alt="Nestlé"></div>
-                    <div class="client-logo-card"><img src="https://logo.clearbit.com/airbnb.com" alt="Airbnb"></div>
-                    <div class="client-logo-card"><img src="https://logo.clearbit.com/dhl.com" alt="DHL"></div>
-                    <div class="client-logo-card"><img src="https://logo.clearbit.com/shell.com" alt="Shell"></div>
-                    <div class="client-logo-card"><img src="https://logo.clearbit.com/bp.com" alt="BP"></div>
-                    <div class="client-logo-card"><img src="https://logo.clearbit.com/marriott.com" alt="Marriott"></div>
-                    <div class="client-logo-card"><img src="https://logo.clearbit.com/samsung.com" alt="Samsung"></div>
+                    <div class="client-logo-card"><img src="https://grconsultants.in/public/front/imgs/gr/pa-21.png" alt="Citi"></div>
+                    <div class="client-logo-card"><img src="https://grconsultants.in/public/front/imgs/gr/pa-35.png" alt="Nestlé"></div>
+                    <div class="client-logo-card"><img src="https://grconsultants.in/public/front/imgs/gr/pa-22.png" alt="Airbnb"></div>
+                    <div class="client-logo-card"><img src="https://grconsultants.in/public/front/imgs/gr/pa-29.png" alt="DHL"></div>
+                    <div class="client-logo-card"><img src="https://grconsultants.in/public/front/imgs/gr/pa-23.png" alt="Shell"></div>
+                    <div class="client-logo-card"><img src="https://grconsultants.in/public/front/imgs/gr/pa-24.png"></div>
+                    <div class="client-logo-card"><img src="https://grconsultants.in/public/front/imgs/gr/pa-33.png" alt="Marriott"></div>
+                    <div class="client-logo-card"><img src="https://grconsultants.in/public/front/imgs/gr/pa-32.png" alt="Samsung"></div>
                 </div>
             </div>
         </div>
@@ -1992,7 +2044,7 @@
                 <span class="oil-chip">Project Management</span>
             </div>
             <div class="oilgas-banner reveal">
-                <img src="https://images.unsplash.com/photo-1504215403659-69fdd218edcc?auto=format&fit=crop&w=1400&q=80" alt="Oil and gas industry">
+                <img src="https://images.rigzone.com/images/news/articles/Chevron-Open-to-Buying-Phillips-66-Chemical-Stake-179753-1200x628.png" alt="Oil and gas industry">
                 <div class="oilgas-overlay">
                     <div>
                         <div style="font-size:12px; color:#A5B4FC; text-transform:uppercase; letter-spacing:0.16em;">Industry Spotlight</div>
@@ -2029,10 +2081,10 @@
         <div class="container">
             <div class="about-grid">
                 <div class="reveal">
-                    <div class="eyebrow">About The GAP India</div>
+                    <div class="eyebrow">About Gap India</div>
                     <h2>Specialized recruitment for IT & Non‑IT roles across India</h2>
                     <p>
-                        Founded in 2023, The GAP India is a dynamic recruitment solutions provider based in New Delhi. We specialize in both IT and non‑IT hiring, offering end‑to‑end talent acquisition services to clients in technology, healthcare, manufacturing, BFSI, retail, logistics, education and more.
+                        Founded in 2023, Gap India is a dynamic recruitment solutions provider based in New Delhi. We specialize in both IT and non‑IT hiring, offering end‑to‑end talent acquisition services to clients in technology, healthcare, manufacturing, BFSI, retail, logistics, education and more.
                     </p>
                     <p>
                         Our strength lies in understanding the unique hiring needs of each sector and designing search strategies that connect the right talent with the right opportunity. Whether it is a leadership mandate, a critical niche hire or high‑volume recruitment, our team is focused on speed, quality and long‑term fit.
@@ -2066,7 +2118,7 @@
                     <div class="eyebrow" style="color:#A5B4FC;">Who We Are</div>
                     <h2>Your strategic recruitment & talent solutions partner</h2>
                     <p>
-                        The GAP India connects skilled professionals with leading organizations across India. Our consultants act as problem‑solvers and opportunity‑creators, helping employers build strong teams and helping candidates move closer to their career goals.
+                        Gap India connects skilled professionals with leading organizations across India. Our consultants act as problem‑solvers and opportunity‑creators, helping employers build strong teams and helping candidates move closer to their career goals.
                     </p>
                     <p>
                         We work closely with founders, HR leaders and business heads to design hiring plans that align with culture, capability needs and growth roadmaps. From mid‑level specialists to CXO leaders, our search capability helps identify individuals who drive measurable impact.
@@ -2378,7 +2430,7 @@
                     <div class="eyebrow">Why Choose Us</div>
                     <h2>Recruitment that feels structured, fast and human‑centered</h2>
                     <p style="font-size:13px; color:var(--muted); margin-top:8px;">
-                        The GAP India works like an extension of your HR team – combining market knowledge, candidate insight and execution discipline to deliver consistent hiring outcomes.
+                        Gap India works like an extension of your HR team – combining market knowledge, candidate insight and execution discipline to deliver consistent hiring outcomes.
                     </p>
                     <div class="why-list">
                         <div class="why-item"><i class="fas fa-circle-check"></i><span>Specialized consultants for IT, Non‑IT and leadership mandates.</span></div>
@@ -2531,12 +2583,12 @@
         <div class="container">
             <div class="section-header testimonials-header reveal">
                 <h2>What our clients and candidates say</h2>
-                <p>Real feedback from people who have worked with The GAP India.</p>
+                <p>Real feedback from people who have worked with Gap India.</p>
             </div>
             <div class="testimonial-shell">
                 <div class="testimonial-track" id="testimonialTrack">
                     <div class="testimonial-item active">
-                        <p class="testimonial-quote">“We were able to ramp up our technology team faster than expected. The GAP India understood our product roadmap, culture and skill expectations, and the quality of shortlisted profiles was consistently high.”</p>
+                        <p class="testimonial-quote">“We were able to ramp up our technology team faster than expected. Gap India understood our product roadmap, culture and skill expectations, and the quality of shortlisted profiles was consistently high.”</p>
                         <div class="testimonial-meta">
                             <span class="testimonial-name">HR Head, SaaS Product Company</span>
                             <br>Mid‑size B2B product firm, Bangalore
@@ -2572,7 +2624,7 @@
             <div class="cta-box reveal">
                 <div>
                     <h2>Ready to strengthen your team or career?</h2>
-                    <p>Share your requirement or profile and let The GAP India do the heavy lifting on recruitment.</p>
+                    <p>Share your requirement or profile and let Gap India do the heavy lifting on recruitment.</p>
                 </div>
                 <div class="cta-actions">
                     <button class="btn-primary" onclick="openModal('employer')"><i class="fas fa-briefcase"></i> Book Hiring Consultation</button>
@@ -2587,7 +2639,9 @@
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <div class="footer-logo">THE GAP <span>INDIA</span></div>
+                    <!-- <div class="footer-logo">THE GAP <span>INDIA</span></div> -->
+                    
+                      <img src="logo.png" width="130" alt="">   
                     <p class="footer-text">Recruitment and talent solutions partner for IT and Non‑IT organizations across India, with a focus on quality, speed and long‑term fit.</p>
                 </div>
                 <div>
@@ -2616,7 +2670,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <span>© 2023–2025 The GAP India. All rights reserved.</span>
+                <span>© 2023–2025 Gap India. All rights reserved.</span>
                 <span>Designed for a clean, minimal and corporate recruitment experience.</span>
             </div>
         </div>
@@ -2851,15 +2905,15 @@
             });
         });
 
-        const dropdowns = document.querySelectorAll('.dropdown');
-        dropdowns.forEach(dd => {
-            const link = dd.querySelector('a');
-            if (!link) return;
-            link.addEventListener('click', (e) => {
+        // Bootstrap handles top-level dropdown toggling via data attributes
+
+        document.querySelectorAll('.dropdown .has-submenu > a').forEach(subLink => {
+            subLink.addEventListener('click', (e) => {
                 const isMobile = window.matchMedia('(max-width: 768px)').matches || navLinks.classList.contains('show');
                 if (isMobile) {
                     e.preventDefault();
-                    dd.classList.toggle('open');
+                    const parent = subLink.parentElement;
+                    parent.classList.toggle('open');
                 }
             });
         });
@@ -2941,6 +2995,21 @@
         }
         setupDropzone('cvDropzone','cvFileInput','cvFileList','cvBrowse');
         setupDropzone('cvDropzoneModal','cvFileInputModal','cvFileListModal','cvBrowseModal');
+    </script>
+    <script>
+        window.addEventListener('load', () => {
+            document.querySelectorAll('[data-bs-toggle="dropdown"]').forEach(t => {
+                t.addEventListener('click', (e) => { e.preventDefault(); });
+            });
+            const isDesktop = () => !window.matchMedia('(max-width: 768px)').matches;
+            document.querySelectorAll('.dropdown').forEach(dd => {
+                const toggle = dd.querySelector('[data-bs-toggle="dropdown"]');
+                if (!toggle || typeof bootstrap === 'undefined') return;
+                const bsDrop = new bootstrap.Dropdown(toggle, { autoClose: true });
+                dd.addEventListener('mouseenter', () => { if (isDesktop()) bsDrop.show(); });
+                dd.addEventListener('mouseleave', () => { if (isDesktop()) bsDrop.hide(); });
+            });
+        });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
