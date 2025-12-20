@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     try {
         // 1. Save to Database
-        $stmt = $pdo->prepare("INSERT INTO hire_requests (company_name, contact_person, email, phone, industry, role_description) VALUES (?, ?, ?, ?, ?, ?)");
+        $stmt = $pdo->prepare("INSERT INTO hire_requests (`company_name`, `contact_person`, `email`, `phone`, `industry`, `role_description`) VALUES (?, ?, ?, ?, ?, ?)");
         $stmt->execute([$company_name, $contact_person, $email, $phone, $industry, $role_description]);
 
         // 2. Send Email to Admin

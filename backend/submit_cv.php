@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (move_uploaded_file($_FILES["cv_file"]["tmp_name"], $target_file)) {
         try {
             // 1. Save to Database
-            $stmt = $pdo->prepare("INSERT INTO cv_submissions (full_name, mobile, email, current_role, file_path) VALUES (?, ?, ?, ?, ?)");
+            $stmt = $pdo->prepare("INSERT INTO cv_submissions (`full_name`, `mobile`, `email`, `current_role`, `file_path`) VALUES (?, ?, ?, ?, ?)");
             $stmt->execute([$full_name, $mobile, $email, $current_role, $target_file]);
 
             // 2. Send Email to Admin (with attachment)

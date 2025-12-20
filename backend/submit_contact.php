@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     try {
         // 1. Save to Database
-        $stmt = $pdo->prepare("INSERT INTO contact_queries (name, email, phone, subject, message) VALUES (?, ?, ?, ?, ?)");
+        $stmt = $pdo->prepare("INSERT INTO contact_queries (`name`, `email`, `phone`, `subject`, `message`) VALUES (?, ?, ?, ?, ?)");
         $stmt->execute([$name, $email, $phone, $subject, $message]);
 
         // 2. Send Email to Admin
