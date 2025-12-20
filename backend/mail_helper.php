@@ -1,41 +1,41 @@
 <?php
-// Simple SMTP Mailer for Gap India (No PHPMailer Dependency)
+// Simple SMTP Mailer for Gap India (Updated for Better Compatibility)
 
 class GapMailer {
     private $host = 'smtp.hostinger.com';
     private $port = 587;
     private $username = 'no-reply@itsahayata.com';
     private $password = 'Support@1925';
-    private $socket;
-    private $logs = [];
+    private $timeout = 30; // Timeout in seconds
+    private $debug = false; // Set to true to see debug logs in response
 
     public function send($to, $subject, $body, $attachments = []) {
         try {
-            // 1. Connect
-            $this->connect();
-            
-            // 2. Handshake & Auth
-            $this->sendCommand("EHLO " . gethostname());
-            $this->sendCommand("STARTTLS");
-            
-            // Upgrade to secure socket
-            stream_socket_enable_crypto($this->socket, true, STREAM_CRYPTO_METHOD_TLS_CLIENT);
-            $this->sendCommand("EHLO " . gethostname());
-            
-            $this->sendCommand("AUTH LOGIN");
-            $this->sendCommand(base64_encode($this->username));
-            $this->sendCommand(base64_encode($this->password));
+            $socket = fsockopen($this->host, $this->port, $errno, $errstr, $this->timeout);
+            if (!$socket) {
+                throw new Exception("Could not connect: $errstr ($errno)");
+            }
 
-            // 3. Email Data
-            $this->sendCommand("MAIL FROM: <{$this->username}>");
-            $this->sendCommand("RCPT TO: <$to>");
-            
-            // Handle BCC (Admin) - Optional, sending separate mail is better usually, but here we can add another RCPT
-            // $this->sendCommand("RCPT TO: <hr@gapindia.com>"); 
+            $this->read($socket); // Welcome message
 
-            $this->sendCommand("DATA");
+            $this->cmd($socket, "EHLO " . gethostname());
+            $this->cmd($socket, "STARTTLS");
 
-            // 4. Build MIME Headers & Body
+            if (!stream_socket_enable_crypto($socket, true, STREAM_CRYPTO_METHOD_TLS_CLIENT)) {
+                throw new Exception("TLS negotiation failed");
+            }
+
+            $this->cmd($socket, "EHLO " . gethostname());
+            $this->cmd($socket, "AUTH LOGIN");
+            $this->cmd($socket, base64_encode($this->username));
+            $this->cmd($socket, base64_encode($this->password));
+
+            $this->cmd($socket, "MAIL FROM: <{$this->username}>");
+            $this->cmd($socket, "RCPT TO: <$to>");
+
+            $this->cmd($socket, "DATA");
+
+            // --- HEADERS ---
             $boundary = md5(uniqid(time()));
             
             $headers  = "From: Gap India <{$this->username}>\r\n";
@@ -45,6 +45,7 @@ class GapMailer {
             $headers .= "Content-Type: multipart/mixed; boundary=\"$boundary\"\r\n";
             $headers .= "\r\n";
 
+            // --- BODY ---
             $message  = "--$boundary\r\n";
             $message .= "Content-Type: text/html; charset=\"UTF-8\"\r\n";
             $message .= "Content-Transfer-Encoding: 7bit\r\n";
@@ -52,7 +53,7 @@ class GapMailer {
             $message .= "$body\r\n";
             $message .= "\r\n";
 
-            // Attachments
+            // --- ATTACHMENTS ---
             if (!empty($attachments)) {
                 foreach ($attachments as $filePath) {
                     if (file_exists($filePath)) {
@@ -70,53 +71,48 @@ class GapMailer {
             }
 
             $message .= "--$boundary--\r\n";
-            $message .= "."; // End of message
+            $message .= "."; // End of data
 
-            fwrite($this->socket, $headers . $message . "\r\n");
-            $this->readResponse();
+            // Send headers and message together
+            fputs($socket, $headers . $message . "\r\n");
+            $this->read($socket); // Read response for data end
 
-            // 5. Quit
-            $this->sendCommand("QUIT");
-            fclose($this->socket);
-            
+            $this->cmd($socket, "QUIT");
+            fclose($socket);
+
             return true;
 
         } catch (Exception $e) {
-            return "Error: " . $e->getMessage();
+            return "Mail Error: " . $e->getMessage();
         }
     }
 
-    private function connect() {
-        $this->socket = fsockopen($this->host, $this->port, $errno, $errstr, 30);
-        if (!$this->socket) {
-            throw new Exception("Could not connect to SMTP host: $errstr");
-        }
-        $this->readResponse();
-    }
-
-    private function sendCommand($cmd) {
-        fwrite($this->socket, $cmd . "\r\n");
-        $response = $this->readResponse();
-        
-        // Basic error checking (codes 4xx and 5xx are errors)
+    private function cmd($socket, $command) {
+        fputs($socket, $command . "\r\n");
+        $response = $this->read($socket);
+        // Check for error codes (4xx or 5xx)
         $code = substr($response, 0, 3);
         if ($code >= 400) {
-            throw new Exception("SMTP Error [$code]: $response");
+            throw new Exception("SMTP Error: $response");
         }
         return $response;
     }
 
-    private function readResponse() {
+    private function read($socket) {
         $response = "";
-        while ($str = fgets($this->socket, 515)) {
+        while ($str = fgets($socket, 515)) {
             $response .= $str;
+            // Stop if line is 4th char is space (e.g., "250 OK")
             if (substr($str, 3, 1) == " ") { break; }
+        }
+        if ($this->debug) {
+            // error_log("SMTP: " . $response); // Uncomment for server logs
         }
         return $response;
     }
 }
 
-// Global helper function to match existing usage
+// Global helper function
 function sendEmail($to, $subject, $body, $attachments = []) {
     $mailer = new GapMailer();
     return $mailer->send($to, $subject, $body, $attachments);
