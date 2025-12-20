@@ -193,7 +193,8 @@
             .then(response => response.json())
             .then(data => {
                 if(data.status === 'success') {
-                    alert(data.message);
+                    // Redirect to Thank You page
+                    window.location.href = 'thank-you.php';
                     form.reset();
                 } else {
                     alert('Error: ' + data.message);

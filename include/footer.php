@@ -267,7 +267,8 @@
             .then(response => response.json())
             .then(data => {
                 if(data.status === 'success') {
-                    alert(data.message);
+                    // Redirect to Thank You page
+                    window.location.href = 'thank-you.php';
                     form.reset();
                     bootstrap.Modal.getInstance(document.getElementById('hireModal')).hide();
                 } else {
@@ -302,7 +303,8 @@
             .then(response => response.json())
             .then(data => {
                 if(data.status === 'success') {
-                    alert(data.message);
+                    // Redirect to Thank You page
+                    window.location.href = 'thank-you.php';
                     form.reset();
                     if (filePreview) filePreview.style.display = 'none';
                     bootstrap.Modal.getInstance(document.getElementById('cvModal')).hide();
