@@ -1,9 +1,13 @@
 <?php
 // Database Configuration
 $host = 'localhost';
-$dbname = 'gapindia_db'; // Change this if your database name is different
-$username = 'root';      // Change this to your database username
-$password = '';          // Change this to your database password
+$dbname = 'u634223065_gapindia_db'; // Change this if your database name is different
+$username = 'u634223065_admin';      // Change this to your database username
+$password = 'Admin@000@';          // Change this to your database password
+// $host = 'localhost';
+// $dbname = 'gapindia_db'; // Change this if your database name is different
+// $username = 'root';      // Change this to your database username
+// $password = '';          // Change this to your database password
 
 try {
     $pdo = new PDO("mysql:host=$host;charset=utf8mb4", $username, $password);
