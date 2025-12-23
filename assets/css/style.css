@@ -141,6 +141,25 @@
             width: 100%;
         }
 
+        .nav-link.active {
+            color: var(--accent) !important;
+        }
+
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        /* Dropdown Icon Rotation */
+        .nav-item.dropdown:hover .fa-chevron-down,
+        .nav-link.active .fa-chevron-down {
+            transform: rotate(180deg);
+            transition: transform 0.3s ease;
+        }
+
+        .fa-chevron-down {
+            transition: transform 0.3s ease;
+        }
+
         /* Dropdown Fix: Added Bridge */
         .nav-item.dropdown {
             position: relative;
@@ -215,7 +234,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1920&auto=format&fit=crop');
+            background-image: url('https://empowerhr.com/wp-content/uploads/2024/03/EPA-B5-IMAGE2.jpg');
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -862,4 +881,73 @@
                 font-size: 0.85rem;
                 padding: 10px 16px;
             }
+        }
+
+        /* --- PRELOADER --- */
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--white);
+            z-index: 99999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+
+        .loader-content {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 120px;
+            height: 120px;
+        }
+
+        .loader-logo {
+            width: 60px;
+            height: auto;
+            position: relative;
+            z-index: 2;
+            animation: pulse 2s infinite ease-in-out;
+        }
+
+        .loader-circle {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 3px solid transparent;
+            border-top-color: var(--accent);
+            border-right-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 1.5s linear infinite;
+            z-index: 1;
+        }
+
+        .loader-circle::before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            bottom: 5px;
+            border: 3px solid transparent;
+            border-top-color: var(--primary);
+            border-left-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 2s linear infinite reverse;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+            100% { transform: scale(1); opacity: 1; }
         }
