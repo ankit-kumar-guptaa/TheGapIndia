@@ -1,16 +1,18 @@
   /* --- 1. GLOBAL VARIABLES & RESET --- */
         :root {
-            --primary: #0f172a;
-            /* Dark Navy */
-            --primary-light: #1e293b;
-            --accent: #F97316;
-            /* Vibrant Orange */
-            --accent-hover: #ea580c;
+            --primary: #000080;
+            /* Indian Navy Blue (Chakra) */
+            --primary-light: #1e3a8a;
+            --accent: #FF9933;
+            /* Saffron */
+            --accent-hover: #E68A00;
+            --green: #138808;
+            /* India Green */
             --text-dark: #334155;
             --text-light: #64748b;
             --white: #ffffff;
             --bg-light: #f8fafc;
-            --gradient-primary: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            --gradient-primary: linear-gradient(135deg, #000080 0%, #1e3a8a 100%);
             --shadow-card: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
             --shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
@@ -105,7 +107,7 @@
 
         /* --- 3. NAVBAR --- */
         .navbar {
-            padding: 15px 0;
+            padding: 5px 0;
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(15px);
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
@@ -231,24 +233,42 @@
             height: 100vh;
             min-height: 780px;
             /* Increased to accommodate client section */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-image: url('https://empowerhr.com/wp-content/uploads/2024/03/EPA-B5-IMAGE2.jpg');
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+            /* REMOVED STATIC BG IMAGE */
+            /* background-image: url('https://empowerhr.com/wp-content/uploads/2024/03/EPA-B5-IMAGE2.jpg'); */
+            background-color: var(--primary); /* Fallback */
             color: white;
-            overflow: visible;
-            /* Changed to visible to prevent clipping */
+            overflow: hidden; /* Changed to hidden to contain carousel */
+        }
+
+        /* Carousel Styles */
+        #heroCarousel,
+        .carousel-inner,
+        .carousel-item {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero-bg-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Parallax effect */
+            background-repeat: no-repeat;
+            z-index: 0;
         }
 
         /* Updated Hero Overlay */
         .hero-overlay {
             position: absolute;
             inset: 0;
-            background: linear-gradient(135deg, rgb(22 32 54 / 40%) 0%, rgba(15, 23, 42, 0.75) 100%);
+            background: linear-gradient(135deg, rgb(22 32 54 / 40%) 0%, rgb(15 23 42 / 78%) 100%);
             z-index: 1;
         }
 
@@ -261,6 +281,12 @@
             padding: 0 20px;
             margin-bottom: 60px;
             /* Space for slider */
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 120px; /* Offset for buttons */
         }
 
         .hero-badge {
@@ -291,22 +317,36 @@
         }
 
         .hero h1 span {
-            background: linear-gradient(to right, #FF6600, #ffb380);
+            background: linear-gradient(to right, #FF9933, #ffb380);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         .hero p {
-            font-size: 1.3rem;
-            color: #cbd5e1;
+            font-size: 1.6rem;
+            color: #ffffff;
             margin-bottom: 40px;
-            font-weight: 300;
+            font-weight: 500;
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
         }
 
+        /* Static Buttons Overlay */
+        .hero-btns-static {
+            position: absolute;
+            bottom: 180px; /* Adjusted to sit above client slider */
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            width: 100%;
+        }
+
         .hero-btns {
+             /* Legacy support or removal */
             display: flex;
             gap: 20px;
             justify-content: center;
@@ -921,10 +961,12 @@
             height: 100%;
             border: 3px solid transparent;
             border-top-color: var(--accent);
-            border-right-color: var(--accent);
+            border-right-color: var(--white);
+            border-bottom-color: var(--green);
             border-radius: 50%;
             animation: spin 1.5s linear infinite;
             z-index: 1;
+            box-shadow: 0 0 15px rgba(255, 153, 51, 0.2);
         }
 
         .loader-circle::before {
@@ -936,7 +978,7 @@
             bottom: 5px;
             border: 3px solid transparent;
             border-top-color: var(--primary);
-            border-left-color: var(--primary);
+            border-bottom-color: var(--primary);
             border-radius: 50%;
             animation: spin 2s linear infinite reverse;
         }

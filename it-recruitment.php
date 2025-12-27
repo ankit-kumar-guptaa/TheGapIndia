@@ -89,7 +89,7 @@
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6" data-aos="fade-right">
-                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop" class="img-fluid rounded-4 shadow-lg mb-4" alt="IT Team">
+                    <img src="assets/images/it-hiring.png" class="img-fluid rounded-4 shadow-lg mb-4" alt="IT Team">
                     <div class="bg-light p-4 rounded-4 border-start border-4 border-primary">
                         <h5 class="mb-3">Why IT Hiring is Different?</h5>
                         <p class="mb-0 text-muted">Technology evolves faster than any other sector. You need recruiters who speak the language of code, cloud, and infrastructure. Gap India understands the nuances of tech stacks and development methodologies.</p>

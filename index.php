@@ -16,15 +16,36 @@
 
     <!-- 1. PARALLAX HERO SECTION -->
     <section class="hero" id="home">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content" data-aos="zoom-in" data-aos-duration="1000">
-            <div class="hero-badge">Since 2023 • New Delhi</div>
-            <h1>Leading Provider of <br> <span style="color: var(--accent);">Manpower Outsourcing Solutions</span></h1>
-            <p>Bridging the gap between top talent and leading organizations through agile, scalable, and quality-driven staffing solutions across India.</p>
-            <div class="hero-btns">
-                <button class="btn btn-primary-custom btn-lg" data-bs-toggle="modal" data-bs-target="#hireModal">Find Talent</button>
-                <button class="btn btn-outline-custom btn-lg" data-bs-toggle="modal" data-bs-target="#cvModal">Find a Job</button>
+        <!-- Background & Text Carousel -->
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="hero-bg-img" style="background-image: url('assets/images/hero-1.png');"></div>
+                    <div class="hero-overlay"></div>
+                    <div class="container hero-content" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="hero-badge">Since 2023 • New Delhi</div>
+                        <h1>Delivering the Right Talent <br> <span style="color: var(--accent);">with the Right Skills at the Right Time</span></h1>
+                        <p>Recruitment,Payroll, Staffing & Tech Solutions to take your business to the next level.</p>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="hero-bg-img" style="background-image: url('assets/images/hero-2.jpg');"></div>
+                    <div class="hero-overlay"></div>
+                    <div class="container hero-content" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="hero-badge">Trusted by 500+ Clients</div>
+                        <h1>Delivering the Right Talent <br> <span style="color: var(--accent);">with the Right Skills at the Right Time</span></h1>
+                        <p>Recruitment,Payroll, Staffing & Tech Solutions to take your business to the next level.</p>
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <!-- Static Buttons (Fixed Overlay) -->
+        <div class="hero-btns-static">
+            <button class="btn btn-primary-custom btn-lg" data-bs-toggle="modal" data-bs-target="#hireModal">Find Talent</button>
+            <button class="btn btn-outline-custom btn-lg" data-bs-toggle="modal" data-bs-target="#cvModal">Find a Job</button>
         </div>
 
         <!-- Glassmorphism Client Slider with Exact 40 Logos -->
@@ -37,6 +58,9 @@
         </div>
     </section>
 
+
+
+    
     <!-- 2. ABOUT US SECTION -->
     <section id="about" class="py-5">
         <div class="container py-5">
@@ -58,7 +82,7 @@
                     <a href="#contact" class="btn btn-outline-custom text-primary border-primary mt-4" style="color:var(--primary); border-color:var(--primary);">Learn More</a>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" class="img-fluid rounded-4 shadow-lg" alt="Team">
+                    <img src="assets/images/about-1.png" class="img-fluid rounded-4 shadow-lg" alt="Team">
                 </div>
             </div>
         </div>
@@ -83,7 +107,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 d-none d-lg-block text-center">
-                        <img src="https://businessacademia.co/wp-content/uploads/2021/04/10.png" alt="Vision" class="img-fluid" style="max-height: 250px;">
+                        <img src="https://charitymiles.org/wp-content/uploads/2023/10/unnamed-2023-10-12T174401.519.jpg" alt="Vision" class="img-fluid" style="max-height: 250px;">
                     </div>
                 </div>
             </div>

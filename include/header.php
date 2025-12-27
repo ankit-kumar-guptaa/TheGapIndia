@@ -53,14 +53,16 @@
                     <!-- Dropdown with Fix -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle <?php echo $is_services_active; ?>" href="#" role="button" data-bs-toggle="dropdown">
-                            Services <i class="fas fa-chevron-down fa-xs ms-1"></i>
+                            Staffing Solutions <i class="fas fa-chevron-down fa-xs ms-1"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="it-recruitment.php">IT Recruitment</a></li>
-                            <li><a class="dropdown-item" href="non-it-staffing.php">Non-IT Staffing</a></li>
-                            <li><a class="dropdown-item" href="oil-gas-hiring.php">Oil & Gas Hiring</a></li>
+                            <li><a class="dropdown-item" href="it-recruitment.php">IT Staffing Solutions</a></li>
+                            <!-- <li><a class="dropdown-item" href="non-it-staffing.php">Non-IT Staffing</a></li> -->
+                            <li><a class="dropdown-item" href="oil-gas-hiring.php">Oil & Gas Staffing</a></li>
                             <li><a class="dropdown-item" href="executive-search.php">Executive Search</a></li>
                             <li><a class="dropdown-item" href="rpo-solutions.php">RPO Solutions</a></li>
+                            <li><a class="dropdown-item" href="campus-hiring.php">Global Placement</a></li>
+                            <li><a class="dropdown-item" href="campus-hiring.php">Payroll and Operations</a></li>
                             <li><a class="dropdown-item" href="campus-hiring.php">Campus Hiring</a></li>
                         </ul>
                     </li>

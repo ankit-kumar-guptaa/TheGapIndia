@@ -14,6 +14,7 @@
             background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
+            background-attachment: fixed; /* Parallax Effect */
             padding: 150px 0 80px;
             color: white;
             margin-bottom: 0;
@@ -26,11 +27,37 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgb(22 32 54 / 80%) 0%, rgba(15, 23, 42, 0.9) 100%);
+            background: linear-gradient(135deg, rgb(22 32 54 / 44%) 0%, rgba(15, 23, 42, 0.9) 100%);
             z-index: 1;
         }
 
         .page-header .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* NEW: Parallax for Value Proposition Section */
+        .parallax-section {
+            position: relative;
+            background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2032&auto=format&fit=crop'); /* Meeting/Handshake image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Parallax Effect */
+            color: white;
+            padding: 100px 0;
+        }
+
+        .parallax-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 0, 128, 0.9) 0%, rgba(30, 58, 138, 0.85) 100%); /* Navy Blue Overlay */
+            z-index: 1;
+        }
+
+        .parallax-content {
             position: relative;
             z-index: 2;
         }
@@ -74,7 +101,7 @@
         <div class="container text-center" data-aos="fade-up">
             <h5 class="text-accent text-uppercase letter-spacing-2 mb-3">We Make It Possible</h5>
             <h1 class="display-3 fw-bold">About GAP India</h1>
-            <p class="lead text-white-50 mx-auto" style="max-width: 700px;">Bridging the gap between top talent and leading organizations through agile, scalable, and quality-driven staffing solutions.</p>
+            <p class="lead text-white mx-auto" style="max-width: 700px;">Bridging the gap between top talent and leading organizations through agile, scalable, and quality-driven staffing solutions.</p>
         </div>
     </section>
 
@@ -161,13 +188,14 @@
     </section>
 
     <!-- VALUE PROPOSITION -->
-    <section class="py-5 bg-dark text-white">
-        <div class="container py-5">
+    <section class="parallax-section">
+        <div class="parallax-overlay"></div>
+        <div class="container parallax-content">
             <div class="row align-items-center">
                 <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
                     <h5 class="text-accent text-uppercase mb-3">Our Value Proposition</h5>
                     <h2 class="mb-4">Benefits of Partnering with GAP India</h2>
-                    <p class="text-white-50 mb-4">We don't just provide candidates; we provide solutions that drive your business forward. Our data-driven approach ensures you get the best talent efficiently.</p>
+                    <p class="text-white mb-4">We don't just provide candidates; we provide solutions that drive your business forward. Our data-driven approach ensures you get the best talent efficiently.</p>
                     <a href="contact.php" class="btn btn-primary-custom">Get Started</a>
                 </div>
                 <div class="col-lg-7" data-aos="fade-left">
@@ -177,7 +205,7 @@
                                 <i class="fas fa-check-circle text-accent fa-2x"></i>
                                 <div>
                                     <h5 class="mb-2">Cost Savings</h5>
-                                    <p class="text-white-50 small">Lower recruitment and operational costs with our efficient processes.</p>
+                                    <p class="text-white small">Lower recruitment and operational costs with our efficient processes.</p>
                                 </div>
                             </div>
                         </div>
@@ -186,7 +214,7 @@
                                 <i class="fas fa-check-circle text-accent fa-2x"></i>
                                 <div>
                                     <h5 class="mb-2">Efficiency Gains</h5>
-                                    <p class="text-white-50 small">Streamlined hiring process and faster onboarding of skilled candidates.</p>
+                                    <p class="text-white small">Streamlined hiring process and faster onboarding of skilled candidates.</p>
                                 </div>
                             </div>
                         </div>
@@ -195,7 +223,7 @@
                                 <i class="fas fa-check-circle text-accent fa-2x"></i>
                                 <div>
                                     <h5 class="mb-2">Faster Hiring Turnaround</h5>
-                                    <p class="text-white-50 small">Agile recruitment process reduces time-to-hire significantly.</p>
+                                    <p class="text-white small">Agile recruitment process reduces time-to-hire significantly.</p>
                                 </div>
                             </div>
                         </div>
@@ -204,7 +232,7 @@
                                 <i class="fas fa-check-circle text-accent fa-2x"></i>
                                 <div>
                                     <h5 class="mb-2">Customized Solutions</h5>
-                                    <p class="text-white-50 small">Tailored recruitment strategies aligned with your business goals.</p>
+                                    <p class="text-white small">Tailored recruitment strategies aligned with your business goals.</p>
                                 </div>
                             </div>
                         </div>
