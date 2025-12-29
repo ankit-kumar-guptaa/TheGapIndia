@@ -33,36 +33,31 @@
 <style>
     /* Top Bar Styling */
     .top-bar-marquee {
-        background: linear-gradient(90deg, #000080 0%, #ffffff 50%, #138808 100%); /* Indian Flag Hint: Navy -> White -> Green */
+        background: linear-gradient(90deg, #FF9933 0%, #ffffff 50%, #138808 100%); /* Indian Flag: Saffron -> White -> Green */
         background-size: 200% 200%;
         animation: gradientBG 10s ease infinite;
-        color: #000080; /* Navy Text for contrast on white/light parts */
+        color: #000080; /* Navy Text */
         height: 40px;
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 9999; /* Below Preloader (99999) but above Navbar (1030) */
+        z-index: 9999;
         display: flex;
         align-items: center;
         box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        border-bottom: 2px solid #FF9933; /* Saffron Line */
+        border-bottom: 2px solid #000080; /* Navy Line for contrast */
         overflow: hidden;
-    }
-
-    .marquee-wrapper {
-        width: 100%;
-        overflow: hidden;
-        white-space: nowrap;
     }
 
     .marquee-text {
         display: inline-block;
         white-space: nowrap;
         animation: scrollText 25s linear infinite;
-        font-weight: 600;
+        font-weight: 700;
         font-size: 14px;
         letter-spacing: 0.5px;
+        text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.8); /* Ensure visibility on dark colors */
     }
 
     .marquee-text span {

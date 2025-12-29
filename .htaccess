@@ -1,0 +1,17 @@
+# Disable directory browsing
+Options -Indexes
+
+# Set the default index file
+DirectoryIndex index.php index.html
+
+# Protect critical files (optional but recommended)
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Protect include files if they shouldn't be accessed directly
+<FilesMatch "^(header|footer|assets)\.php$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
