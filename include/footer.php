@@ -32,7 +32,7 @@
                     <p><i class="fas fa-globe text-accent me-2"></i> gapindia.com</p>
                     <p><i class="fas fa-envelope text-accent me-2"></i> hr@gapindia.com</p>
                     <p><i class="fas fa-phone text-accent me-2"></i> +91-9990411626</p>
-                    <p><i class="fas fa-phone text-accent me-2"></i> +91-129-403-1626</p>
+                    <p><i class="fas fa-phone-volume text-accent me-2"></i> +91-129-403-1626</p>
                 </div>
             </div>
             <div class="footer-bottom">

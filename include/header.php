@@ -22,6 +22,7 @@
 
 <!-- Fixed Left Sidebar Icons -->
 <div class="fixed-social d-none d-lg-flex">
+        <a href="tel:+919990411626" class="social-btn btn-phone ring-animation"><i class="fas fa-phone-volume"></i></a>
         <a href="#" class="social-btn btn-whatsapp"><i class="fab fa-whatsapp"></i></a>
         <a href="#" class="social-btn btn-linkedin"><i class="fab fa-linkedin-in"></i></a>
         <a href="#" class="social-btn btn-facebook"><i class="fab fa-facebook-f"></i></a>
@@ -43,7 +44,7 @@
             <div class="collapse navbar-collapse" id="gapNav">
                 <?php
                     $current_page = basename($_SERVER['PHP_SELF']);
-                    $service_pages = ['it-recruitment.php', 'non-it-staffing.php', 'oil-gas-hiring.php', 'executive-search.php', 'rpo-solutions.php', 'campus-hiring.php'];
+                    $service_pages = ['it-recruitment.php', 'non-it-staffing.php', 'oil-gas-hiring.php', 'executive-search.php', 'rpo-solutions.php', 'campus-hiring.php', 'global-placement.php', 'payroll-operations.php'];
                     $is_services_active = in_array($current_page, $service_pages) ? 'active' : '';
                 ?>
                 <ul class="navbar-nav mx-auto align-items-lg-center">
@@ -61,8 +62,8 @@
                             <li><a class="dropdown-item" href="oil-gas-hiring.php">Oil & Gas Staffing</a></li>
                             <li><a class="dropdown-item" href="executive-search.php">Executive Search</a></li>
                             <li><a class="dropdown-item" href="rpo-solutions.php">RPO Solutions</a></li>
-                            <li><a class="dropdown-item" href="campus-hiring.php">Global Placement</a></li>
-                            <li><a class="dropdown-item" href="campus-hiring.php">Payroll and Operations</a></li>
+                            <li><a class="dropdown-item" href="global-placement.php">Global Placement</a></li>
+                            <li><a class="dropdown-item" href="payroll-operations.php">Payroll and Operations</a></li>
                             <li><a class="dropdown-item" href="campus-hiring.php">Campus Hiring</a></li>
                         </ul>
                     </li>

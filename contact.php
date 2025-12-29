@@ -14,6 +14,7 @@
             background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
+            background-attachment: fixed; /* Parallax Effect */
             padding: 150px 0 80px;
             color: white;
             margin-bottom: 0;
@@ -41,19 +42,39 @@
             border-radius: 20px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.05);
             height: 100%;
+            border-top: 5px solid var(--accent); /* Saffron Top Border */
+            transition: transform 0.3s ease;
+        }
+
+        .contact-info-card:hover {
+            transform: translateY(-5px);
         }
 
         .contact-icon-box {
             width: 50px;
             height: 50px;
-            background: rgba(249, 115, 22, 0.1);
-            color: var(--accent);
+            background: rgba(19, 136, 8, 0.1); /* Green tint */
+            color: var(--green); /* India Green */
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 12px;
             font-size: 20px;
             margin-right: 20px;
+            transition: 0.3s;
+        }
+
+        .contact-info-card:hover .contact-icon-box {
+            background: var(--green);
+            color: white;
+        }
+
+        .form-section {
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            border-radius: 20px;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+            padding: 40px;
+            border-top: 5px solid var(--primary); /* Navy Blue Top Border */
         }
     </style>
 </head>
@@ -123,25 +144,25 @@
 
                 <!-- Contact Form -->
                 <div class="col-lg-7" data-aos="fade-left">
-                    <div class="bg-white p-5 rounded-4 shadow-sm h-100">
+                    <div class="form-section h-100">
                         <h3 class="mb-4">Send us a Message</h3>
                         <form id="contactForm">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <label class="form-label">Your Name <span class="text-danger">*</span></label>
-                                    <input type="text" name="name" class="form-control bg-light border-0 py-3" placeholder="John Doe" required>
+                                    <input type="text" name="name" class="form-control bg-white border shadow-sm py-3" placeholder="John Doe" required>
                                 </div>
                                 <div class="col-md-6">
                                     <label class="form-label">Email Address <span class="text-danger">*</span></label>
-                                    <input type="email" name="email" class="form-control bg-light border-0 py-3" placeholder="john@example.com" required>
+                                    <input type="email" name="email" class="form-control bg-white border shadow-sm py-3" placeholder="john@example.com" required>
                                 </div>
                                 <div class="col-md-6">
                                     <label class="form-label">Phone Number</label>
-                                    <input type="tel" name="phone" class="form-control bg-light border-0 py-3" placeholder="+91...">
+                                    <input type="tel" name="phone" class="form-control bg-white border shadow-sm py-3" placeholder="+91...">
                                 </div>
                                 <div class="col-md-6">
                                     <label class="form-label">Subject</label>
-                                    <select name="subject" class="form-select bg-light border-0 py-3">
+                                    <select name="subject" class="form-select bg-white border shadow-sm py-3">
                                         <option value="General Inquiry">General Inquiry</option>
                                         <option value="Hire Talent">Hire Talent</option>
                                         <option value="Job Application">Job Application</option>
@@ -150,7 +171,7 @@
                                 </div>
                                 <div class="col-12">
                                     <label class="form-label">Message <span class="text-danger">*</span></label>
-                                    <textarea name="message" class="form-control bg-light border-0" rows="5" placeholder="How can we help you?" required></textarea>
+                                    <textarea name="message" class="form-control bg-white border shadow-sm" rows="5" placeholder="How can we help you?" required></textarea>
                                 </div>
                                 <div class="col-12 mt-4">
                                     <button type="submit" class="btn btn-primary-custom btn-lg w-100">Send Message</button>

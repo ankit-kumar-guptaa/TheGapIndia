@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAP INDIA - Executive AI Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    
+    <style>
+        :root {
+            --saffron: #FF9933;
+            --white: #FFFFFF;
+            --green: #138808;
+            --navy: #000428;
+            --blue-grad: linear-gradient(to right, #000428, #004e92);
+            --gold: #FFD700;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #e8eaed;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card-wrapper {
+            position: relative;
+            filter: drop-shadow(0 30px 50px rgba(0,0,0,0.3));
+            margin-bottom: 30px;
+        }
+
+        /* --- NEW CARD STRUCTURE: Vertical Layout --- */
+        .card {
+            width: 500px; /* Standard Vertical/Portrait width usually, but let's do Landscape slightly taller */
+            height: 650px; /* Vertical Business Card Style - Very Trendy */
+            /* Wait, standard is landscape. Let's do a wide landscape but split horizontally */
+            width: 650px;
+            height: 380px;
+            
+            background: var(--white);
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column; /* Stacking Top and Bottom */
+        }
+        
+        /* --- TOP SECTION: LOGO AREA --- */
+        .card-top {
+            height: 42%;
+            background: var(--white);
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding-left: 40px;
+            z-index: 2;
+        }
+
+        .logo-img {
+            max-width: 180px;
+            max-height: 100px;
+            object-fit: contain;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+        }
+
+        /* Spinning Chakra Watermark Top Right */
+        .top-decoration {
+            position: absolute;
+            top: -30px;
+            right: -30px;
+            color: rgba(0, 0, 128, 0.05);
+            font-size: 180px;
+            z-index: 1;
+        }
+
+        /* --- THE WAVE SEPARATOR --- */
+        .wave-container {
+            position: absolute;
+            top: 35%;
+            left: 0;
+            width: 100%;
+            height: 7%;
+            z-index: 5;
+            pointer-events: none;
+        }
+        
+        .wave-svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        /* --- BOTTOM SECTION: INFO AREA --- */
+        .card-bottom {
+            height: 58%;
+            background: var(--blue-grad);
+            position: relative;
+            padding: 40px 40px 30px 40px; /* Top padding pushes content below wave */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            z-index: 3;
+        }
+
+        /* Background Pattern for Bottom */
+        .card-bottom::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.03' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        /* Content Styling */
+        .name-container {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .name-container::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--saffron);
+            border-radius: 2px;
+        }
+
+        .person-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--white);
+            margin-bottom: 2px;
+            letter-spacing: 0.5px;
+        }
+
+        .person-role {
+            font-family: 'Playfair Display', serif; /* Elegant serif for role */
+            font-size: 1.1rem;
+            color: var(--gold);
+            font-style: italic;
+            letter-spacing: 1px;
+            margin-bottom: 8px; /* For underline spacing */
+            padding-bottom: 8px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 30px; /* Row gap, Col gap */
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            font-size: 0.85rem;
+            color: #e0e0e0;
+        }
+
+        .contact-icon {
+            color: var(--saffron);
+            margin-right: 10px;
+            font-size: 1rem;
+            width: 20px;
+            text-align: center;
+        }
+
+        .contact-text a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .contact-text a:hover {
+            color: var(--white);
+            text-shadow: 0 0 5px rgba(255,255,255,0.5);
+        }
+
+        .full-width {
+            grid-column: 1 / -1;
+        }
+
+        /* --- AI FEATURES --- */
+        .ai-controls {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .ai-btn {
+            background: var(--navy);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: transform 0.2s, background 0.2s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .ai-btn:hover {
+            transform: translateY(-2px);
+            background: #003366;
+        }
+        
+        .ai-btn.translate-btn i { color: var(--saffron); }
+        .ai-btn.email-btn i { color: var(--gold); }
+        .ai-btn.download-btn i { color: #ff4d4d; }
+
+        /* Modal (Same as before) */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 100;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 500px;
+            border-top: 5px solid var(--navy);
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .input-group label { display: block; margin-bottom: 5px; font-weight: 600; color: #333; }
+        .input-group textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 8px; min-height: 80px; }
+        
+        .modal-actions { margin-top: 15px; display: flex; justify-content: flex-end; gap: 10px; }
+        .btn-cancel { background: #eee; border: none; padding: 8px 16px; border-radius: 5px; cursor: pointer; }
+        .btn-generate { background: var(--navy); color: white; border: none; padding: 8px 16px; border-radius: 5px; cursor: pointer; }
+        .loading-spinner { display: none; width: 15px; height: 15px; border: 2px solid rgba(255,255,255,0.3); border-top-color: white; border-radius: 50%; animation: spin 1s linear infinite; margin-left: 5px; }
+        .generated-result { margin-top: 15px; background: #f9f9f9; padding: 15px; border-radius: 8px; border-left: 3px solid var(--green); display: none; font-size: 0.9rem; }
+        .copy-btn { background: var(--green); color: white; border: none; padding: 5px 10px; border-radius: 4px; font-size: 0.8rem; margin-top: 10px; cursor: pointer; }
+
+        @keyframes spin { 100% { transform: rotate(360deg); } }
+
+        /* Mobile Responsive */
+        @media (max-width: 700px) {
+            .card {
+                width: 100%;
+                height: auto;
+                min-height: 600px;
+            }
+            
+            .card-top {
+                height: 200px;
+                justify-content: center;
+                padding-left: 0;
+            }
+
+            .wave-container {
+                top: 180px; /* Adjust based on top height */
+            }
+
+            .card-bottom {
+                height: auto;
+                padding: 60px 20px 30px 20px;
+                text-align: center;
+            }
+
+            .name-container::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+                text-align: left; /* Keep details readable */
+                padding-left: 10px;
+            }
+            
+            .contact-item {
+                justify-content: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-wrapper">
+        <div class="card" id="businessCard">
+            
+            <!-- Top Section: White Clean Header -->
+            <div class="card-top">
+                <i class="fas fa-dharmachakra top-decoration fa-spin" style="animation-duration: 30s;"></i>
+                <img src="logo.png" alt="GAP India" class="logo-img">
+            </div>
+
+            <!-- Wave Separator (SVG) -->
+            <div class="wave-container">
+                <svg viewBox="0 0 1440 320" preserveAspectRatio="none" class="wave-svg">
+                    <path fill="#FF9933" fill-opacity="1" d="M0,160L48,170.7C96,181,192,203,288,197.3C384,192,480,160,576,149.3C672,139,768,149,864,165.3C960,181,1056,203,1152,197.3C1248,192,1344,160,1392,144L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+                    <path fill="#138808" fill-opacity="0.8" d="M0,192L48,186.7C96,181,192,171,288,176C384,181,480,203,576,213.3C672,224,768,224,864,213.3C960,203,1056,181,1152,176C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" style="transform: translateY(10px);"></path>
+                </svg>
+            </div>
+
+            <!-- Bottom Section: Navy Blue Details -->
+            <div class="card-bottom">
+                <div class="name-container">
+                    <div class="person-name" id="nameText">Gajendra Kumar Sharma</div>
+                    <div class="person-role" id="roleText">Director</div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt contact-icon"></i>
+                        <span class="contact-text">+91-9990411626</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-mobile-alt contact-icon"></i>
+                        <span class="contact-text">+91-129-4031626</span>
+                    </div>
+                    <div class="contact-item full-width">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <span class="contact-text">
+                            <a href="mailto:director@gapindia.com">director@gapindia.com</a>
+                        </span>
+                    </div>
+                    <div class="contact-item full-width">
+                        <i class="fas fa-globe contact-icon"></i>
+                        <span class="contact-text">
+                            <a href="https://www.gapindia.com" target="_blank">www.gapindia.com</a>
+                        </span>
+                    </div>
+                    <div class="contact-item full-width">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <span class="contact-text" id="addressText">281, DDA Badarpur New Delhi, 110044</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Controls -->
+    <div class="ai-controls">
+        <button class="ai-btn translate-btn" onclick="translateCard()">
+            <i class="fas fa-language"></i> <span id="translateBtnText">Hindi Translation</span>
+        </button>
+        <button class="ai-btn email-btn" onclick="openEmailModal()">
+            <i class="fas fa-envelope-open-text"></i> Draft AI Email
+        </button>
+        <button class="ai-btn download-btn" onclick="downloadPDF()">
+            <i class="fas fa-file-pdf"></i> Download PDF
+        </button>
+    </div>
+
+    <!-- Hidden Modal Code (Same Logic) -->
+    <div class="modal" id="emailModal">
+        <div class="modal-content">
+            <h3><i class="fas fa-robot" style="color:var(--navy)"></i> AI Assistant</h3>
+            <div class="input-group">
+                <label>Email Intent:</label>
+                <textarea id="emailIntent" placeholder="Example: I want to discuss a solar project deal..."></textarea>
+            </div>
+            <div class="modal-actions">
+                <button class="btn-cancel" onclick="closeEmailModal()">Cancel</button>
+                <button class="btn-generate" onclick="generateEmail()">
+                    <span>Draft Email</span> <div class="loading-spinner" id="emailSpinner"></div>
+                </button>
+            </div>
+            <div class="generated-result" id="emailResult">
+                <div style="font-weight:bold; margin-bottom:5px;">Subject: <span id="emailSubject"></span></div>
+                <div id="emailBody" style="white-space: pre-wrap;"></div>
+                <button class="copy-btn" onclick="sendToMailApp()">Open Mail App</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const apiKey = ""; 
+        let isHindi = false;
+        
+        const originalContent = {
+            name: "Gajendra Kumar Sharma",
+            role: "Director",
+            address: "281, DDA Badarpur New Delhi, 110044"
+        };
+
+        function downloadPDF() {
+            // Select the element
+            const element = document.getElementById('businessCard');
+            
+            // Configure options
+            const opt = {
+                margin:       0,
+                filename:     'GapIndia_VisitingCard.pdf',
+                image:        { type: 'jpeg', quality: 0.98 },
+                html2canvas:  { scale: 3, useCORS: true, logging: false },
+                jsPDF:        { unit: 'px', format: [650, 380], orientation: 'landscape' }
+            };
+
+            // Generate PDF
+            // We temporarily remove the shadow to make the print cleaner
+            const originalShadow = element.style.boxShadow;
+            element.style.boxShadow = 'none';
+            
+            // Also handle the card wrapper filter if needed, but selecting #businessCard directly ignores wrapper styles
+            // However, #businessCard has border-radius which might show black corners in PDF if not handled.
+            // html2canvas usually handles border-radius okay, but background needs to be white.
+            
+            html2pdf().set(opt).from(element).save().then(() => {
+                element.style.boxShadow = originalShadow;
+            });
+        }
+
+        function openEmailModal() { document.getElementById('emailModal').style.display = 'flex'; }
+        function closeEmailModal() { 
+            document.getElementById('emailModal').style.display = 'none'; 
+            document.getElementById('emailResult').style.display = 'none';
+        }
+
+        async function callGemini(prompt) {
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
+            const payload = { contents: [{ parts: [{ text: prompt }] }] };
+            try {
+                const response = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
+                const data = await response.json();
+                return data.candidates[0].content.parts[0].text;
+            } catch (error) { console.error('Error:', error); return null; }
+        }
+
+        async function translateCard() {
+            const btnText = document.getElementById('translateBtnText');
+            const nameEl = document.getElementById('nameText');
+            const roleEl = document.getElementById('roleText');
+            const addrEl = document.getElementById('addressText');
+
+            if (isHindi) {
+                nameEl.innerText = originalContent.name;
+                roleEl.innerText = originalContent.role;
+                addrEl.innerText = originalContent.address;
+                btnText.innerText = "Hindi Translation";
+                isHindi = false;
+                return;
+            }
+
+            btnText.innerText = "Translating...";
+            const prompt = `Translate to Hindi (Devanagari): Name: "${originalContent.name}", Role: "${originalContent.role}", Address: "${originalContent.address}". Return JSON {name, role, address} only.`;
+            
+            const result = await callGemini(prompt);
+            if (result) {
+                try {
+                    const cleanJson = result.replace(/```json/g, '').replace(/```/g, '');
+                    const translated = JSON.parse(cleanJson);
+                    nameEl.innerText = translated.name;
+                    roleEl.innerText = translated.role;
+                    addrEl.innerText = translated.address;
+                    btnText.innerText = "Revert to English";
+                    isHindi = true;
+                } catch (e) { btnText.innerText = "Try Again"; }
+            }
+        }
+
+        async function generateEmail() {
+            const intent = document.getElementById('emailIntent').value;
+            if (!intent) return;
+            document.getElementById('emailSpinner').style.display = 'inline-block';
+            
+            const prompt = `Draft professional email to Gajendra Kumar Sharma (Director, GAP INDIA). Intent: "${intent}". Output: Subject: [sub]\nBody: [body]`;
+            const result = await callGemini(prompt);
+            
+            document.getElementById('emailSpinner').style.display = 'none';
+            if (result) {
+                const lines = result.split('\n');
+                let subject = "Business Inquiry"; let body = "";
+                lines.forEach(line => {
+                    if (line.startsWith("Subject:")) subject = line.replace("Subject:", "").trim();
+                    else if (!line.startsWith("Body:")) body += line + "\n";
+                });
+                document.getElementById('emailSubject').innerText = subject;
+                document.getElementById('emailBody').innerText = body.trim();
+                document.getElementById('emailResult').style.display = 'block';
+            }
+        }
+
+        function sendToMailApp() {
+            const subject = encodeURIComponent(document.getElementById('emailSubject').innerText);
+            const body = encodeURIComponent(document.getElementById('emailBody').innerText);
+            window.location.href = `mailto:director@gapindia.com?subject=${subject}&body=${body}`;
+        }
+    </script>
+</body>
+</html>

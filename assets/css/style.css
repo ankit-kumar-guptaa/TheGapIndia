@@ -545,6 +545,32 @@
             background: #0A66C2;
         }
 
+        .btn-phone {
+            background: var(--accent); /* Saffron */
+            color: white;
+            z-index: 1000;
+        }
+
+        /* Ringing Animation */
+        @keyframes ring {
+            0% { transform: rotate(0deg); }
+            10% { transform: rotate(-25deg); }
+            20% { transform: rotate(25deg); }
+            30% { transform: rotate(-25deg); }
+            40% { transform: rotate(25deg); }
+            50% { transform: rotate(0deg); }
+            100% { transform: rotate(0deg); }
+        }
+
+        .ring-animation {
+            animation: ring 1.5s infinite ease-in-out;
+        }
+
+        .ring-animation:hover {
+            animation: none; /* Stop animation on hover */
+            transform: scale(1.1);
+        }
+
         .scroll-top {
             position: fixed;
             bottom: 30px;
@@ -685,39 +711,115 @@
             margin-bottom: 15px;
         }
 
-        /* --- 8. FOOTER --- */
+        /* --- 8. FOOTER (Parallax & Indian Theme) --- */
         footer {
-            background: var(--primary);
-            color: #94a3b8;
+            position: relative;
+            background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop'); /* Network/Global Image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Parallax Effect */
+            color: #cbd5e1;
             padding: 80px 0 30px;
+            overflow: hidden;
+        }
+
+        /* Navy Blue Overlay */
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 128, 0.92); /* Deep Navy Overlay */
+            z-index: 0;
+        }
+
+        /* Tricolor Top Border */
+        footer::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(90deg, #FF9933 0%, #FFFFFF 50%, #138808 100%);
+            z-index: 2;
+        }
+
+        footer .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer-logo {
+            display: inline-block;
+            background: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
 
         .footer-logo img {
-            height: 55px;
+            height: 70px;
             width: auto;
-            margin-bottom: 20px;
-            /* Invert filter to make logo white for dark bg */
-            filter: brightness(0) invert(1);
-            opacity: 0.9;
+            display: block;
+            filter: none; /* Show original logo colors */
         }
 
         .footer-title {
-            color: white;
+            color: var(--accent); /* Saffron */
             font-size: 18px;
             margin-bottom: 25px;
             font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Decorative underline for titles */
+        .footer-title::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: white;
+            margin-top: 8px;
         }
 
         .footer-link {
             display: block;
-            color: #94a3b8;
+            color: #cbd5e1;
             margin-bottom: 12px;
             transition: 0.3s;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
         }
 
         .footer-link:hover {
+            color: var(--green); /* India Green */
+            padding-left: 8px;
+            transform: translateX(2px);
+        }
+
+        /* Arrow/Icon before link on hover */
+        .footer-link::before {
+            content: '\f105'; /* FontAwesome angle-right */
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            opacity: 0;
+            margin-right: 0;
+            transition: 0.3s;
+            font-size: 14px;
+        }
+
+        .footer-link:hover::before {
+            opacity: 1;
+            margin-right: 8px;
             color: var(--accent);
-            padding-left: 5px;
         }
 
         .footer-bottom {
@@ -725,6 +827,16 @@
             padding-top: 30px;
             margin-top: 50px;
             text-align: center;
+        }
+
+        /* Social Icons Hover - Tricolor */
+        .footer-social-icon {
+            color: white;
+            transition: 0.3s;
+        }
+        .footer-social-icon:hover {
+            color: var(--accent);
+            transform: translateY(-3px);
         }
 
         /* --- 9. MODALS --- */
