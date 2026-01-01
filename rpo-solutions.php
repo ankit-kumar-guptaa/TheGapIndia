@@ -83,7 +83,7 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-6" data-aos="fade-right">
-                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop" class="img-fluid rounded-4 shadow-lg mb-4" alt="Team Collaboration">
+                    <img src="assets/images/rpo.jpg" class="img-fluid rounded-4 shadow-lg mb-4" alt="Team Collaboration">
                     <div class="bg-light p-4 rounded-4 border-start border-4 border-warning">
                         <h5 class="mb-3">Benefits of RPO</h5>
                         <ul class="list-unstyled feature-list mb-0">

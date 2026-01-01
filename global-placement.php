@@ -77,7 +77,7 @@
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6" data-aos="fade-right">
-                    <img src="https://images.unsplash.com/photo-1529400971008-f566de0e6dfc?q=80&w=2070&auto=format&fit=crop" class="img-fluid rounded-4 shadow-lg mb-4" alt="Global Business">
+                    <img src="assets/images/global.jpg" class="img-fluid rounded-4 shadow-lg mb-4" alt="Global Business">
                     <div class="bg-light p-4 rounded-4 border-start border-4 border-primary">
                         <h5 class="mb-3">Why Go Global with Gap India?</h5>
                         <ul class="list-unstyled feature-list mb-0">
@@ -227,7 +227,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-7 order-lg-1" data-aos="fade-right">
-                    <img src="https://images.unsplash.com/photo-1512453979798-5ea936a7fe65?q=80&w=2070&auto=format&fit=crop" class="img-fluid rounded-4 shadow" alt="Global Industries">
+                    <img src="assets/images/global2.jpg" class="img-fluid rounded-4 shadow" alt="Global Industries">
                 </div>
             </div>
         </div>

@@ -128,7 +128,7 @@
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="service-card">
                         <div class="service-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2069&auto=format&fit=crop" alt="IT Recruitment">
+                            <img src="assets/images/it.jpg" alt="IT Recruitment">
                         </div>
                         <div class="service-body">
                             <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
@@ -143,7 +143,7 @@
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="service-card">
                         <div class="service-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?q=80&w=2070&auto=format&fit=crop" alt="Oil & Gas">
+                            <img src="assets/images/oil-gas.jpeg" alt="Oil & Gas">
                         </div>
                         <div class="service-body">
                             <div class="service-icon"><i class="fas fa-oil-can"></i></div>
@@ -158,7 +158,7 @@
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="service-card">
                         <div class="service-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop" alt="Manufacturing">
+                            <img src="assets/images/manufacturing.jpg" alt="Manufacturing">
                         </div>
                         <div class="service-body">
                             <div class="service-icon"><i class="fas fa-cogs"></i></div>
@@ -173,7 +173,7 @@
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
                     <div class="service-card">
                         <div class="service-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2032&auto=format&fit=crop" alt="Executive Search">
+                            <img src="assets/images/executive-search.jpg" alt="Executive Search">
                         </div>
                         <div class="service-body">
                             <div class="service-icon"><i class="fas fa-user-tie"></i></div>
@@ -188,7 +188,7 @@
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
                     <div class="service-card">
                         <div class="service-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop" alt="RPO">
+                            <img src="assets/images/rpo.jpg" alt="RPO">
                         </div>
                         <div class="service-body">
                             <div class="service-icon"><i class="fas fa-tasks"></i></div>
@@ -203,7 +203,7 @@
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
                     <div class="service-card">
                         <div class="service-img-wrapper">
-                            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop" alt="Campus">
+                            <img src="assets/images/campus-hiring.jpg" alt="Campus">
                         </div>
                         <div class="service-body">
                             <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>

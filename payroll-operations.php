@@ -124,7 +124,7 @@
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 order-lg-2" data-aos="fade-left">
-                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop" class="img-fluid rounded-4 shadow-lg mb-4" alt="Payroll Processing">
+                    <img src="assets/images/payroll-opertions.jpg" class="img-fluid rounded-4 shadow-lg mb-4" alt="Payroll Processing">
                     <div class="row g-3">
                         <div class="col-6">
                             <div class="p-3 bg-light rounded text-center border border-success bg-opacity-10">

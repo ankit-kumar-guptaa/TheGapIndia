@@ -73,7 +73,7 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-6" data-aos="fade-right">
-                    <img src="https://images.unsplash.com/photo-1516937941344-00b4ec0c46f6?q=80&w=2032&auto=format&fit=crop" class="img-fluid rounded-4 shadow-lg mb-4" alt="Oil Refinery">
+                    <img src="assets/images//oil-gas.jpeg" class="img-fluid rounded-4 shadow-lg mb-4" alt="Oil Refinery">
                     <div class="bg-light p-4 rounded-4 border-start border-4 border-warning">
                         <h5 class="mb-3">Industry Expertise</h5>
                         <ul class="list-unstyled feature-list mb-0">

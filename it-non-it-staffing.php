@@ -158,7 +158,7 @@
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
                     <div class="position-relative">
-                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop" class="img-fluid rounded-4 shadow" alt="Unified Team">
+                        <img src="assets/images/it.jpg" class="img-fluid rounded-4 shadow" alt="Unified Team">
                         <div class="position-absolute bottom-0 end-0 bg-white p-4 rounded-top-4 shadow border-bottom border-4 border-warning m-4 d-none d-md-block">
                             <h3 class="fw-bold text-dark mb-0">5000+</h3>
                             <small class="text-muted">Professionals Placed Globally</small>
