@@ -244,7 +244,7 @@
     </section>
 
     <!-- CTA SECTION -->
-    <section class="py-5 bg-dark text-white text-center" style="background: linear-gradient(90deg, #138808 0%, #000080 100%);">
+    <section class="py-5 bg-dark text-white text-center" style="background: linear-gradient(90deg, #0f172a 0%, #1e40af 100%);">
         <div class="container" data-aos="zoom-in">
             <h2 class="fw-bold mb-3">Optimize Your Operations Today</h2>
             <p class="lead mb-4 text-white-50">Let us handle the numbers while you handle the business.</p>

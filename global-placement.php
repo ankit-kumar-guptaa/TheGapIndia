@@ -27,7 +27,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgba(0, 0, 128, 0.9) 0%, rgba(19, 136, 8, 0.8) 100%); /* Navy to Green Gradient */
+            background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%); /* Professional Navy to Blue */
             z-index: 1;
         }
 

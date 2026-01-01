@@ -150,7 +150,8 @@
                         </ul>
                     </li>
 
-                    <li class="nav-item"><a class="nav-link <?php echo ($current_page == 'industries.php') ? 'active' : ''; ?>" href="industries.php">Industries</a></li>
+                    <li class="nav-item"><a class="nav-link <?php echo ($current_page == 'blog.php' || strpos($current_page, 'blog-') !== false) ? 'active' : ''; ?>" href="blog.php">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link <?php echo ($current_page == 'faq.php') ? 'active' : ''; ?>" href="faq.php">FAQ</a></li>
                     <li class="nav-item"><a class="nav-link <?php echo ($current_page == 'contact.php') ? 'active' : ''; ?>" href="contact.php">Contact</a></li>
                 </ul>
                 <div class="d-flex gap-2 mt-3 mt-lg-0">

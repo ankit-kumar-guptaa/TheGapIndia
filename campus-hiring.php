@@ -79,7 +79,7 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-6" data-aos="fade-right">
-                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop" class="img-fluid rounded-4 shadow-lg mb-4" alt="Graduates">
+                    <img src="assets/images/campus-hiring.jpg" class="img-fluid rounded-4 shadow-lg mb-4" alt="Graduates">
                     <div class="bg-light p-4 rounded-4 border-start border-4 border-warning">
                         <h5 class="mb-3">Why Hire Freshers?</h5>
                         <ul class="list-unstyled feature-list mb-0">
@@ -173,7 +173,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-7" data-aos="fade-left">
-                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop" class="img-fluid rounded-4 shadow" alt="College Campus">
+                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop" class="img-fluid rounded-4 shadow" alt="College Campus">
                 </div>
             </div>
         </div>

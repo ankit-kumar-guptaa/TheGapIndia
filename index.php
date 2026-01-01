@@ -79,7 +79,7 @@
                             <p class="text-muted small">Client Retention</p>
                         </div>
                     </div>
-                    <a href="#contact" class="btn btn-outline-custom text-primary border-primary mt-4" style="color:var(--primary); border-color:var(--primary);">Learn More</a>
+                    <a href="about.php" class="btn btn-outline-custom text-primary border-primary mt-4" style="color:var(--primary); border-color:var(--primary);">Learn More</a>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
                     <img src="assets/images/about-1.png" class="img-fluid rounded-4 shadow-lg" alt="Team">
@@ -107,7 +107,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 d-none d-lg-block text-center">
-                        <img src="https://charitymiles.org/wp-content/uploads/2023/10/unnamed-2023-10-12T174401.519.jpg" alt="Vision" class="img-fluid" style="max-height: 250px;">
+                        <img src="assets/images/vision.jpg" alt="Vision" class="img-fluid" style="max-height: 250px;">
                     </div>
                 </div>
             </div>
