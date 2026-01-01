@@ -27,7 +27,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgba(19, 136, 8, 0.85) 0%, rgba(0, 0, 128, 0.9) 100%); /* Green to Navy Gradient */
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 41, 59, 0.8) 100%); /* Professional Navy Gradient */
             z-index: 1;
         }
 
@@ -37,7 +37,7 @@
         }
 
         .feature-list i {
-            color: var(--accent); /* Saffron */
+            color: var(--accent);
             margin-right: 10px;
         }
 

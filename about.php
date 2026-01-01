@@ -80,7 +80,7 @@
         .feature-icon {
             width: 60px;
             height: 60px;
-            background: rgba(249, 115, 22, 0.1);
+            background: rgba(37, 99, 235, 0.1); /* Professional Blue tint */
             color: var(--accent);
             display: flex;
             align-items: center;

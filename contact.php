@@ -42,7 +42,7 @@
             border-radius: 20px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.05);
             height: 100%;
-            border-top: 5px solid var(--accent); /* Saffron Top Border */
+            border-top: 5px solid var(--accent);
             transition: transform 0.3s ease;
         }
 
@@ -53,8 +53,8 @@
         .contact-icon-box {
             width: 50px;
             height: 50px;
-            background: rgba(19, 136, 8, 0.1); /* Green tint */
-            color: var(--green); /* India Green */
+            background: rgba(37, 99, 235, 0.1); /* Professional Blue tint */
+            color: var(--accent); /* Professional Blue */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -65,7 +65,7 @@
         }
 
         .contact-info-card:hover .contact-icon-box {
-            background: var(--green);
+            background: var(--accent);
             color: white;
         }
 

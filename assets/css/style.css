@@ -1,18 +1,18 @@
   /* --- 1. GLOBAL VARIABLES & RESET --- */
         :root {
-            --primary: #000080;
-            /* Indian Navy Blue (Chakra) */
-            --primary-light: #1e3a8a;
-            --accent: #FF9933;
-            /* Saffron */
-            --accent-hover: #E68A00;
-            --green: #138808;
-            /* India Green */
+            --primary: #0f172a;
+            /* Professional Navy/Slate */
+            --primary-light: #1e293b;
+            --accent: #2563eb;
+            /* Corporate Blue */
+            --accent-hover: #1d4ed8;
+            --green: #10b981;
+            /* Success Green */
             --text-dark: #334155;
             --text-light: #64748b;
             --white: #ffffff;
             --bg-light: #f8fafc;
-            --gradient-primary: linear-gradient(135deg, #000080 0%, #1e3a8a 100%);
+            --gradient-primary: linear-gradient(135deg, #0f172a 0%, #334155 100%);
             --shadow-card: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
             --shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         }
@@ -53,13 +53,13 @@
 
         /* --- 2. BUTTONS --- */
         .btn-primary-custom {
-            background: linear-gradient(135deg, var(--accent), #ff8533);
+            background: linear-gradient(135deg, var(--accent), var(--accent-hover));
             color: white;
             padding: 12px 30px;
             border-radius: 50px;
             font-weight: 600;
             border: none;
-            box-shadow: 0 4px 15px rgba(249, 115, 22, 0.4);
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
@@ -85,7 +85,7 @@
         .btn-primary-custom:hover {
             transform: translateY(-2px);
             color: white;
-            box-shadow: 0 8px 25px rgba(249, 115, 22, 0.3);
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
         }
 
         .btn-outline-custom {
@@ -300,7 +300,7 @@
             border-radius: 50px;
             font-size: 13px;
             font-weight: 700;
-            color: var(--accent);
+            color: #ffffff;
             text-transform: uppercase;
             letter-spacing: 1.5px;
             margin-bottom: 25px;

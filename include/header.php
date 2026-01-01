@@ -33,10 +33,10 @@
 <style>
     /* Top Bar Styling */
     .top-bar-marquee {
-        background: linear-gradient(90deg, #FF9933 0%, #ffffff 50%, #138808 100%); /* Indian Flag: Saffron -> White -> Green */
+        background: linear-gradient(90deg, #0f172a 0%, #1e40af 50%, #0f172a 100%); /* Professional Navy -> Blue -> Navy */
         background-size: 200% 200%;
-        animation: gradientBG 10s ease infinite;
-        color: #000080; /* Navy Text */
+        animation: gradientProfessional 15s ease infinite;
+        color: #ffffff; /* White Text */
         height: 40px;
         position: fixed;
         top: 0;
@@ -46,8 +46,14 @@
         display: flex;
         align-items: center;
         box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        border-bottom: 2px solid #000080; /* Navy Line for contrast */
+        border-bottom: 1px solid rgba(255,255,255,0.1);
         overflow: hidden;
+    }
+
+    @keyframes gradientProfessional {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
     }
 
     .marquee-text {
@@ -67,12 +73,6 @@
     @keyframes scrollText {
         0% { transform: translateX(0); }
         100% { transform: translateX(-50%); }
-    }
-
-    @keyframes gradientBG {
-        0% { background-position: 0% 50%; }
-        50% { background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
     }
 
     /* Adjust Navbar Position */

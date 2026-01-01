@@ -66,7 +66,7 @@
     <!-- PAGE HEADER -->
     <section class="page-header">
         <div class="container text-center" data-aos="fade-up">
-            <h5 class="text-white text-uppercase letter-spacing-2 mb-3" style="color: #FF9933 !important;">International Opportunities</h5>
+            <h5 class="text-white text-uppercase letter-spacing-2 mb-3">International Opportunities</h5>
             <h1 class="display-3 fw-bold">Global Placement Services</h1>
             <p class="lead text-white-50 mx-auto" style="max-width: 700px;">Bridging borders to connect world-class Indian talent with global enterprises.</p>
         </div>
