@@ -2,10 +2,10 @@
     <footer id="contact">
         <div class="container">
             <div class="row g-5">
-                <div class="col-lg-4">
-                    <a href="#" class="footer-logo">
+                <div class="col-lg-3">
+                    <!-- <a href="#" class="footer-logo">
                         <img src="/logo.png" alt="GAP India">
-                    </a>
+                    </a> -->
                     <p>Recruitment and talent solutions partner for IT and Non-IT organizations across India. We make it possible.</p>
                     <div class="d-flex gap-3 mt-4">
                         <a href="#" class="text-white opacity-75"><i class="fab fa-linkedin fa-lg"></i></a>
@@ -21,12 +21,20 @@
                     <a href="#" class="footer-link">Privacy Policy</a>
                 </div>
                 <div class="col-lg-2 col-6">
+                    <h5 class="footer-title">Services</h5>
+                    <a href="it-recruitment.php" class="footer-link">IT Staffing</a>
+                    <a href="blue-collar-staffing.php" class="footer-link">Blue Collar</a>
+                    <a href="white-collar-staffing.php" class="footer-link">White Collar</a>
+                    <a href="grey-collar-staffing.php" class="footer-link">Grey Collar</a>
+                    <a href="rpo-solutions.php" class="footer-link">RPO Solutions</a>
+                </div>
+                <div class="col-lg-2 col-6">
                     <h5 class="footer-title">For Talent</h5>
                     <a href="#" class="footer-link" data-bs-toggle="modal" data-bs-target="#cvModal">Submit CV</a>
                     <a href="#" class="footer-link">Job Search</a>
                     <a href="#" class="footer-link">Career Advice</a>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-3">
                     <h5 class="footer-title">Contact Us</h5>
                     <p><i class="fas fa-map-marker-alt text-accent me-2"></i> 281, DDA, Badarpur, New Delhi, 110044</p>
                     <p><i class="fas fa-globe text-accent me-2"></i> gapindia.com</p>

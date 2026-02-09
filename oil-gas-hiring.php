@@ -26,7 +26,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgb(22 32 54 / 85%) 0%, rgba(15, 23, 42, 0.95) 100%);
+            background: linear-gradient(135deg, rgb(22 32 54 / 44%) 0%, rgb(15 23 42 / 63%) 100%);
             z-index: 1;
         }
 

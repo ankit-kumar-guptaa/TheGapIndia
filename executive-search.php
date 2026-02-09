@@ -26,7 +26,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgb(22 32 54 / 85%) 0%, rgba(15, 23, 42, 0.95) 100%);
+            background: linear-gradient(135deg, rgb(22 32 54 / 44%) 0%, rgb(15 23 42 / 63%) 100%);
             z-index: 1;
         }
 
@@ -64,7 +64,7 @@
         <div class="container text-center" data-aos="fade-up">
             <h5 class="text-accent text-uppercase letter-spacing-2 mb-3">Service Overview</h5>
             <h1 class="display-3 fw-bold">Executive Search</h1>
-            <p class="lead text-white-50 mx-auto" style="max-width: 700px;">Identifying and attracting visionary leaders to drive your business forward.</p>
+            <p class="lead text-white mx-auto" style="max-width: 700px;">Identifying and attracting visionary leaders to drive your business forward.</p>
         </div>
     </section>
 
