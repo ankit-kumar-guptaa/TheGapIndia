@@ -114,76 +114,53 @@
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
                     <h5 class="text-accent text-uppercase mb-3">Who We Are</h5>
-                    <h2 class="mb-4">Leading Provider of Manpower Outsourcing Solutions</h2>
-                    <p class="text-muted mb-4">GAP India is a forward-thinking Oil & Gas / IT recruitment firm headquartered in New Delhi. Established with a vision to bridge the gap between top tech talent and leading organizations, we specialize in delivering agile, scalable, and quality-driven staffing solutions.</p>
-                    <p class="text-muted mb-4">Our team combines industry expertise with deep market insight to connect companies with the right professionals across the Oil & Gas / IT landscape. From startups to Fortune 500 enterprises, we tailor our recruitment strategies to meet the evolving needs of our clients.</p>
-                    <p class="text-muted">At GAP India, we are committed to building long-term partnerships through transparent communication, ethical practices, and a relentless focus on quality.</p>
+                    <h2 class="mb-4">India's Largest & Global Leader in Staffing Solutions</h2>
+                    <p class="text-muted mb-4"><strong>Gap India</strong> is India’s largest and a global leader in <strong>Staffing and Workforce Solutions</strong>, empowering businesses to enhance productivity through our deep domain expertise and future-ready workforce through our AI-driven digital platforms.</p>
+                    <p class="text-muted mb-4">With a <strong>500+ strong workforce</strong> across India, serving <strong>300+ clients</strong> worldwide, we have grown from a start-up to an industry powerhouse in just a few years. We drive transformative impact for businesses globally.</p>
+                    <p class="text-muted">We offer a comprehensive suite of technology-driven staffing and managed outsourcing services, serving sectors like <strong>IT, BFSI, Retail, Telecom, Manufacturing, Healthcare, Banking, and BPO services.</strong></p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- MISSION & VISION -->
+    <!-- MISSION & PURPOSE -->
     <section class="py-5 bg-light">
         <div class="container py-5">
             <div class="row g-4">
-                <div class="col-md-6" data-aos="fade-up">
-                    <div class="feature-box">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="feature-box h-100">
                         <div class="feature-icon"><i class="fas fa-bullseye"></i></div>
-                        <h3>Our Mission</h3>
-                        <p class="text-muted">To create the perfect symbiosis between talent and opportunity. We believe that every resume tells a story and every job opening is a new chapter waiting to be written. We are committed to rewriting the narrative of recruitment in India.</p>
+                        <h3>Our Purpose</h3>
+                        <p class="text-muted">To build a leading institution that drives productivity for clients by outsourcing and optimizing their staffing requirements. We aim to be the preferred firm for employees, customers, and investors alike.</p>
                     </div>
                 </div>
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="feature-box">
-                        <div class="feature-icon"><i class="fas fa-eye"></i></div>
-                        <h3>Our Vision</h3>
-                        <p class="text-muted">To be the most trusted and innovative recruitment partner for organizations globally, driving excellence in every placement and empowering businesses with the right manpower solutions.</p>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-box h-100">
+                        <div class="feature-icon"><i class="fas fa-flag"></i></div>
+                        <h3>Our Mission</h3>
+                        <ul class="list-unstyled text-muted mt-3">
+                            <li class="mb-2"><i class="fas fa-check text-accent me-2"></i><strong>Employment Opportunities:</strong> We help job seekers find formal employment opportunities.</li>
+                            <li class="mb-2"><i class="fas fa-check text-accent me-2"></i><strong>Social Security:</strong> We provide social security benefits to a wider employable population.</li>
+                            <li class="mb-2"><i class="fas fa-check text-accent me-2"></i><strong>Training & Skill Development:</strong> Improving employability through continuous training.</li>
+                            <li class="mb-2"><i class="fas fa-check text-accent me-2"></i><strong>Diversity:</strong> Fostering an inclusive workforce that reflects our communities.</li>
+                            <li class="mb-2"><i class="fas fa-check text-accent me-2"></i><strong>Productivity:</strong> Enhancing workforce productivity is at the heart of our business.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- OUR EXPERTISE -->
+    <!-- OUR PRESENCE -->
     <section class="py-5">
-        <div class="container py-5">
-            <div class="text-center mb-5" data-aos="fade-up">
-                <h5 class="text-accent text-uppercase">Our Expertise</h5>
-                <h2>Oil & Gas / IT Manpower Supply</h2>
-                <p class="text-muted mx-auto" style="max-width: 600px;">Comprehensive recruitment solutions tailored for your industry needs.</p>
-            </div>
-
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3" data-aos="fade-up">
-                    <div class="feature-box text-center">
-                        <div class="feature-icon mx-auto"><i class="fas fa-search"></i></div>
-                        <h5>End-to-End Recruitment</h5>
-                        <p class="small text-muted">From entry-level tech roles to C-suite IT leadership – we handle it all with precision.</p>
-                    </div>
+        <div class="container py-5 text-center" data-aos="fade-up">
+             <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h5 class="text-accent text-uppercase">Our Reach</h5>
+                    <h2 class="mb-4">Unmatched Geographic Presence</h2>
+                    <p class="lead text-muted">Headquartered in <strong>New Delhi, India</strong>, Gap India today has an unmatched geographic presence and scale with more than <strong>2 offices across India</strong>, backed by technology intensity and domain specialization to create exceptional service experiences.</p>
                 </div>
-                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-                    <div class="feature-box text-center">
-                        <div class="feature-icon mx-auto"><i class="fas fa-handshake"></i></div>
-                        <h5>Permanent & Contract Staffing</h5>
-                        <p class="small text-muted">Flexible hiring models to meet dynamic business needs, whether short-term or long-term.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-                    <div class="feature-box text-center">
-                        <div class="feature-icon mx-auto"><i class="fas fa-filter"></i></div>
-                        <h5>Niche Hiring</h5>
-                        <p class="small text-muted">Identifying and onboarding top-tier talent for specialized and hard-to-fill roles.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-                    <div class="feature-box text-center">
-                        <div class="feature-icon mx-auto"><i class="fas fa-user-graduate"></i></div>
-                        <h5>Campus & Lateral Hiring</h5>
-                        <p class="small text-muted">Strong presence in sourcing fresh talent and experienced professionals across India.</p>
-                    </div>
-                </div>
-            </div>
+             </div>
         </div>
     </section>
 

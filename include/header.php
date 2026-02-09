@@ -100,6 +100,95 @@
             font-size: 12px;
         }
     }
+
+    /* Nested Dropdown CSS */
+    .dropdown-menu {
+        border: none;
+        border-radius: 8px; /* Slightly sharper for professional look */
+        box-shadow: 0 5px 25px rgba(0,0,0,0.15); /* Stronger shadow for separation */
+        padding: 8px 0;
+        animation: fadeIn 0.2s ease;
+        background-color: #ffffff;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(5px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .dropdown-item {
+        padding: 12px 25px; /* More breathing room */
+        transition: all 0.2s;
+        font-weight: 600; /* Bolder text */
+        color: #000000 !important; /* Force PURE BLACK text */
+        font-size: 15px;
+    }
+
+    .dropdown-item:hover, .dropdown-item:focus, .dropdown-item.active {
+        background-color: #f0f4ff; /* Light blue tint */
+        color: var(--primary) !important;
+        padding-left: 30px; /* Enhanced slide effect */
+    }
+
+    /* Hide default Bootstrap caret for submenu */
+    .dropdown-menu .dropdown-submenu .dropdown-toggle::after {
+        display: none !important;
+    }
+
+    /* Submenu Styling */
+    .dropdown-menu .dropdown-submenu {
+        position: relative;
+    }
+
+    /* Ensure icon color matches text on hover */
+    .dropdown-item:hover i, .dropdown-item:focus i, .dropdown-item.active i {
+        color: var(--primary) !important;
+    }
+
+    /* Desktop Submenu Positioning */
+    @media (min-width: 992px) {
+        .dropdown-menu .dropdown-submenu .dropdown-menu {
+            top: 0 !important; /* Force align with top */
+            left: 100% !important; /* Force completely to the right */
+            margin-top: -5px !important;
+            margin-left: 0px !important;
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.2s ease;
+            position: absolute !important; /* Ensure absolute positioning */
+        }
+
+        /* Hover Behavior */
+        .dropdown-menu .dropdown-submenu:hover > .dropdown-menu {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    /* Mobile Submenu Styling */
+    @media (max-width: 991px) {
+        .dropdown-menu .dropdown-submenu .dropdown-menu {
+            position: static;
+            margin-left: 15px;
+            display: none;
+            border: none;
+            box-shadow: none;
+            background: #f9fafb; /* Slightly different bg for contrast */
+            border-left: 2px solid var(--primary);
+            padding-left: 0;
+        }
+        .dropdown-menu .dropdown-submenu .dropdown-menu.show {
+            display: block;
+        }
+        .dropdown-menu .dropdown-submenu .dropdown-toggle::after {
+             transform: rotate(90deg); /* Point down on mobile */
+        }
+        .dropdown-item {
+            color: #333 !important; /* Ensure readable on mobile too */
+        }
+    }
 </style>
 
 <!-- Fixed Left Sidebar Icons -->
@@ -136,10 +225,26 @@
                     <!-- Dropdown with Fix -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle <?php echo $is_services_active; ?>" href="#" role="button" data-bs-toggle="dropdown">
-                            Staffing Solutions <i class="fas fa-chevron-down fa-xs ms-1"></i>
+                            Services <i class="fas fa-chevron-down fa-xs ms-1"></i>
                         </a>
                         <ul class="dropdown-menu">
+                              <!-- Contract Staffing Nested Menu -->
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#">
+                                    Contract Staffing Solutions 
+                                    <i class="fas fa-chevron-right" style="font-size: 11px;"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="blue-collar-staffing.php">Blue Collar Staffing Solutions</a></li>
+                                    <li><a class="dropdown-item" href="white-collar-staffing.php">White Collar Staffing Solutions</a></li>
+                                    <li><a class="dropdown-item" href="grey-collar-staffing.php">Grey Collar Staffing Solutions</a></li>
+                                </ul>
+                            </li>
+
                             <li><a class="dropdown-item" href="it-non-it-staffing.php">IT & Non-IT Staffing</a></li>
+                            
+                          
+
                             <!-- <li><a class="dropdown-item" href="non-it-staffing.php">Non-IT Staffing</a></li> -->
                             <li><a class="dropdown-item" href="oil-gas-hiring.php">Oil & Gas Staffing</a></li>
                             <li><a class="dropdown-item" href="executive-search.php">Executive Search</a></li>
@@ -161,3 +266,21 @@
             </div>
         </div>
     </nav>
+
+    <script>
+        // Handle Nested Dropdowns on Mobile
+        document.addEventListener("DOMContentLoaded", function(){
+            document.querySelectorAll('.dropdown-submenu .dropdown-toggle').forEach(function(element){
+                element.addEventListener('click', function (e) {
+                    if (window.innerWidth < 992) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        let nextEl = this.nextElementSibling;
+                        if(nextEl && nextEl.classList.contains('dropdown-menu')){
+                            nextEl.classList.toggle('show');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
