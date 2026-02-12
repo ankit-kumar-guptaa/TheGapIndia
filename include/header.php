@@ -241,14 +241,14 @@
                                 </ul>
                             </li>
 
-                            <li><a class="dropdown-item" href="it-non-it-staffing.php">IT & Non-IT Staffing</a></li>
+                            <li><a class="dropdown-item" href="it-staffing-solutions.php">IT Staffing Solutions</a></li>
                             
                           
 
                             <!-- <li><a class="dropdown-item" href="non-it-staffing.php">Non-IT Staffing</a></li> -->
                             <li><a class="dropdown-item" href="oil-gas-hiring.php">Oil & Gas Staffing</a></li>
                             <li><a class="dropdown-item" href="executive-search.php">Executive Search</a></li>
-                            <li><a class="dropdown-item" href="rpo-solutions.php">RPO Solutions</a></li>
+                            <!-- <li><a class="dropdown-item" href="rpo-solutions.php">RPO Solutions</a></li> -->
                             <li><a class="dropdown-item" href="global-placement.php">Global Placement</a></li>
                             <li><a class="dropdown-item" href="payroll-operations.php">Payroll and Operations</a></li>
                             <li><a class="dropdown-item" href="campus-hiring.php">Campus Hiring</a></li>

@@ -115,7 +115,7 @@
         <div class="container text-center" data-aos="fade-up">
             <h5 class="text-white text-uppercase letter-spacing-2 mb-3" style="color: #FF9933 !important;">Operational Excellence</h5>
             <h1 class="display-3 fw-bold">Payroll & Operations</h1>
-            <p class="lead text-white-50 mx-auto" style="max-width: 700px;">Seamless payroll management and HR operations to let you focus on your core business.</p>
+            <p class="lead text-white-50 mx-auto" style="max-width: 700px;">Streamline operations to drive measurable gains in efficiency and productivity.</p>
         </div>
     </section>
 
@@ -125,35 +125,11 @@
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 order-lg-2" data-aos="fade-left">
                     <img src="assets/images/payroll-opertions.jpg" class="img-fluid rounded-4 shadow-lg mb-4" alt="Payroll Processing">
-                    <div class="row g-3">
-                        <div class="col-6">
-                            <div class="p-3 bg-light rounded text-center border border-success bg-opacity-10">
-                                <h3 class="fw-bold text-success mb-0">100%</h3>
-                                <small class="text-muted">Compliance Accuracy</small>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="p-3 bg-light rounded text-center border border-primary bg-opacity-10">
-                                <h3 class="fw-bold text-primary mb-0">24/7</h3>
-                                <small class="text-muted">Support Access</small>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="col-lg-6 order-lg-1" data-aos="fade-right">
-                    <h2 class="mb-4">Simplify Your HR Operations</h2>
-                    <p class="text-muted mb-4">Managing payroll and HR operations in-house can be time-consuming, error-prone, and resource-intensive. Gap India offers end-to-end payroll outsourcing and operational support designed to ensure accuracy, timeliness, and full legal compliance.</p>
-                    <p class="text-muted mb-4">From calculating salaries and taxes to managing employee benefits and statutory filings, our expert team handles the complexities so you can focus on strategic growth.</p>
-                    
-                    <div class="bg-white p-4 rounded shadow-sm border-start border-4 border-warning mt-4">
-                        <h5 class="mb-3">Why Outsource Payroll?</h5>
-                        <ul class="list-unstyled feature-list mb-0">
-                            <li class="mb-2"><i class="fas fa-check-circle"></i> Eliminate Payroll Errors</li>
-                            <li class="mb-2"><i class="fas fa-check-circle"></i> Ensure Statutory Compliance (PF, ESIC, TDS)</li>
-                            <li class="mb-2"><i class="fas fa-check-circle"></i> Data Security & Confidentiality</li>
-                            <li><i class="fas fa-check-circle"></i> Cost Reduction</li>
-                        </ul>
-                    </div>
+                    <h2 class="mb-4">Optimize Operational Processes</h2>
+                    <p class="text-muted mb-4">Whether it is processing payrolls, tracking attendance, managing leave, or maintaining employee records, the complexities in managing your organization’s payroll and operational tasks can be a resource-draining endeavor.</p>
+                    <p class="text-muted mb-4">At Gap India we address your payroll and operations challenges across blue, white and grey collar roles and provide tailored outsourcing solutions that empower your organization to thrive.</p>
                 </div>
             </div>
         </div>
@@ -165,79 +141,92 @@
             <div class="text-center mb-5" data-aos="fade-up">
                 <h5 class="text-uppercase letter-spacing-2" style="color: var(--accent);">Our Offerings</h5>
                 <h2 class="fw-bold" style="color: var(--primary);">Comprehensive Operational Solutions</h2>
-                <p class="text-muted mx-auto" style="max-width: 600px;">More than just salary processing.</p>
             </div>
             <div class="row g-4">
-                <!-- Service 1 -->
+                <!-- Service 1: Payroll Processing and Compliance -->
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="bg-white p-4 rounded shadow-sm h-100 position-relative overflow-hidden">
-                        <div class="position-absolute top-0 end-0 p-3 opacity-10">
-                            <i class="fas fa-calculator fa-5x text-primary"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3 mt-2">Payroll Processing</h4>
-                        <p class="text-muted mb-4">Accurate calculation of gross-to-net salaries, including allowances, deductions, overtime, and bonuses. We generate precise pay slips and bank transfer files.</p>
-                        <a href="#" class="text-decoration-none fw-bold text-primary">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
+                    <div class="bg-white p-4 rounded shadow-sm h-100 position-relative overflow-hidden border-top border-4 border-primary">
+                        <div class="mb-3 text-primary"><i class="fas fa-file-invoice-dollar fa-3x"></i></div>
+                        <h4 class="fw-bold mb-3 mt-2">Payroll Processing & Compliance</h4>
+                        <p class="text-muted mb-4">We take care of the entire payroll process and reimbursements ensuring that employees are paid accurately and on time, while staying fully compliant with tax laws. Our payroll experts remain up-to-date on tax regulations and compliance standards.</p>
                     </div>
                 </div>
-                <!-- Service 2 -->
+                <!-- Service 2: Attendance Tracking and Leave Management -->
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="bg-white p-4 rounded shadow-sm h-100 position-relative overflow-hidden">
-                        <div class="position-absolute top-0 end-0 p-3 opacity-10">
-                            <i class="fas fa-gavel fa-5x text-success"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3 mt-2">Statutory Compliance</h4>
-                        <p class="text-muted mb-4">Complete management of PF, ESIC, PT, LWF, and TDS filings. We ensure you stay compliant with all changing labor laws and regulations.</p>
-                        <a href="#" class="text-decoration-none fw-bold text-success">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
+                    <div class="bg-white p-4 rounded shadow-sm h-100 position-relative overflow-hidden border-top border-4 border-success">
+                        <div class="mb-3 text-success"><i class="fas fa-clock fa-3x"></i></div>
+                        <h4 class="fw-bold mb-3 mt-2">Attendance & Leave Management</h4>
+                        <p class="text-muted mb-4">We offer efficient attendance tracking solutions, simplifying the process and reducing manual errors. Hopper, our attendance tracking and leave management system ensures that employees can request and receive approval for leave seamlessly.</p>
                     </div>
                 </div>
-                <!-- Service 3 -->
+                <!-- Service 3: Employee Records Management -->
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="bg-white p-4 rounded shadow-sm h-100 position-relative overflow-hidden">
-                        <div class="position-absolute top-0 end-0 p-3 opacity-10">
-                            <i class="fas fa-user-shield fa-5x text-warning"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3 mt-2">Benefits Administration</h4>
-                        <p class="text-muted mb-4">Managing employee insurance, medical claims, leave encashment, and reimbursements efficiently to enhance employee satisfaction.</p>
-                        <a href="#" class="text-decoration-none fw-bold text-warning">Learn More <i class="fas fa-arrow-right ms-1"></i></a>
+                    <div class="bg-white p-4 rounded shadow-sm h-100 position-relative overflow-hidden border-top border-4 border-warning">
+                        <div class="mb-3 text-warning"><i class="fas fa-id-card fa-3x"></i></div>
+                        <h4 class="fw-bold mb-3 mt-2">Employee Records Management</h4>
+                        <p class="text-muted mb-4">We maintain and update employee records with a high level of accuracy, providing an easy-to-access and reliable database for your organization. Our records management systems streamline HR processes, reducing operational bottlenecks.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <!-- PROCESS SECTION -->
+
+    <!-- STATUTORY COMPLIANCE SECTION -->
     <section class="py-5">
         <div class="container py-5">
             <div class="row align-items-center">
                 <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-right">
-                    <h2 class="fw-bold mb-4">Our Payroll Workflow</h2>
-                    <p class="text-muted mb-5">A systematic approach to ensure zero errors every month.</p>
-                    
-                    <div class="process-step">
-                        <h5 class="fw-bold">Data Collection</h5>
-                        <p class="text-muted small">Gathering attendance, leave, and variable pay data from your systems.</p>
-                    </div>
-                    <div class="process-step">
-                        <h5 class="fw-bold">Processing & Validation</h5>
-                        <p class="text-muted small">Calculating salaries and running multiple audit checks for accuracy.</p>
-                    </div>
-                    <div class="process-step">
-                        <h5 class="fw-bold">Approval & Disbursement</h5>
-                        <p class="text-muted small">Sending reports for your approval followed by salary bank transfers.</p>
-                    </div>
-                    <div class="process-step">
-                        <h5 class="fw-bold">Reporting & Compliance</h5>
-                        <p class="text-muted small">Generating MIS reports and filing statutory returns with government bodies.</p>
-                    </div>
+                    <h5 class="text-uppercase letter-spacing-2" style="color: var(--accent);">Regulatory Confidence</h5>
+                    <h2 class="fw-bold mb-4">Navigate Compliance with Confidence</h2>
+                    <p class="text-muted mb-4">Statutory compliance refers to the legal framework that an organization must adhere to while dealing with its employees. It includes responsibilities that ensure a company is secure from government penal actions, financial losses & brand defamation while staying fair & just to its employees.</p>
+                    <p class="text-muted mb-4">At Gap India, we help you navigate the complex landscape of HR compliance across blue, white and grey collar roles, ensuring that your organization is not only protected but also poised for success.</p>
+                    <p class="text-muted">Navigate compliance with confidence while focussing on your core business goals.</p>
                 </div>
                 <div class="col-lg-7" data-aos="fade-left">
-                    <div class="p-4 bg-light rounded-4 border border-2 border-primary position-relative">
-                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?q=80&w=2070&auto=format&fit=crop" class="img-fluid rounded-3 shadow" alt="Dashboard">
-                        <div class="position-absolute bottom-0 start-0 m-4 p-3 bg-white rounded shadow border-start border-4 border-success d-none d-md-block" style="max-width: 250px;">
-                            <h6 class="mb-1 fw-bold">Secure Data</h6>
-                            <p class="small text-muted mb-0">256-bit encryption for all sensitive employee financial data.</p>
+                     <div class="row g-4">
+                        <!-- Legal Expertise -->
+                        <div class="col-md-12">
+                            <div class="d-flex p-4 bg-light rounded shadow-sm border-start border-4 border-primary">
+                                <div class="flex-shrink-0 me-3">
+                                    <div class="bg-white p-3 rounded-circle shadow-sm text-primary">
+                                        <i class="fas fa-gavel fa-2x"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold">Legal Expertise</h5>
+                                    <p class="text-muted mb-0">We maintain a team of legal experts who stay updated on the latest labor laws and statutory requirements, ensuring that your organization remains in full compliance. Our experts proactively identify and address compliance risks.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                        <!-- Industry-Specific Knowledge -->
+                        <div class="col-md-12">
+                            <div class="d-flex p-4 bg-light rounded shadow-sm border-start border-4 border-success">
+                                <div class="flex-shrink-0 me-3">
+                                    <div class="bg-white p-3 rounded-circle shadow-sm text-success">
+                                        <i class="fas fa-industry fa-2x"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold">Industry-Specific Knowledge</h5>
+                                    <p class="text-muted mb-0">We have a deep understanding of industry-specific compliance requirements, tailoring our solutions to meet the unique needs of your organization. This industry-centric approach ensures that your organization remains fully compliant.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Compliance Management -->
+                        <div class="col-md-12">
+                            <div class="d-flex p-4 bg-light rounded shadow-sm border-start border-4 border-warning">
+                                <div class="flex-shrink-0 me-3">
+                                    <div class="bg-white p-3 rounded-circle shadow-sm text-warning">
+                                        <i class="fas fa-tasks fa-2x"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold">Compliance Management</h5>
+                                    <p class="text-muted mb-0">We provide compliance management systems that streamline your compliance processes, reducing administrative burdens. These systems facilitate efficient compliance monitoring and reporting.</p>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
                 </div>
             </div>
         </div>
