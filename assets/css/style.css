@@ -769,7 +769,7 @@
         }
 
         .footer-title {
-            color: var(--accent); /* Saffron */
+            color: white; /* Saffron */
             font-size: 18px;
             margin-bottom: 25px;
             font-weight: 700;

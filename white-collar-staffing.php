@@ -8,10 +8,10 @@
     <style>
         .page-header {
             position: relative;
-            background-image: url('assets/images/executive-search.jpg');
+            background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80');
             background-size: cover;
             background-position: center;
-            padding: 150px 0 80px;
+            padding: 180px 0 100px;
             color: white;
             margin-bottom: 0;
             background-attachment: fixed;
@@ -24,8 +24,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, #0f172a 0%, #1e40af30 100%);
-            opacity: 0.85;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 64, 175, 0.8) 100%);
             z-index: 1;
         }
 
@@ -43,39 +42,43 @@
         .section-title::after {
             content: '';
             position: absolute;
-            width: 50px;
-            height: 3px;
+            width: 60px;
+            height: 4px;
             background: var(--primary);
             bottom: -10px;
             left: 0;
+            border-radius: 2px;
         }
 
-        .feature-box {
-            background: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-            transition: transform 0.3s;
+        .service-card {
+            transition: all 0.3s ease;
             height: 100%;
-            border-bottom: 3px solid transparent;
+            border: none;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
         }
 
-        .feature-box:hover {
-            transform: translateY(-5px);
-            border-bottom-color: var(--primary);
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
         }
 
-        .feature-icon {
-            width: 60px;
-            height: 60px;
-            background: #f0f4ff;
-            border-radius: 50%;
+        .service-card img {
+            height: 220px;
+            object-fit: cover;
+            width: 100%;
+            border-bottom: 4px solid var(--primary);
+        }
+
+        .feature-icon-small {
+            width: 50px;
+            height: 50px;
+            background: rgba(var(--primary-rgb), 0.1);
+            color: var(--primary);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--primary);
-            font-size: 24px;
-            margin-bottom: 20px;
+            border-radius: 12px;
+            font-size: 1.2rem;
         }
     </style>
 </head>
@@ -85,9 +88,13 @@
     <!-- Page Header -->
     <div class="page-header">
         <div class="container">
-            <h5 class="text-uppercase text-warning fw-bold mb-3">Contract Staffing Solutions</h5>
-            <h1 class="display-4 fw-bold">White Collar Staffing</h1>
-            <p class="lead mb-0">Connecting top-tier talent with world-class organizations.</p>
+            <div class="row">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <h5 class="text-uppercase text-warning fw-bold mb-3 ls-2">Professional Workforce Solutions</h5>
+                    <h1 class="display-3 fw-bold mb-4">White Collar Staffing</h1>
+                    <p class="lead mb-0 text-white-50">Connecting world-class organizations with visionary leaders and top-tier professionals. We build the teams that build your future.</p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -96,54 +103,58 @@
         <div class="container py-4">
             <div class="row align-items-center g-5">
                 <div class="col-lg-6" data-aos="fade-right">
-                    <h5 class="text-primary fw-bold text-uppercase">Strategic Hiring</h5>
-                    <h2 class="mb-4">Driving Business Growth</h2>
-                    <p class="text-secondary lead">Having the right white-collar professionals can be the key to business success.</p>
-                    <p class="text-muted">Our white-collar staffing solutions can help you with a diverse pool of candidates skilled in areas such as finance, engineering, IT, and management. Our staffing solutions are geared towards meticulously matching the qualifications, experience, and cultural fit of candidates to your organisation, ensuring you get the talent you need to thrive.</p>
-                    <p class="text-muted">We go beyond resumes, evaluating soft skills, leadership potential, and long-term compatibility to build teams that innovate and lead.</p>
+                    <div class="section-title">
+                        <h5 class="text-primary fw-bold text-uppercase">Strategic Recruitment</h5>
+                        <h2 class="mb-0 display-6 fw-bold">Driving Business Growth Through Talent</h2>
+                    </div>
+                    <p class="text-secondary lead">In the corporate world, the quality of your people defines the trajectory of your business.</p>
+                    <p class="text-muted">Gap India’s White Collar Staffing division specializes in identifying, vetting, and placing high-caliber professionals across key business functions. Whether you need dynamic leadership for your C-suite, innovative engineers for R&D, or astute financial analysts, we deliver talent that aligns with your strategic goals.</p>
+                    <p class="text-muted mb-4">We go beyond the resume. Our comprehensive screening process evaluates cultural fit, leadership potential, and problem-solving abilities to ensure long-term success.</p>
                     
-                    <div class="d-flex gap-3 mt-4">
-                        <a href="contact.php" class="btn btn-primary-custom">Hire Professionals</a>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                <span class="fw-semibold">Executive Search</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                <span class="fw-semibold">Permanent Placement</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                <span class="fw-semibold">Contract Staffing</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                <span class="fw-semibold">RPO Services</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-5">
+                        <a href="contact.php" class="btn btn-primary btn-lg px-4 shadow-sm">Start Hiring Now</a>
                     </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
-                    <div class="position-relative">
-                        <img src="assets/images/executive-search.jpg" class="img-fluid rounded-4 shadow-lg" alt="White Collar Staffing">
-                        <div class="bg-primary text-white p-4 rounded-3 position-absolute bottom-0 start-0 m-4 shadow-lg" style="max-width: 300px;">
-                            <h4 class="fw-bold mb-0">Top 1%</h4>
-                            <p class="mb-0 small">Talent Pool Access</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Shared "Gap India Approach" Section -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row justify-content-center text-center mb-5">
-                <div class="col-lg-8">
-                    <h2 class="fw-bold">Why Choose Gap India?</h2>
-                    <p class="text-muted">Customized Contract Staffing Solutions that Match your Business Needs</p>
-                </div>
-            </div>
-            
-            <div class="card border-0 shadow-sm overflow-hidden">
-                <div class="row g-0">
-                    <div class="col-lg-12">
-                        <div class="p-5 bg-white">
-                            <i class="fas fa-quote-left text-primary opacity-25 display-4 mb-3"></i>
-                            <h4 class="mb-4 lh-base">"At Gap India, we understand that identifying and hiring the right people for your organisation can often feel like navigating a maze. That’s where we step in – your strategic contract staffing solutions partner with a singular goal – to alleviate your staffing headaches and help you focus on what you do best. Whether you are seeking blue, white or grey-collar professionals, our staffing solutions provide you with the perfect fit."</h4>
-                            <div class="d-flex align-items-center mt-4">
-                                <div class="bg-primary rounded-circle p-2 text-white me-3">
-                                    <i class="fas fa-chart-line"></i>
+                    <div class="position-relative ps-lg-4">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80" class="img-fluid rounded-4 shadow-lg w-100" alt="Corporate Meeting">
+                        <div class="bg-white p-4 rounded-3 position-absolute bottom-0 start-0 shadow-lg border-start border-5 border-primary" style="max-width: 280px; transform: translate(-20px, 20px);">
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-user-tie text-primary fa-2x"></i>
                                 </div>
-                                <div>
-                                    <h6 class="fw-bold mb-0">Strategic Alignment</h6>
-                                    <small class="text-muted">Aligning talent with business goals</small>
+                                <div class="flex-grow-1 ms-3">
+                                    <h4 class="fw-bold mb-0">Top 1%</h4>
                                 </div>
                             </div>
+                            <p class="mb-0 text-muted small">Access to exclusive talent pool of vetted professionals.</p>
                         </div>
                     </div>
                 </div>
@@ -152,36 +163,102 @@
     </section>
 
     <!-- Roles We Fill -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h5 class="text-primary fw-bold text-uppercase">Expertise Across Industries</h5>
+                <h2 class="fw-bold display-6">Specialized Roles We Fill</h2>
+                <p class="text-muted col-lg-8 mx-auto">We understand the nuances of different verticals and provide specialized staffing solutions tailored to your industry needs.</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- IT & Tech -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card service-card overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80" alt="IT & Tech">
+                        <div class="card-body p-4">
+                            <div class="mb-3 text-primary"><i class="fas fa-laptop-code fa-2x"></i></div>
+                            <h5 class="fw-bold">IT & Technology</h5>
+                            <p class="text-muted small mb-0">Software Developers, System Architects, Data Scientists, and Project Managers.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Finance -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card service-card overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80" alt="Finance">
+                        <div class="card-body p-4">
+                            <div class="mb-3 text-success"><i class="fas fa-chart-line fa-2x"></i></div>
+                            <h5 class="fw-bold">Banking & Finance</h5>
+                            <p class="text-muted small mb-0">Investment Bankers, Financial Analysts, Chartered Accountants, and Auditors.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Management -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card service-card overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80" alt="Management">
+                        <div class="card-body p-4">
+                            <div class="mb-3 text-warning"><i class="fas fa-briefcase fa-2x"></i></div>
+                            <h5 class="fw-bold">Management & HR</h5>
+                            <p class="text-muted small mb-0">Operations Heads, HR Directors, Strategy Consultants, and C-Suite Executives.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sales & Marketing -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card service-card overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80" alt="Marketing">
+                        <div class="card-body p-4">
+                            <div class="mb-3 text-danger"><i class="fas fa-bullhorn fa-2x"></i></div>
+                            <h5 class="fw-bold">Sales & Marketing</h5>
+                            <p class="text-muted small mb-0">Brand Strategists, Digital Marketing Managers, Sales Directors, and Growth Hackers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
     <section class="py-5">
         <div class="container">
-            <h2 class="mb-5 text-center fw-bold">Roles We Specialize In</h2>
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h5 class="text-primary fw-bold text-uppercase">The Gap India Advantage</h5>
+                    <h2 class="fw-bold display-6">Why Partner With Us?</h2>
+                </div>
+            </div>
+            
             <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="feature-box">
-                        <div class="feature-icon"><i class="fas fa-laptop-code"></i></div>
-                        <h5>IT & Tech</h5>
-                        <p class="text-muted small">Developers, System Architects, Project Managers, and Data Scientists.</p>
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="p-4 border rounded-4 h-100 bg-white shadow-sm hover-elevate">
+                        <div class="feature-icon-small mb-3 text-primary bg-primary-subtle rounded-circle p-3 d-inline-block">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h4>Rigorous Screening</h4>
+                        <p class="text-muted">Our multi-stage vetting process ensures only the most qualified candidates reach your desk.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="feature-box">
-                        <div class="feature-icon"><i class="fas fa-coins"></i></div>
-                        <h5>Finance & Banking</h5>
-                        <p class="text-muted small">Accountants, Financial Analysts, Investment Bankers, and Auditors.</p>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-4 border rounded-4 h-100 bg-white shadow-sm hover-elevate">
+                        <div class="feature-icon-small mb-3 text-success bg-success-subtle rounded-circle p-3 d-inline-block">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Rapid Turnaround</h4>
+                        <p class="text-muted">We value your time. Our extensive database allows us to close positions faster without compromising quality.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="feature-box">
-                        <div class="feature-icon"><i class="fas fa-user-tie"></i></div>
-                        <h5>Management</h5>
-                        <p class="text-muted small">HR Managers, Operations Heads, and Senior Executives.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="feature-box">
-                        <div class="feature-icon"><i class="fas fa-chart-pie"></i></div>
-                        <h5>Sales & Marketing</h5>
-                        <p class="text-muted small">Sales Directors, Marketing Managers, and Brand Strategists.</p>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-4 border rounded-4 h-100 bg-white shadow-sm hover-elevate">
+                        <div class="feature-icon-small mb-3 text-warning bg-warning-subtle rounded-circle p-3 d-inline-block">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4>Long-term Retention</h4>
+                        <p class="text-muted">We focus on cultural alignment, resulting in higher retention rates and stronger team cohesion.</p>
                     </div>
                 </div>
             </div>
@@ -189,11 +266,15 @@
     </section>
 
     <!-- CTA -->
-    <section class="py-5 bg-primary text-white text-center">
-        <div class="container">
-            <h2 class="fw-bold mb-3">Find Your Next Leader</h2>
-            <p class="lead mb-4">Let us help you build a team that drives your vision forward.</p>
-            <a href="contact.php" class="btn btn-light btn-lg px-5 fw-bold text-primary">Start Hiring</a>
+    <section class="py-5 position-relative overflow-hidden">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80') center/cover; filter: brightness(0.15);"></div>
+        <div class="container position-relative z-2 text-center py-5">
+            <h2 class="fw-bold text-white mb-3 display-5">Ready to Build Your Dream Team?</h2>
+            <p class="lead text-white-50 mb-5 col-lg-8 mx-auto">Don't let talent shortages hold you back. Partner with Gap India for premier white-collar staffing solutions.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="contact.php" class="btn btn-primary btn-lg px-5 py-3 fw-bold rounded-pill">Start Hiring</a>
+                <a href="about.php" class="btn btn-outline-light btn-lg px-5 py-3 fw-bold rounded-pill">Learn More</a>
+            </div>
         </div>
     </section>
 

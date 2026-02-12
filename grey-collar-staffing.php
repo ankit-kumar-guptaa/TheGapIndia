@@ -11,7 +11,7 @@
             background-image: url('assets/images/oil-gas.jpeg');
             background-size: cover;
             background-position: center;
-            padding: 150px 0 80px;
+            padding: 180px 0 100px;
             color: white;
             margin-bottom: 0;
             background-attachment: fixed;
@@ -24,8 +24,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, #0f172a 0%, #1e40af30 100%);
-            opacity: 0.85;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 64, 175, 0.8) 100%);
             z-index: 1;
         }
 
@@ -43,39 +42,43 @@
         .section-title::after {
             content: '';
             position: absolute;
-            width: 50px;
-            height: 3px;
+            width: 60px;
+            height: 4px;
             background: var(--primary);
             bottom: -10px;
             left: 0;
+            border-radius: 2px;
         }
 
-        .feature-box {
-            background: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-            transition: transform 0.3s;
+        .service-card {
+            transition: all 0.3s ease;
             height: 100%;
-            border-bottom: 3px solid transparent;
+            border: none;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
         }
 
-        .feature-box:hover {
-            transform: translateY(-5px);
-            border-bottom-color: var(--primary);
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
         }
 
-        .feature-icon {
-            width: 60px;
-            height: 60px;
-            background: #f0f4ff;
-            border-radius: 50%;
+        .service-card img {
+            height: 220px;
+            object-fit: cover;
+            width: 100%;
+            border-bottom: 4px solid var(--primary);
+        }
+
+        .feature-icon-small {
+            width: 50px;
+            height: 50px;
+            background: rgba(var(--primary-rgb), 0.1);
+            color: var(--primary);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--primary);
-            font-size: 24px;
-            margin-bottom: 20px;
+            border-radius: 12px;
+            font-size: 1.2rem;
         }
     </style>
 </head>
@@ -85,9 +88,13 @@
     <!-- Page Header -->
     <div class="page-header">
         <div class="container">
-            <h5 class="text-uppercase text-warning fw-bold mb-3">Contract Staffing Solutions</h5>
-            <h1 class="display-4 fw-bold">Grey Collar Staffing</h1>
-            <p class="lead mb-0">Specialized technical expertise bridging the gap.</p>
+            <div class="row">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <h5 class="text-uppercase text-warning fw-bold mb-3 ls-2">Specialized Technical Workforce</h5>
+                    <h1 class="display-3 fw-bold mb-4">Grey Collar Staffing</h1>
+                    <p class="lead mb-0 text-white-50">Bridging the gap between white and blue collar. We provide the certified technical experts essential for modern operations.</p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -96,54 +103,58 @@
         <div class="container py-4">
             <div class="row align-items-center g-5">
                 <div class="col-lg-6" data-aos="fade-right">
-                    <h5 class="text-primary fw-bold text-uppercase">Technical Expertise</h5>
-                    <h2 class="mb-4">The Perfect Blend of Skills</h2>
-                    <p class="text-secondary lead">In today’s dynamic business landscape, grey-collar positions are on the rise.</p>
-                    <p class="text-muted">These roles bridge the gap between traditional blue and white collar, combining technical skills with hands-on experience. Our grey-collar staffing solutions identify and deliver candidates with the unique blend of skills required for roles in maintenance, healthcare support, and other specialized fields.</p>
-                    <p class="text-muted">Gap India understands the specific certifications and practical know-how required for these critical roles, ensuring you get professionals who are technically proficient and operationally sound.</p>
+                    <div class="section-title">
+                        <h5 class="text-primary fw-bold text-uppercase">Technical Expertise</h5>
+                        <h2 class="mb-0 display-6 fw-bold">The Perfect Blend of Skills</h2>
+                    </div>
+                    <p class="text-secondary lead">The modern workforce needs more than just labor or management—it needs specialized technical skill.</p>
+                    <p class="text-muted">Grey-collar roles combine the hands-on nature of blue-collar work with the technical knowledge of white-collar professions. From IT technicians to healthcare support staff, these roles are critical for maintaining complex systems and services.</p>
+                    <p class="text-muted mb-4">Gap India specializes in sourcing candidates with specific certifications, technical diplomas, and practical experience to ensure your operations run without a hitch.</p>
                     
-                    <div class="d-flex gap-3 mt-4">
-                        <a href="contact.php" class="btn btn-primary-custom">Hire Specialists</a>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                <span class="fw-semibold">Certified Professionals</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                <span class="fw-semibold">Diploma Holders</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                <span class="fw-semibold">Technical Screening</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-check-circle text-primary me-2"></i>
+                                <span class="fw-semibold">Skill Verification</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-5">
+                        <a href="contact.php" class="btn btn-primary btn-lg px-4 shadow-sm">Hire Specialists</a>
                     </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
-                    <div class="position-relative">
-                        <img src="assets/images/oil-gas.jpeg" class="img-fluid rounded-4 shadow-lg" alt="Grey Collar Staffing">
-                        <div class="bg-primary text-white p-4 rounded-3 position-absolute bottom-0 start-0 m-4 shadow-lg" style="max-width: 300px;">
-                            <h4 class="fw-bold mb-0">Certified</h4>
-                            <p class="mb-0 small">Technical Professionals</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Shared "Gap India Approach" Section -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row justify-content-center text-center mb-5">
-                <div class="col-lg-8">
-                    <h2 class="fw-bold">Why Choose Gap India?</h2>
-                    <p class="text-muted">Customized Contract Staffing Solutions that Match your Business Needs</p>
-                </div>
-            </div>
-            
-            <div class="card border-0 shadow-sm overflow-hidden">
-                <div class="row g-0">
-                    <div class="col-lg-12">
-                        <div class="p-5 bg-white">
-                            <i class="fas fa-quote-left text-primary opacity-25 display-4 mb-3"></i>
-                            <h4 class="mb-4 lh-base">"At Gap India, we understand that identifying and hiring the right people for your organisation can often feel like navigating a maze. That’s where we step in – your strategic contract staffing solutions partner with a singular goal – to alleviate your staffing headaches and help you focus on what you do best. Whether you are seeking blue, white or grey-collar professionals, our staffing solutions provide you with the perfect fit."</h4>
-                            <div class="d-flex align-items-center mt-4">
-                                <div class="bg-primary rounded-circle p-2 text-white me-3">
-                                    <i class="fas fa-tools"></i>
+                    <div class="position-relative ps-lg-4">
+                        <img src="https://www.indeavor.com/wp-content/uploads/2024/03/Grey-Collar-Worker.jpg" class="img-fluid rounded-4 shadow-lg w-100" alt="Technical Expert">
+                        <div class="bg-white p-4 rounded-3 position-absolute bottom-0 start-0 shadow-lg border-start border-5 border-info" style="max-width: 280px; transform: translate(-20px, 20px);">
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="flex-shrink-0">
+                                    <i class="fas fa-certificate text-info fa-2x"></i>
                                 </div>
-                                <div>
-                                    <h6 class="fw-bold mb-0">Specialized Skills</h6>
-                                    <small class="text-muted">Technical proficiency guaranteed</small>
+                                <div class="flex-grow-1 ms-3">
+                                    <h4 class="fw-bold mb-0">Certified</h4>
                                 </div>
                             </div>
+                            <p class="mb-0 text-muted small">Access to a pool of certified and diploma-holding professionals.</p>
                         </div>
                     </div>
                 </div>
@@ -152,36 +163,102 @@
     </section>
 
     <!-- Roles We Fill -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h5 class="text-primary fw-bold text-uppercase">Technical Roles</h5>
+                <h2 class="fw-bold display-6">Specialized Roles We Fill</h2>
+                <p class="text-muted col-lg-8 mx-auto">Connecting you with the skilled technicians and support staff that keep your business running.</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- IT Support -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card service-card overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&q=80" alt="IT Support">
+                        <div class="card-body p-4">
+                            <div class="mb-3 text-primary"><i class="fas fa-microchip fa-2x"></i></div>
+                            <h5 class="fw-bold">IT Support</h5>
+                            <p class="text-muted small mb-0">Network Technicians, Helpdesk Support, Hardware Engineers, and System Admins.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Healthcare -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card service-card overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80" alt="Healthcare">
+                        <div class="card-body p-4">
+                            <div class="mb-3 text-success"><i class="fas fa-user-nurse fa-2x"></i></div>
+                            <h5 class="fw-bold">Healthcare Support</h5>
+                            <p class="text-muted small mb-0">Nursing Assistants, Lab Technicians, Phlebotomists, and Caregivers.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skilled Trades -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card service-card overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80" alt="Skilled Trades">
+                        <div class="card-body p-4">
+                            <div class="mb-3 text-warning"><i class="fas fa-wrench fa-2x"></i></div>
+                            <h5 class="fw-bold">Skilled Trades</h5>
+                            <p class="text-muted small mb-0">HVAC Technicians, Certified Welders, Electricians, and Machinists.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Safety & Security -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card service-card overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80" alt="Safety">
+                        <div class="card-body p-4">
+                            <div class="mb-3 text-danger"><i class="fas fa-shield-alt fa-2x"></i></div>
+                            <h5 class="fw-bold">Safety & Security</h5>
+                            <p class="text-muted small mb-0">Safety Officers, Security Supervisors, Fire Safety Technicians, and CCTV Operators.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
     <section class="py-5">
         <div class="container">
-            <h2 class="mb-5 text-center fw-bold">Technical Roles We Fill</h2>
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-8">
+                    <h5 class="text-primary fw-bold text-uppercase">The Gap India Standard</h5>
+                    <h2 class="fw-bold display-6">Why Trust Our Specialists?</h2>
+                </div>
+            </div>
+            
             <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="feature-box">
-                        <div class="feature-icon"><i class="fas fa-microchip"></i></div>
-                        <h5>IT Support</h5>
-                        <p class="text-muted small">Network technicians, helpdesk support, and hardware specialists.</p>
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="p-4 border rounded-4 h-100 bg-white shadow-sm hover-elevate">
+                        <div class="feature-icon-small mb-3 text-primary bg-primary-subtle rounded-circle p-3 d-inline-block">
+                            <i class="fas fa-check-double"></i>
+                        </div>
+                        <h4>Verified Skills</h4>
+                        <p class="text-muted">We don't just check resumes; we verify technical certifications and conduct practical assessments.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="feature-box">
-                        <div class="feature-icon"><i class="fas fa-user-nurse"></i></div>
-                        <h5>Healthcare</h5>
-                        <p class="text-muted small">Nursing assistants, lab technicians, and patient care staff.</p>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-4 border rounded-4 h-100 bg-white shadow-sm hover-elevate">
+                        <div class="feature-icon-small mb-3 text-info bg-info-subtle rounded-circle p-3 d-inline-block">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Continuous Training</h4>
+                        <p class="text-muted">We encourage continuous learning, ensuring our pool of candidates stays updated with the latest tech.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="feature-box">
-                        <div class="feature-icon"><i class="fas fa-wrench"></i></div>
-                        <h5>Skilled Trades</h5>
-                        <p class="text-muted small">Electricians, plumbers, HVAC technicians, and welders.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="feature-box">
-                        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
-                        <h5>Security & Safety</h5>
-                        <p class="text-muted small">Security supervisors, safety officers, and fire safety technicians.</p>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-4 border rounded-4 h-100 bg-white shadow-sm hover-elevate">
+                        <div class="feature-icon-small mb-3 text-warning bg-warning-subtle rounded-circle p-3 d-inline-block">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4>Operational Readiness</h4>
+                        <p class="text-muted">Our candidates are ready to hit the ground running, minimizing training time and maximizing uptime.</p>
                     </div>
                 </div>
             </div>
@@ -189,11 +266,15 @@
     </section>
 
     <!-- CTA -->
-    <section class="py-5 bg-primary text-white text-center">
-        <div class="container">
-            <h2 class="fw-bold mb-3">Need Technical Experts?</h2>
-            <p class="lead mb-4">Get the specialized skills your business needs to operate smoothly.</p>
-            <a href="contact.php" class="btn btn-light btn-lg px-5 fw-bold text-primary">Hire Specialists</a>
+    <section class="py-5 position-relative overflow-hidden">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80') center/cover; filter: brightness(0.15);"></div>
+        <div class="container position-relative z-2 text-center py-5">
+            <h2 class="fw-bold text-white mb-3 display-5">Need Specialized Talent?</h2>
+            <p class="lead text-white-50 mb-5 col-lg-8 mx-auto">Find the certified experts you need to keep your business moving forward.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="contact.php" class="btn btn-primary btn-lg px-5 py-3 fw-bold rounded-pill">Hire Experts</a>
+                <a href="about.php" class="btn btn-outline-light btn-lg px-5 py-3 fw-bold rounded-pill">Learn More</a>
+            </div>
         </div>
     </section>
 

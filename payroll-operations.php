@@ -145,26 +145,35 @@
             <div class="row g-4">
                 <!-- Service 1: Payroll Processing and Compliance -->
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="bg-white p-4 rounded shadow-sm h-100 position-relative overflow-hidden border-top border-4 border-primary">
-                        <div class="mb-3 text-primary"><i class="fas fa-file-invoice-dollar fa-3x"></i></div>
-                        <h4 class="fw-bold mb-3 mt-2">Payroll Processing & Compliance</h4>
-                        <p class="text-muted mb-4">We take care of the entire payroll process and reimbursements ensuring that employees are paid accurately and on time, while staying fully compliant with tax laws. Our payroll experts remain up-to-date on tax regulations and compliance standards.</p>
+                    <div class="bg-white rounded shadow-sm h-100 position-relative overflow-hidden border-top border-4 border-primary">
+                        <img src="https://www.concordnow.com/wp-content/uploads/2019/01/legal-compliance-guide-banner.jpg" class="img-fluid w-100" style="height: 200px; object-fit: cover;" alt="Payroll Processing">
+                        <div class="p-4">
+                            <div class="mb-3 text-primary"><i class="fas fa-file-invoice-dollar fa-3x"></i></div>
+                            <h4 class="fw-bold mb-3 mt-2">Payroll Processing & Compliance</h4>
+                            <p class="text-muted mb-4">We take care of the entire payroll process and reimbursements ensuring that employees are paid accurately and on time, while staying fully compliant with tax laws. Our payroll experts remain up-to-date on tax regulations and compliance standards.</p>
+                        </div>
                     </div>
                 </div>
                 <!-- Service 2: Attendance Tracking and Leave Management -->
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="bg-white p-4 rounded shadow-sm h-100 position-relative overflow-hidden border-top border-4 border-success">
-                        <div class="mb-3 text-success"><i class="fas fa-clock fa-3x"></i></div>
-                        <h4 class="fw-bold mb-3 mt-2">Attendance & Leave Management</h4>
-                        <p class="text-muted mb-4">We offer efficient attendance tracking solutions, simplifying the process and reducing manual errors. Hopper, our attendance tracking and leave management system ensures that employees can request and receive approval for leave seamlessly.</p>
+                    <div class="bg-white rounded shadow-sm h-100 position-relative overflow-hidden border-top border-4 border-success">
+                        <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80&w=600" class="img-fluid w-100" style="height: 200px; object-fit: cover;" alt="Attendance Tracking">
+                        <div class="p-4">
+                            <div class="mb-3 text-success"><i class="fas fa-clock fa-3x"></i></div>
+                            <h4 class="fw-bold mb-3 mt-2">Attendance & Leave Management</h4>
+                            <p class="text-muted mb-4">We offer efficient attendance tracking solutions, simplifying the process and reducing manual errors. Hopper, our attendance tracking and leave management system ensures that employees can request and receive approval for leave seamlessly.</p>
+                        </div>
                     </div>
                 </div>
                 <!-- Service 3: Employee Records Management -->
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                    <div class="bg-white p-4 rounded shadow-sm h-100 position-relative overflow-hidden border-top border-4 border-warning">
-                        <div class="mb-3 text-warning"><i class="fas fa-id-card fa-3x"></i></div>
-                        <h4 class="fw-bold mb-3 mt-2">Employee Records Management</h4>
-                        <p class="text-muted mb-4">We maintain and update employee records with a high level of accuracy, providing an easy-to-access and reliable database for your organization. Our records management systems streamline HR processes, reducing operational bottlenecks.</p>
+                    <div class="bg-white rounded shadow-sm h-100 position-relative overflow-hidden border-top border-4 border-warning">
+                        <img src="https://th.bing.com/th/id/OIP.gyuY3kcSjQNovNEyOUdzBAHaEK?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="img-fluid w-100" style="height: 200px; object-fit: cover;" alt="Records Management">
+                        <div class="p-4">
+                            <div class="mb-3 text-warning"><i class="fas fa-id-card fa-3x"></i></div>
+                            <h4 class="fw-bold mb-3 mt-2">Employee Records Management</h4>
+                            <p class="text-muted mb-4">We maintain and update employee records with a high level of accuracy, providing an easy-to-access and reliable database for your organization. Our records management systems streamline HR processes, reducing operational bottlenecks.</p>
+                        </div>
                     </div>
                 </div>
             </div>
