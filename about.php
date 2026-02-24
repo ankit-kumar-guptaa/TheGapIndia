@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About Gap India - Leading provider of manpower outsourcing solutions for Oil & Gas and IT sectors.">
+    <meta name="description"
+        content="About Gap India - Leading provider of manpower outsourcing solutions for Oil & Gas and IT sectors.">
     <title>About Us | Gap India</title>
 
     <?php include 'include/assets.php'; ?>
@@ -14,7 +15,8 @@
             background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed; /* Parallax Effect */
+            background-attachment: fixed;
+            /* Parallax Effect */
             padding: 150px 0 80px;
             color: white;
             margin-bottom: 0;
@@ -39,10 +41,12 @@
         /* NEW: Parallax for Value Proposition Section */
         .parallax-section {
             position: relative;
-            background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2032&auto=format&fit=crop'); /* Meeting/Handshake image */
+            background-image: url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2032&auto=format&fit=crop');
+            /* Meeting/Handshake image */
             background-size: cover;
             background-position: center;
-            background-attachment: fixed; /* Parallax Effect */
+            background-attachment: fixed;
+            /* Parallax Effect */
             color: white;
             padding: 100px 0;
         }
@@ -53,7 +57,8 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgba(0, 0, 128, 0.9) 0%, rgba(30, 58, 138, 0.85) 100%); /* Navy Blue Overlay */
+            background: linear-gradient(135deg, rgba(0, 0, 128, 0.9) 0%, rgba(30, 58, 138, 0.85) 100%);
+            /* Navy Blue Overlay */
             z-index: 1;
         }
 
@@ -66,7 +71,7 @@
             background: white;
             padding: 30px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
             height: 100%;
             transition: 0.3s;
             border-bottom: 3px solid transparent;
@@ -80,7 +85,8 @@
         .feature-icon {
             width: 60px;
             height: 60px;
-            background: rgba(37, 99, 235, 0.1); /* Professional Blue tint */
+            background: rgba(37, 99, 235, 0.1);
+            /* Professional Blue tint */
             color: var(--accent);
             display: flex;
             align-items: center;
@@ -101,7 +107,8 @@
         <div class="container text-center" data-aos="fade-up">
             <h5 class="text-accent text-uppercase letter-spacing-2 mb-3">We Make It Possible</h5>
             <h1 class="display-3 fw-bold">About GAP India</h1>
-            <p class="lead text-white mx-auto" style="max-width: 700px;">Bridging the gap between top talent and leading organizations through agile, scalable, and quality-driven staffing solutions.</p>
+            <p class="lead text-white mx-auto" style="max-width: 700px;">Bridging the gap between top talent and leading
+                organizations through agile, scalable, and quality-driven staffing solutions.</p>
         </div>
     </section>
 
@@ -110,14 +117,22 @@
         <div class="container py-5">
             <div class="row align-items-center g-5">
                 <div class="col-lg-6" data-aos="fade-right">
-                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop" alt="Office Meeting" class="img-fluid rounded-4 shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop"
+                        alt="Office Meeting" class="img-fluid rounded-4 shadow-lg">
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
                     <h5 class="text-accent text-uppercase mb-3">Who We Are</h5>
                     <h2 class="mb-4">India's Largest & Global Leader in Staffing Solutions</h2>
-                    <p class="text-muted mb-4"><strong>Gap India</strong> is India’s largest and a global leader in <strong>Staffing and Workforce Solutions</strong>, empowering businesses to enhance productivity through our deep domain expertise and future-ready workforce through our AI-driven digital platforms.</p>
-                    <p class="text-muted mb-4">With a <strong>500+ strong workforce</strong> across India, serving <strong>300+ clients</strong> worldwide, we have grown from a start-up to an industry powerhouse in just a few years. We drive transformative impact for businesses globally.</p>
-                    <p class="text-muted">We offer a comprehensive suite of technology-driven staffing and managed outsourcing services, serving sectors like <strong>IT, BFSI, Retail, Telecom, Manufacturing, Healthcare, Banking, and BPO services.</strong></p>
+                    <p class="text-muted mb-4"><strong>Gap India</strong> is India’s largest and a global leader in
+                        <strong>Staffing and Workforce Solutions</strong>, empowering businesses to enhance productivity
+                        through our deep domain expertise and future-ready workforce through our AI-driven digital
+                        platforms.</p>
+                    <p class="text-muted mb-4">With a <strong>500+ strong workforce</strong> across India, serving
+                        <strong>300+ clients</strong> worldwide, we have grown from a start-up to an industry powerhouse
+                        in just a few years. We drive transformative impact for businesses globally.</p>
+                    <p class="text-muted">We offer a comprehensive suite of technology-driven staffing and managed
+                        outsourcing services, serving sectors like <strong>IT, BFSI, Retail, Telecom, Manufacturing,
+                            Healthcare, Banking, and BPO services.</strong></p>
                 </div>
             </div>
         </div>
@@ -131,7 +146,9 @@
                     <div class="feature-box h-100">
                         <div class="feature-icon"><i class="fas fa-bullseye"></i></div>
                         <h3>Our Purpose</h3>
-                        <p class="text-muted">To build a leading institution that drives productivity for clients by outsourcing and optimizing their staffing requirements. We aim to be the preferred firm for employees, customers, and investors alike.</p>
+                        <p class="text-muted">To build a leading institution that drives productivity for clients by
+                            outsourcing and optimizing their staffing requirements. We aim to be the preferred firm for
+                            employees, customers, and investors alike.</p>
                     </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
@@ -139,11 +156,18 @@
                         <div class="feature-icon"><i class="fas fa-flag"></i></div>
                         <h3>Our Mission</h3>
                         <ul class="list-unstyled text-muted mt-3">
-                            <li class="mb-2"><i class="fas fa-check text-accent me-2"></i><strong>Employment Opportunities:</strong> We help job seekers find formal employment opportunities.</li>
-                            <li class="mb-2"><i class="fas fa-check text-accent me-2"></i><strong>Social Security:</strong> We provide social security benefits to a wider employable population.</li>
-                            <li class="mb-2"><i class="fas fa-check text-accent me-2"></i><strong>Training & Skill Development:</strong> Improving employability through continuous training.</li>
-                            <li class="mb-2"><i class="fas fa-check text-accent me-2"></i><strong>Diversity:</strong> Fostering an inclusive workforce that reflects our communities.</li>
-                            <li class="mb-2"><i class="fas fa-check text-accent me-2"></i><strong>Productivity:</strong> Enhancing workforce productivity is at the heart of our business.</li>
+                            <li class="mb-2"><i class="fas fa-check text-accent me-2"></i><strong>Employment
+                                    Opportunities:</strong> We help job seekers find formal employment opportunities.
+                            </li>
+                            <li class="mb-2"><i class="fas fa-check text-accent me-2"></i><strong>Social
+                                    Security:</strong> We provide social security benefits to a wider employable
+                                population.</li>
+                            <li class="mb-2"><i class="fas fa-check text-accent me-2"></i><strong>Training & Skill
+                                    Development:</strong> Improving employability through continuous training.</li>
+                            <li class="mb-2"><i class="fas fa-check text-accent me-2"></i><strong>Diversity:</strong>
+                                Fostering an inclusive workforce that reflects our communities.</li>
+                            <li class="mb-2"><i class="fas fa-check text-accent me-2"></i><strong>Productivity:</strong>
+                                Enhancing workforce productivity is at the heart of our business.</li>
                         </ul>
                     </div>
                 </div>
@@ -154,13 +178,16 @@
     <!-- OUR PRESENCE -->
     <section class="py-5">
         <div class="container py-5 text-center" data-aos="fade-up">
-             <div class="row justify-content-center">
+            <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <h5 class="text-accent text-uppercase">Our Reach</h5>
                     <h2 class="mb-4">Unmatched Geographic Presence</h2>
-                    <p class="lead text-muted">Headquartered in <strong>New Delhi, India</strong>, Gap India today has an unmatched geographic presence and scale with more than <strong>2 offices across India</strong>, backed by technology intensity and domain specialization to create exceptional service experiences.</p>
+                    <p class="lead text-muted">Headquartered in <strong>New Delhi, India</strong>, Gap India today has
+                        an unmatched geographic presence and scale with more than <strong>2 offices across
+                            India</strong>, backed by technology intensity and domain specialization to create
+                        exceptional service experiences.</p>
                 </div>
-             </div>
+            </div>
         </div>
     </section>
 
@@ -172,7 +199,8 @@
                 <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
                     <h5 class="text-accent text-uppercase mb-3">Our Value Proposition</h5>
                     <h2 class="mb-4">Benefits of Partnering with GAP India</h2>
-                    <p class="text-white mb-4">We don't just provide candidates; we provide solutions that drive your business forward. Our data-driven approach ensures you get the best talent efficiently.</p>
+                    <p class="text-white mb-4">We don't just provide candidates; we provide solutions that drive your
+                        business forward. Our data-driven approach ensures you get the best talent efficiently.</p>
                     <a href="contact.php" class="btn btn-primary-custom">Get Started</a>
                 </div>
                 <div class="col-lg-7" data-aos="fade-left">
@@ -182,7 +210,8 @@
                                 <i class="fas fa-check-circle text-accent fa-2x"></i>
                                 <div>
                                     <h5 class="mb-2">Cost Savings</h5>
-                                    <p class="text-white small">Lower recruitment and operational costs with our efficient processes.</p>
+                                    <p class="text-white small">Lower recruitment and operational costs with our
+                                        efficient processes.</p>
                                 </div>
                             </div>
                         </div>
@@ -191,7 +220,8 @@
                                 <i class="fas fa-check-circle text-accent fa-2x"></i>
                                 <div>
                                     <h5 class="mb-2">Efficiency Gains</h5>
-                                    <p class="text-white small">Streamlined hiring process and faster onboarding of skilled candidates.</p>
+                                    <p class="text-white small">Streamlined hiring process and faster onboarding of
+                                        skilled candidates.</p>
                                 </div>
                             </div>
                         </div>
@@ -200,7 +230,8 @@
                                 <i class="fas fa-check-circle text-accent fa-2x"></i>
                                 <div>
                                     <h5 class="mb-2">Faster Hiring Turnaround</h5>
-                                    <p class="text-white small">Agile recruitment process reduces time-to-hire significantly.</p>
+                                    <p class="text-white small">Agile recruitment process reduces time-to-hire
+                                        significantly.</p>
                                 </div>
                             </div>
                         </div>
@@ -209,7 +240,8 @@
                                 <i class="fas fa-check-circle text-accent fa-2x"></i>
                                 <div>
                                     <h5 class="mb-2">Customized Solutions</h5>
-                                    <p class="text-white small">Tailored recruitment strategies aligned with your business goals.</p>
+                                    <p class="text-white small">Tailored recruitment strategies aligned with your
+                                        business goals.</p>
                                 </div>
                             </div>
                         </div>
@@ -231,28 +263,75 @@
                     <div class="card border-0 shadow-sm h-100 p-4 text-center">
                         <div class="mb-3 text-accent"><i class="fas fa-users-cog fa-3x"></i></div>
                         <h4>Workforce Consulting</h4>
-                        <p class="text-muted">A collaborative, insight-led approach that offers comprehensive, strategic support for workforce planning and execution.</p>
+                        <p class="text-muted">A collaborative, insight-led approach that offers comprehensive, strategic
+                            support for workforce planning and execution.</p>
                     </div>
                 </div>
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="card border-0 shadow-sm h-100 p-4 text-center">
                         <div class="mb-3 text-accent"><i class="fas fa-chart-line fa-3x"></i></div>
                         <h4>Workforce Analytics</h4>
-                        <p class="text-muted">Powerful, practical analytics and insights that reduce risk and speed up business, workforce, and talent decision-making.</p>
+                        <p class="text-muted">Powerful, practical analytics and insights that reduce risk and speed up
+                            business, workforce, and talent decision-making.</p>
                     </div>
                 </div>
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="card border-0 shadow-sm h-100 p-4 text-center">
                         <div class="mb-3 text-accent"><i class="fas fa-lightbulb fa-3x"></i></div>
                         <h4>Talent Acquisition</h4>
-                        <p class="text-muted">Integrated assessment and analytics expertise that reshapes talent strategies and drives faster, more impactful results.</p>
+                        <p class="text-muted">Integrated assessment and analytics expertise that reshapes talent
+                            strategies and drives faster, more impactful results.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+        <!-- OUR CLIENTS MODULE -->
+        <section class="py-5 bg-light">
+            <div class="container py-4">
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <h5 class="text-accent text-uppercase">Trusted By</h5>
+                    <h2>Our Clients</h2>
+                </div>
+            </div>
 
-    <?php include 'include/footer.php'; ?>
+            <!-- Client Slider Container -->
+            <div class="hero-clients position-relative mx-auto mt-2" style="border: none;">
+                <div class="marquee">
+                    <div class="marquee-content" id="logoMarqueeAbout">
+                        <!-- JS will load logos here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // Generating 1 to 35 local images automatically
+                const logoMarqueeAbout = document.getElementById('logoMarqueeAbout');
+                if (logoMarqueeAbout) {
+                    const baseUrl = "assets/images/client/";
+
+                    for (let i = 1; i <= 35; i++) {
+                        const div = document.createElement('div');
+                        div.className = 'client-logo-card';
+
+                        const img = document.createElement('img');
+                        img.src = `${baseUrl}${i}.png`;
+                        img.alt = `Client ${i}`;
+                        img.loading = "lazy";
+
+                        div.appendChild(img);
+                        logoMarqueeAbout.appendChild(div);
+                    }
+
+                    // Clone content for smooth rotation
+                    const clones = logoMarqueeAbout.innerHTML;
+                    logoMarqueeAbout.innerHTML += clones;
+                }
+            });
+        </script>
+
+        <?php include 'include/footer.php'; ?>
 
 </body>
 

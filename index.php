@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gap India - Leading Provider of Manpower Outsourcing Solutions. Recruitment & Staffing for IT, Oil & Gas, and Non-IT sectors.">
+    <meta name="description"
+        content="Gap India - Leading Provider of Manpower Outsourcing Solutions. Recruitment & Staffing for IT, Oil & Gas, and Non-IT sectors.">
     <title>Gap India | Leading Manpower Outsourcing</title>
 
     <?php include 'include/assets.php'; ?>
@@ -25,7 +26,8 @@
                     <div class="hero-overlay"></div>
                     <div class="container hero-content" data-aos="zoom-in" data-aos-duration="1000">
                         <div class="hero-badge">Since 2023 • New Delhi</div>
-                        <h1>Delivering the Right Talent <br> <span style="color: var(--accent);">with the Right Skills at the Right Time</span></h1>
+                        <h1>Delivering the Right Talent <br> <span style="color: var(--accent);">with the Right Skills
+                                at the Right Time</span></h1>
                         <p>Recruitment,Payroll, Staffing & Tech Solutions to take your business to the next level.</p>
                     </div>
                 </div>
@@ -35,7 +37,8 @@
                     <div class="hero-overlay"></div>
                     <div class="container hero-content" data-aos="zoom-in" data-aos-duration="1000">
                         <div class="hero-badge">Trusted by 500+ Clients</div>
-                        <h1>Delivering the Right Talent <br> <span style="color: var(--accent);">with the Right Skills at the Right Time</span></h1>
+                        <h1>Delivering the Right Talent <br> <span style="color: var(--accent);">with the Right Skills
+                                at the Right Time</span></h1>
                         <p>Recruitment,Payroll, Staffing & Tech Solutions to take your business to the next level.</p>
                     </div>
                 </div>
@@ -44,23 +47,16 @@
 
         <!-- Static Buttons (Fixed Overlay) -->
         <div class="hero-btns-static">
-            <button class="btn btn-primary-custom btn-lg" data-bs-toggle="modal" data-bs-target="#hireModal">Find Talent</button>
-            <button class="btn btn-outline-custom btn-lg" data-bs-toggle="modal" data-bs-target="#cvModal">Find a Job</button>
-        </div>
-
-        <!-- Glassmorphism Client Slider with Exact 40 Logos -->
-        <div class="hero-clients">
-            <div class="marquee">
-                <div class="marquee-content" id="logoMarquee">
-                    <!-- Script will inject images pa-1 to pa-40 here -->
-                </div>
-            </div>
+            <button class="btn btn-primary-custom btn-lg" data-bs-toggle="modal" data-bs-target="#hireModal">Find
+                Talent</button>
+            <button class="btn btn-outline-custom btn-lg" data-bs-toggle="modal" data-bs-target="#cvModal">Find a
+                Job</button>
         </div>
     </section>
 
 
 
-    
+
     <!-- 2. ABOUT US SECTION -->
     <section id="about" class="py-5">
         <div class="container py-5">
@@ -68,7 +64,9 @@
                 <div class="col-lg-6" data-aos="fade-right">
                     <h5 class="text-accent text-uppercase mb-3">About Gap India</h5>
                     <h2 class="mb-4 display-5">We Don't Just Fill Roles,<br> We Build Futures.</h2>
-                    <p class="text-secondary mb-4">Founded in 2023, The GAP India is a dynamic recruitment solutions provider based in New Delhi. We specialize in both IT and non-IT hiring, offering end-to-end talent acquisition services to clients across diverse industries.</p>
+                    <p class="text-secondary mb-4">Founded in 2023, The GAP India is a dynamic recruitment solutions
+                        provider based in New Delhi. We specialize in both IT and non-IT hiring, offering end-to-end
+                        talent acquisition services to clients across diverse industries.</p>
                     <div class="row g-4">
                         <div class="col-6">
                             <h2 class="text-primary display-4 fw-bold mb-0">500+</h2>
@@ -79,7 +77,8 @@
                             <p class="text-muted small">Client Retention</p>
                         </div>
                     </div>
-                    <a href="about.php" class="btn btn-outline-custom text-primary border-primary mt-4" style="color:var(--primary); border-color:var(--primary);">Learn More</a>
+                    <a href="about.php" class="btn btn-outline-custom text-primary border-primary mt-4"
+                        style="color:var(--primary); border-color:var(--primary);">Learn More</a>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
                     <img src="assets/images/about-1.png" class="img-fluid rounded-4 shadow-lg" alt="Team">
@@ -97,7 +96,10 @@
                     <div class="col-lg-8">
                         <h4 class="text-accent mb-3">Vision from Leadership</h4>
                         <h2 class="mb-4">Driving Excellence in Every Placement</h2>
-                        <p class="text-muted fs-5 fst-italic mb-4">"At GAP India, our mission is simple yet profound: to create the perfect symbiosis between talent and opportunity. We believe that every resume tells a story and every job opening is a new chapter waiting to be written. We are committed to rewriting the narrative of recruitment in India."</p>
+                        <p class="text-muted fs-5 fst-italic mb-4">"At GAP India, our mission is simple yet profound: to
+                            create the perfect symbiosis between talent and opportunity. We believe that every resume
+                            tells a story and every job opening is a new chapter waiting to be written. We are committed
+                            to rewriting the narrative of recruitment in India."</p>
                         <div class="d-flex align-items-center">
                             <!-- <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle me-3" width="60" alt="Director"> -->
                             <div>
@@ -114,13 +116,60 @@
         </div>
     </section>
 
+    <!-- OUR CLIENTS MODULE -->
+    <section class="py-5 bg-light">
+        <div class="container py-4">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h5 class="text-accent text-uppercase">Trusted By</h5>
+                <h2>Our Clients</h2>
+            </div>
+        </div>
+
+        <!-- Client Slider Container -->
+        <div class="hero-clients position-relative mx-auto mt-2" style="border: none;">
+            <div class="marquee">
+                <div class="marquee-content" id="logoMarqueeIndex">
+                    <!-- JS will load logos here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Generating 1 to 35 local images automatically
+            const logoMarqueeIndex = document.getElementById('logoMarqueeIndex');
+            if (logoMarqueeIndex) {
+                const baseUrl = "assets/images/client/";
+
+                for (let i = 1; i <= 35; i++) {
+                    const div = document.createElement('div');
+                    div.className = 'client-logo-card';
+
+                    const img = document.createElement('img');
+                    img.src = `${baseUrl}${i}.png`;
+                    img.alt = `Client ${i}`;
+                    img.loading = "lazy";
+
+                    div.appendChild(img);
+                    logoMarqueeIndex.appendChild(div);
+                }
+
+                // Clone content for smooth rotation
+                const clones = logoMarqueeIndex.innerHTML;
+                logoMarqueeIndex.innerHTML += clones;
+            }
+        });
+    </script>
+
     <!-- 3. SERVICES SECTION (Clean Cards - Image Top) -->
     <section id="services" class="bg-light py-5">
         <div class="container py-5">
             <div class="text-center mb-5" data-aos="fade-up">
                 <h5 class="text-accent text-uppercase">Our Expertise</h5>
                 <h2>Comprehensive Services</h2>
-                <p class="text-muted mx-auto" style="max-width: 600px;">Clear, transparent, and result-oriented recruitment strategies.</p>
+                <p class="text-muted mx-auto" style="max-width: 600px;">Clear, transparent, and result-oriented
+                    recruitment strategies.</p>
             </div>
 
             <div class="row g-4">
@@ -133,8 +182,10 @@
                         <div class="service-body">
                             <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
                             <h3 class="service-title">IT Recruitment</h3>
-                            <p class="service-desc">Expert hiring for Software Dev, Cloud, Data AI, and Cybersecurity roles.</p>
-                            <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#hireModal">Hire IT Talent <i class="fas fa-arrow-right"></i></a>
+                            <p class="service-desc">Expert hiring for Software Dev, Cloud, Data AI, and Cybersecurity
+                                roles.</p>
+                            <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#hireModal">Hire IT
+                                Talent <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -148,8 +199,10 @@
                         <div class="service-body">
                             <div class="service-icon"><i class="fas fa-oil-can"></i></div>
                             <h3 class="service-title">Oil & Gas</h3>
-                            <p class="service-desc">Specialized manpower for Upstream, Midstream, Downstream projects.</p>
-                            <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#hireModal">Find Engineers <i class="fas fa-arrow-right"></i></a>
+                            <p class="service-desc">Specialized manpower for Upstream, Midstream, Downstream projects.
+                            </p>
+                            <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#hireModal">Find
+                                Engineers <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -164,7 +217,8 @@
                             <div class="service-icon"><i class="fas fa-cogs"></i></div>
                             <h3 class="service-title">Manufacturing</h3>
                             <p class="service-desc">Staffing for Plant Operations, Auto, Pharma, Retail & Logistics.</p>
-                            <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#hireModal">Hire Staff <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#hireModal">Hire Staff
+                                <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -179,7 +233,8 @@
                             <div class="service-icon"><i class="fas fa-user-tie"></i></div>
                             <h3 class="service-title">Executive Search</h3>
                             <p class="service-desc">Headhunting C-Suite leaders and Directors to drive strategy.</p>
-                            <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#hireModal">Find Leaders <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#hireModal">Find
+                                Leaders <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -194,7 +249,8 @@
                             <div class="service-icon"><i class="fas fa-tasks"></i></div>
                             <h3 class="service-title">RPO Services</h3>
                             <p class="service-desc">End-to-end recruitment process outsourcing for bulk hiring.</p>
-                            <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#hireModal">Outsource HR <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#hireModal">Outsource
+                                HR <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -209,7 +265,8 @@
                             <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
                             <h3 class="service-title">Campus Hiring</h3>
                             <p class="service-desc">Sourcing fresh, energetic talent directly from top campuses.</p>
-                            <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#hireModal">Campus Drives <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" class="read-more" data-bs-toggle="modal" data-bs-target="#hireModal">Campus
+                                Drives <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -231,28 +288,32 @@
                     <div class="why-card text-center">
                         <div class="why-icon"><i class="fas fa-check-circle"></i></div>
                         <h5>Pre-Vetted Talent</h5>
-                        <p class="text-muted small mb-0">Rigorous screening process to ensure only top-quality candidates reach you.</p>
+                        <p class="text-muted small mb-0">Rigorous screening process to ensure only top-quality
+                            candidates reach you.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="why-card text-center">
                         <div class="why-icon"><i class="fas fa-bolt"></i></div>
                         <h5>Fast Turnaround</h5>
-                        <p class="text-muted small mb-0">Agile recruitment process significantly reduces your time-to-hire.</p>
+                        <p class="text-muted small mb-0">Agile recruitment process significantly reduces your
+                            time-to-hire.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
                     <div class="why-card text-center">
                         <div class="why-icon"><i class="fas fa-coins"></i></div>
                         <h5>Cost Effective</h5>
-                        <p class="text-muted small mb-0">Customized solutions that maximize ROI on your manpower investment.</p>
+                        <p class="text-muted small mb-0">Customized solutions that maximize ROI on your manpower
+                            investment.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
                     <div class="why-card text-center">
                         <div class="why-icon"><i class="fas fa-headset"></i></div>
                         <h5>Dedicated Support</h5>
-                        <p class="text-muted small mb-0">Continuous post-placement support and optimization for your team.</p>
+                        <p class="text-muted small mb-0">Continuous post-placement support and optimization for your
+                            team.</p>
                     </div>
                 </div>
             </div>
@@ -269,10 +330,13 @@
             <div class="row g-4">
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="testimonial-card h-100">
-                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-muted">"Gap India transformed our hiring process. Their ability to find niche IT talent within days is unmatched in the industry."</p>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="text-muted">"Gap India transformed our hiring process. Their ability to find niche IT
+                            talent within days is unmatched in the industry."</p>
                         <div class="d-flex align-items-center mt-4">
-                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width:40px; height:40px;">RK</div>
+                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3"
+                                style="width:40px; height:40px;">RK</div>
                             <div>
                                 <h6 class="mb-0">Rohit Khanna</h6>
                                 <small class="text-muted">CTO, TechFlow Solutions</small>
@@ -282,10 +346,13 @@
                 </div>
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="testimonial-card h-100">
-                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-muted">"We needed 50+ specialized engineers for our new refinery project. Gap India delivered quality candidates ahead of schedule."</p>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="text-muted">"We needed 50+ specialized engineers for our new refinery project. Gap
+                            India delivered quality candidates ahead of schedule."</p>
                         <div class="d-flex align-items-center mt-4">
-                            <div class="bg-accent text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width:40px; height:40px;">AM</div>
+                            <div class="bg-accent text-white rounded-circle d-flex align-items-center justify-content-center me-3"
+                                style="width:40px; height:40px;">AM</div>
                             <div>
                                 <h6 class="mb-0">Anjali Mehta</h6>
                                 <small class="text-muted">HR Head, PetroGlobal</small>
@@ -295,10 +362,14 @@
                 </div>
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="testimonial-card h-100">
-                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
-                        <p class="text-muted">"Professional, reliable, and cost-effective. Their manufacturing staffing solutions helped us scale production seamlessly."</p>
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="text-muted">"Professional, reliable, and cost-effective. Their manufacturing staffing
+                            solutions helped us scale production seamlessly."</p>
                         <div class="d-flex align-items-center mt-4">
-                            <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-3" style="width:40px; height:40px;">VS</div>
+                            <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-3"
+                                style="width:40px; height:40px;">VS</div>
                             <div>
                                 <h6 class="mb-0">Vikram Singh</h6>
                                 <small class="text-muted">Ops Manager, AutoCorp</small>
@@ -388,4 +459,4 @@
         </div>
     </section>
 
-<?php include 'include/footer.php'; ?>
+    <?php include 'include/footer.php'; ?>
