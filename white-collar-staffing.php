@@ -104,11 +104,11 @@
             <div class="row align-items-center g-5">
                 <div class="col-lg-6" data-aos="fade-right">
                     <div class="section-title">
-                        <h5 class="text-primary fw-bold text-uppercase">Strategic Recruitment</h5>
-                        <h2 class="mb-0 display-6 fw-bold">Driving Business Growth Through Talent</h2>
+                        <h5 class="text-primary fw-bold text-uppercase">Strategic Talent Solutions for Your Business Vision</h5>
+                        <!-- <h2 class="mb-0 display-6 fw-bold">Driving Business Growth Through Talent</h2> -->
                     </div>
-                    <p class="text-secondary lead">In the corporate world, the quality of your people defines the trajectory of your business.</p>
-                    <p class="text-muted">Gap India’s White Collar Staffing division specializes in identifying, vetting, and placing high-caliber professionals across key business functions. Whether you need dynamic leadership for your C-suite, innovative engineers for R&D, or astute financial analysts, we deliver talent that aligns with your strategic goals.</p>
+                    
+                    <p class="text-muted">In today’s fast-paced corporate landscape, securing exceptional white-collar talent is the key to staying ahead. From finance and IT to marketing and management, attracting and retaining the right professionals can be a daunting task. Gap India bridges this gap by delivering tailored staffing solutions that align seamlessly with your business objectives, empowering your organization to thrive and achieve lasting success.</p>
                     <p class="text-muted mb-4">We go beyond the resume. Our comprehensive screening process evaluates cultural fit, leadership potential, and problem-solving abilities to ensure long-term success.</p>
                     
                     <div class="row g-3">
@@ -144,8 +144,8 @@
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
                     <div class="position-relative ps-lg-4">
-                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80" class="img-fluid rounded-4 shadow-lg w-100" alt="Corporate Meeting">
-                        <div class="bg-white p-4 rounded-3 position-absolute bottom-0 start-0 shadow-lg border-start border-5 border-primary" style="max-width: 280px; transform: translate(-20px, 20px);">
+                        <img src="assets/images/white-collar.png" class="img-fluid rounded-4 shadow-lg w-100" alt="Corporate Meeting">
+                        <!-- <div class="bg-white p-4 rounded-3 position-absolute bottom-0 start-0 shadow-lg border-start border-5 border-primary" style="max-width: 280px; transform: translate(-20px, 20px);">
                             <div class="d-flex align-items-center mb-2">
                                 <div class="flex-shrink-0">
                                     <i class="fas fa-user-tie text-primary fa-2x"></i>
@@ -155,7 +155,7 @@
                                 </div>
                             </div>
                             <p class="mb-0 text-muted small">Access to exclusive talent pool of vetted professionals.</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -175,11 +175,11 @@
                 <!-- IT & Tech -->
                 <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
                     <div class="card service-card overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80" alt="IT & Tech">
+                        <img src="https://st.depositphotos.com/1005893/2124/i/950/depositphotos_21248005-stock-photo-indian-doctors-or-medical-team.jpg" alt="Doctor">
                         <div class="card-body p-4">
                             <div class="mb-3 text-primary"><i class="fas fa-laptop-code fa-2x"></i></div>
-                            <h5 class="fw-bold">IT & Technology</h5>
-                            <p class="text-muted small mb-0">Software Developers, System Architects, Data Scientists, and Project Managers.</p>
+                            <h5 class="fw-bold">Doctors & Medical Staff</h5>
+                            <p class="text-muted small mb-0">Doctors, Nurses, Lab Technicians, and Healthcare Administrators.</p>
                         </div>
                     </div>
                 </div>

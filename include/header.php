@@ -230,7 +230,7 @@
                         <ul class="dropdown-menu">
                               <!-- Contract Staffing Nested Menu -->
                             <li class="dropdown-submenu">
-                                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="#">
+                                <a class="dropdown-item dropdown-toggle d-flex justify-content-between align-items-center" href="contract-staffing.php">
                                     Contract Staffing Solutions 
                                     <i class="fas fa-chevron-right" style="font-size: 11px;"></i>
                                 </a>

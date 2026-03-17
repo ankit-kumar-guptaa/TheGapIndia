@@ -104,8 +104,8 @@
             <div class="row align-items-center g-5">
                 <div class="col-lg-6" data-aos="fade-right">
                     <div class="section-title">
-                        <h5 class="text-primary fw-bold text-uppercase">Operational Excellence</h5>
-                        <h2 class="mb-0 display-6 fw-bold">The Backbone of Industry</h2>
+                        <h5 class="text-primary fw-bold text-uppercase">Maximize Productivity with Skilled Blue-Collar Talent</h5>
+                        <!-- <h2 class="mb-0 display-6 fw-bold">Maximize Productivity with Skilled Blue-Collar Talent</h2> -->
                     </div>
                     <p class="text-secondary lead">In industrial sectors, productivity relies on the reliability and skill of your workforce.</p>
                     <p class="text-muted">Gap India understands the unique challenges of blue-collar staffing—high turnover, safety compliance, and skill verification. We provide end-to-end workforce solutions, ensuring you have the right people on the ground, exactly when you need them.</p>
@@ -144,8 +144,8 @@
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
                     <div class="position-relative ps-lg-4">
-                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80" class="img-fluid rounded-4 shadow-lg w-100" alt="Factory Worker">
-                        <div class="bg-white p-4 rounded-3 position-absolute bottom-0 start-0 shadow-lg border-start border-5 border-warning" style="max-width: 280px; transform: translate(-20px, 20px);">
+                        <img src="assets/images/blue-collar.png" class="img-fluid rounded-4 shadow-lg w-100" alt="Factory Worker">
+                        <!-- <div class="bg-white p-4 rounded-3 position-absolute bottom-0 start-0 shadow-lg border-start border-5 border-warning" style="max-width: 280px; transform: translate(-20px, 20px);">
                             <div class="d-flex align-items-center mb-2">
                                 <div class="flex-shrink-0">
                                     <i class="fas fa-hard-hat text-warning fa-2x"></i>
@@ -155,7 +155,7 @@
                                 </div>
                             </div>
                             <p class="mb-0 text-muted small">Verified, background-checked, and safety-trained personnel.</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -187,7 +187,7 @@
                 <!-- Construction -->
                 <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
                     <div class="card service-card overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80" alt="Construction">
+                        <img src="https://img.freepik.com/premium-photo/refinery-blue-collar-worker-standing-by-lpg-pipeline-checking-gas-production-distribution_641503-152684.jpg" alt="Construction">
                         <div class="card-body p-4">
                             <div class="mb-3 text-warning"><i class="fas fa-hammer fa-2x"></i></div>
                             <h5 class="fw-bold">Construction</h5>

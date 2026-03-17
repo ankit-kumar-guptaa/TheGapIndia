@@ -85,7 +85,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
-                    <h2 class="mb-4">Unlocking Workforce Potential</h2>
+                    <h2 class="mb-4">Unlocking Workforce Potential Through Strategic Oil & Gas Staffing</h2>
                     <p class="text-muted mb-4">In the dynamic and high-risk environment of the Oil & Gas industry, securing the right technical and engineering talent is critical to project success. At Gap India – Oil & Gas Workforce Solutions, we understand the complexities of sourcing, deploying, and managing highly skilled professionals across upstream, midstream, and downstream operations.</p>
                     <p class="text-muted mb-4">From exploration and drilling to refinery operations and large-scale EPC projects, we act as your strategic workforce partner, helping you overcome talent shortages, compliance challenges, and project timelines—so you can focus on operational excellence, safety, and growth.</p>
                     
@@ -112,65 +112,85 @@
     </section>
 
     <!-- STAFFING SOLUTIONS SECTION -->
-    <section class="py-5">
+    <section class="py-5 bg-light">
         <div class="container py-5">
             <div class="text-center mb-5" data-aos="fade-up">
-                <h5 class="text-accent text-uppercase letter-spacing-2">Our Services</h5>
-                <h2 class="fw-bold">Our Tailored Oil & Gas Staffing Solutions</h2>
+                <h5 class="text-primary fw-bold text-uppercase">Our Services</h5>
+                <h2 class="fw-bold display-6">Our Tailored Oil & Gas Staffing Solutions</h2>
             </div>
             <div class="row g-4">
                 <!-- Permanent Recruitment -->
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="bg-white p-4 rounded shadow-sm h-100 border-top border-4 border-primary">
-                        <div class="mb-3 text-primary"><i class="fas fa-user-tie fa-2x"></i></div>
-                        <h5>Permanent Recruitment</h5>
-                        <p class="text-muted small">We support Oil & Gas organizations in rapidly filling critical permanent positions such as engineers, project managers, HSE specialists, QA/QC professionals, and technical experts. Our structured recruitment process minimizes time-to-hire while ensuring candidates meet technical, safety, and regulatory standards.</p>
+                    <div class="card overflow-hidden h-100 border-0 shadow-sm rounded-4" style="transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <img src="assets/images/oil-gas/1.png" alt="Permanent Recruitment" class="w-100" style="height: 200px; object-fit: cover;">
+                        <div class="card-body p-4 border-top border-4 border-primary">
+                            <div class="mb-3 text-primary"><i class="fas fa-user-tie fa-2x"></i></div>
+                            <h5 class="fw-bold">Permanent Recruitment</h5>
+                            <p class="text-muted small mb-0">We support Oil & Gas organizations in rapidly filling critical permanent positions such as engineers, project managers, HSE specialists, QA/QC professionals, and technical experts. Our structured recruitment process minimizes time-to-hire while ensuring candidates meet technical, safety, and regulatory standards.</p>
+                        </div>
                     </div>
                 </div>
                 <!-- Rate Card / Manpower Supply Model -->
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="bg-white p-4 rounded shadow-sm h-100 border-top border-4 border-warning">
-                        <div class="mb-3 text-warning"><i class="fas fa-clock fa-2x"></i></div>
-                        <h5>Rate Card / Manpower Supply</h5>
-                        <p class="text-muted small">Our Rate Card Manpower Model offers flexibility for project-based Oil & Gas requirements. You pay only for actual hours or deployed manpower, enabling you to scale your workforce based on project phases, shutdowns, turnarounds, or site requirements.</p>
+                    <div class="card overflow-hidden h-100 border-0 shadow-sm rounded-4" style="transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <img src="assets/images/oil-gas/2.png" alt="Rate Card / Manpower Supply" class="w-100" style="height: 200px; object-fit: cover;">
+                        <div class="card-body p-4 border-top border-4 border-warning">
+                            <div class="mb-3 text-warning"><i class="fas fa-clock fa-2x"></i></div>
+                            <h5 class="fw-bold">Rate Card / Manpower Supply</h5>
+                            <p class="text-muted small mb-0">Our Rate Card Manpower Model offers flexibility for project-based Oil & Gas requirements. You pay only for actual hours or deployed manpower, enabling you to scale your workforce based on project phases, shutdowns, turnarounds, or site requirements.</p>
+                        </div>
                     </div>
                 </div>
                 <!-- Payroll & Compliance Outsourcing -->
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="bg-white p-4 rounded shadow-sm h-100 border-top border-4 border-success">
-                        <div class="mb-3 text-success"><i class="fas fa-file-invoice-dollar fa-2x"></i></div>
-                        <h5>Payroll & Compliance Outsourcing</h5>
-                        <p class="text-muted small">Managing payroll in the Oil & Gas sector requires strict adherence to statutory compliance, labor laws, site policies, and safety norms. We ensure accurate payroll processing, statutory compliance, contract management, and workforce administration.</p>
+                    <div class="card overflow-hidden h-100 border-0 shadow-sm rounded-4" style="transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <img src="assets/images/oil-gas/3.png" alt="Payroll & Compliance Outsourcing" class="w-100" style="height: 200px; object-fit: cover;">
+                        <div class="card-body p-4 border-top border-4 border-success">
+                            <div class="mb-3 text-success"><i class="fas fa-file-invoice-dollar fa-2x"></i></div>
+                            <h5 class="fw-bold">Payroll & Compliance Outsourcing</h5>
+                            <p class="text-muted small mb-0">Managing payroll in the Oil & Gas sector requires strict adherence to statutory compliance, labor laws, site policies, and safety norms. We ensure accurate payroll processing, statutory compliance, contract management, and workforce administration.</p>
+                        </div>
                     </div>
                 </div>
                 <!-- Temp Staffing & Recruitment -->
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="bg-white p-4 rounded shadow-sm h-100 border-top border-4 border-info">
-                        <div class="mb-3 text-info"><i class="fas fa-user-clock fa-2x"></i></div>
-                        <h5>Temp Staffing & Recruitment</h5>
-                        <p class="text-muted small">Our temporary staffing and recruitment solutions are designed to provide cost-effective alternatives to hiring full-time employees for short-term needs. You can scale your team up or down based on project demands, optimizing your budget without compromising on quality.</p>
+                    <div class="card overflow-hidden h-100 border-0 shadow-sm rounded-4" style="transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80" alt="Temp Staffing & Recruitment" class="w-100" style="height: 200px; object-fit: cover;">
+                        <div class="card-body p-4 border-top border-4 border-info">
+                            <div class="mb-3 text-info"><i class="fas fa-user-clock fa-2x"></i></div>
+                            <h5 class="fw-bold">Temp Staffing & Recruitment</h5>
+                            <p class="text-muted small mb-0">Our temporary staffing and recruitment solutions are designed to provide cost-effective alternatives to hiring full-time employees for short-term needs. You can scale your team up or down based on project demands, optimizing your budget without compromising on quality.</p>
+                        </div>
                     </div>
                 </div>
                 <!-- Hire, Train, Deploy Model (HTD) -->
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
-                    <div class="bg-white p-4 rounded shadow-sm h-100 border-top border-4 border-danger">
-                        <div class="mb-3 text-danger"><i class="fas fa-chalkboard-teacher fa-2x"></i></div>
-                        <h5>Hire, Train, Deploy (HTD)</h5>
-                        <p class="text-muted small">Struggling to find professionals with the exact skills you need? Leverage our Hire, Train, Deploy model. We identify talented individuals, provide them with specialized training tailored to your project, and seamlessly integrate them into your team.</p>
+                    <div class="card overflow-hidden h-100 border-0 shadow-sm rounded-4" style="transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80" alt="Hire, Train, Deploy (HTD)" class="w-100" style="height: 200px; object-fit: cover;">
+                        <div class="card-body p-4 border-top border-4 border-danger">
+                            <div class="mb-3 text-danger"><i class="fas fa-chalkboard-teacher fa-2x"></i></div>
+                            <h5 class="fw-bold">Hire, Train, Deploy (HTD)</h5>
+                            <p class="text-muted small mb-0">Struggling to find professionals with the exact skills you need? Leverage our Hire, Train, Deploy model. We identify talented individuals, provide them with specialized training tailored to your project, and seamlessly integrate them into your team.</p>
+                        </div>
                     </div>
                 </div>
                 <!-- Global Staffing -->
                 <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
-                    <div class="bg-white p-4 rounded shadow-sm h-100 border-top border-4 border-dark">
-                        <div class="mb-3 text-dark"><i class="fas fa-globe-americas fa-2x"></i></div>
-                        <h5>Global Staffing</h5>
-                        <p class="text-muted small">We work closely with your team to understand your global energy staffing requirements, project goals, and cultural considerations. Leveraging our worldwide network, we actively source candidates with the specific skills and expertise needed for your global placements.</p>
+                    <div class="card overflow-hidden h-100 border-0 shadow-sm rounded-4" style="transition: transform 0.3s;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                        <img src="assets/images/oil-gas/4.png" alt="Global Staffing" class="w-100" style="height: 200px; object-fit: cover;">
+                        <div class="card-body p-4 border-top border-4 border-dark">
+                            <div class="mb-3 text-dark"><i class="fas fa-globe-americas fa-2x"></i></div>
+                            <h5 class="fw-bold">Global Staffing</h5>
+                            <p class="text-muted small mb-0">We work closely with your team to understand your global energy staffing requirements, project goals, and cultural considerations. Leveraging our worldwide network, we actively source candidates with the specific skills and expertise needed for your global placements.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    
+    
     <!-- SAFETY SECTION -->
     <section class="py-5 bg-light">
         <div class="container py-5">

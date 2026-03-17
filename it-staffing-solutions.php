@@ -87,17 +87,23 @@
 
     <!-- INTRO SECTION -->
     <section class="py-5">
-        <div class="container py-5 text-center">
-            <div class="row justify-content-center">
-                <div class="col-lg-10" data-aos="fade-up">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
                     <h2 class="fw-bold mb-4">Unlocking Workforce Potential Through Strategic IT Staffing</h2>
                     <p class="lead text-muted lh-lg">
                         In the fast-paced world of technology, finding the right talent can be a daunting task, and we are here to make it easier for you. At Gap India IT staffing solutions, we understand the challenges you face in building a high-performing IT team. Let us be your strategic staffing solutions partner in overcoming the pain points of IT staffing so you can focus on what you do best – driving innovation and growth.
                     </p>
                 </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="text-center">
+                        <img src="assets/images/it-staffing.png" alt="IT Staffing Solutions" class="img-fluid rounded-4 shadow-lg">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    
 
     <!-- TAILORED SOLUTIONS SECTION -->
     <section class="bg-light py-5">

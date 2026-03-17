@@ -104,8 +104,8 @@
             <div class="row align-items-center g-5">
                 <div class="col-lg-6" data-aos="fade-right">
                     <div class="section-title">
-                        <h5 class="text-primary fw-bold text-uppercase">Technical Expertise</h5>
-                        <h2 class="mb-0 display-6 fw-bold">The Perfect Blend of Skills</h2>
+                        <h5 class="text-primary fw-bold text-uppercase">Empower Your Business with Reliable Grey-Collar Staffing</h5>
+                        <!-- <h2 class="mb-0 display-6 fw-bold">The Perfect Blend of Skills</h2> -->
                     </div>
                     <p class="text-secondary lead">The modern workforce needs more than just labor or management—it needs specialized technical skill.</p>
                     <p class="text-muted">Grey-collar roles combine the hands-on nature of blue-collar work with the technical knowledge of white-collar professions. From IT technicians to healthcare support staff, these roles are critical for maintaining complex systems and services.</p>
@@ -144,8 +144,8 @@
                 </div>
                 <div class="col-lg-6" data-aos="fade-left">
                     <div class="position-relative ps-lg-4">
-                        <img src="https://www.indeavor.com/wp-content/uploads/2024/03/Grey-Collar-Worker.jpg" class="img-fluid rounded-4 shadow-lg w-100" alt="Technical Expert">
-                        <div class="bg-white p-4 rounded-3 position-absolute bottom-0 start-0 shadow-lg border-start border-5 border-info" style="max-width: 280px; transform: translate(-20px, 20px);">
+                        <img src="assets/images/grey-collar.png" class="img-fluid rounded-4 shadow-lg w-100" alt="Technical Expert">
+                        <!-- <div class="bg-white p-4 rounded-3 position-absolute bottom-0 start-0 shadow-lg border-start border-5 border-info" style="max-width: 280px; transform: translate(-20px, 20px);">
                             <div class="d-flex align-items-center mb-2">
                                 <div class="flex-shrink-0">
                                     <i class="fas fa-certificate text-info fa-2x"></i>
@@ -155,7 +155,7 @@
                                 </div>
                             </div>
                             <p class="mb-0 text-muted small">Access to a pool of certified and diploma-holding professionals.</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -211,7 +211,7 @@
                 <!-- Safety & Security -->
                 <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
                     <div class="card service-card overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80" alt="Safety">
+                        <img src="https://redbrickworks.com/wp-content/uploads/2021/02/security-safety.jpeg" alt="Safety">
                         <div class="card-body p-4">
                             <div class="mb-3 text-danger"><i class="fas fa-shield-alt fa-2x"></i></div>
                             <h5 class="fw-bold">Safety & Security</h5>
